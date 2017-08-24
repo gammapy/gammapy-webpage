@@ -11,23 +11,18 @@
 <html lang="en-US">
     <head>
         <meta charset="UTF-8">
-        <script type="text/javascript">
-
-            var param_to_url = { 
-                "gammapy-cta-1dc-docs":"https://nbviewer.jupyter.org/github/gammapy/gammapy-extra/blob/master/notebooks/cta_data_analysis.ipynb", 
-                 "tutorials":"https://nbviewer.jupyter.org/github/gammapy/gammapy-extra/blob/master/index.ipynb" 
-            };
-
-            var param = document.URL.split('#')[1];
-            console.log('param: ' + param)
-            var url = param_to_url[param];
-            console.log('url: ' + url)
-            window.location.replace(url)
-
+        <script
+            src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+            crossorigin="anonymous">
         </script>
+        <script src="script.js"></script>
         <title>Page Redirection</title>
     </head>
     <body>
-        If you are not redirected automatically, follow this <a href="todo">link to todo</a>.
+        <h1>Gammapy redirect page</h1>
+        <p>If you see this page, you have probably typed a non-existing redirect URL.</p>
+        <p>List of available redirect links:</p>
+        <ul id="gotos"></ul>
     </body>
 </html>

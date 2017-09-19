@@ -2,7 +2,7 @@
 var redirects = [
     {
         short: "gammapy-cta-1dc-docs",
-        url: "https://nbviewer.jupyter.org/github/gammapy/gammapy-extra/blob/master/notebooks/cta_data_analysis.ipynb"
+        url: "https://nbviewer.jupyter.org/github/gammapy/gammapy-extra/blob/master/notebooks/cta_1dc_introduction.ipynb"
     },
     {
         short: "tutorials",

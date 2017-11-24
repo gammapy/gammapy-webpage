@@ -63,31 +63,33 @@
            <p></p>
            <p></p>
             <div class="container">
-               <h4> Getting Help with Gammapy</h4>
-                <ol class="list-unstyled">
-                    <li><a href=""> Gammapy Slack team</a> (get an account <a href="https://gammapy.slack.com">here</a>)
-                    <p> Most of the developers and contributors are using Slack as chatting tools.
-                        Post any question you have and you will receive an answer within some hours, depending on the
-                        time of the day. </p>
-                    </li>
-                    <li> <a href=""> User Email List </a> (join it <a href="https://groups.google.com/forum/#!forum/gammapy">here)</a>
-                        <p> This is a free mailing list. Ask any question about Python programming applied to gamma-ray astronomy.</p>
-                    </li>
-                    <li> <a href=""> CTA User Email List</a>
-                        <p> Ask any question about C.T.A. data analysis with gammapy. </p>
-                    </li>
-                    <li> <a href=""> Coordination Committee Email List </a>
-                        <p> Post any question about gammapy visibility </p>
-                    </li>
-                </ol>
+               <h4> The Gammapy project </h4>
+                <p> Gammapy is a community-developed, open-source Python package for gamma-ray astronomy.
+                It is an in-development affiliated package of Astropy that builds on the core scientific
+                    Python stack to provide tools to simulate and analyse the gamma-ray sky for telescopes
+                    such as CTA, H.E.S.S., VERITAS, MAGIC, HAWC and Fermi-LAT.
+                    Gammapy is a place for Python-coding gamma-ray astronomers to share their code and collaborate.
+                    Feature requests and contributions welcome!
+                    Likelihood fitting of the morphology and spectrum of gamma-ray sources (using Sherpa),
+                    including multi-mission joint likelihood analysis and physical SED modeling (using Naima)
+                    is one important feature we’re working on. But Gammapy has a broader scope, we currently
+                    have code e.g. for data handling, background modeling, source detection, easy access to c
+                    ommonly used datasets and catalogs, statistical methods, even simulating Galactic source populations.
             </div>
-
-
-
 
 
        </main>
 
+    <canvas id="myCanvas" width="578" height="200"></canvas>
+    <script>
+      var canvas = document.getElementById('myCanvas');
+      var context = canvas.getContext('2d');
+
+      context.beginPath();
+      context.moveTo(100, 150);
+      context.lineTo(450, 50);
+      context.stroke();
+    </script>
     <footer class="container">
       <p>&copy; Company 2017</p>
     </footer>

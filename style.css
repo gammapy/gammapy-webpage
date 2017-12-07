@@ -21,6 +21,11 @@
 main {
     padding-top: 7rem;
     margin-bottom: 0;
+    font-family: 'Fira Sans';
+}
+
+a {
+    color: var(--gammapy-primary);
 }
 
 footer {

@@ -13,10 +13,13 @@
 <body>
 
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <a class="navbar-brand" href="index.html">gammapy</a>
-    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <a class="navbar-brand" href=".">Gammapy</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link dropdown-toggle" href="" data-toggle="dropdown" aria-haspopup="true"
                    aria-expanded="false">About</a>
                 <div class="dropdown-menu" aria-labelledby="about">
@@ -28,12 +31,17 @@
                 <a class="nav-link dropdown-toggle" href="" data-toggle="dropdown" aria-haspopup="true"
                    aria-expanded="false">Documentation</a>
                 <div class="dropdown-menu" aria-labelledby="documentation">
-                    <a class="dropdown-item" href="http://docs.gammapy.org/en/latest/changelog.html">Release</a>
-                    <a class="dropdown-item" href="http://docs.gammapy.org/en/latest/notebooks.html#tutorials">
-                        Tutorials</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="http://docs.gammapy.org/en/latest/development/index.html">Developer
-                        documentation</a>
+                    <a class="dropdown-item"
+                       href="http://docs.gammapy.org/en/latest/changelog.html">
+                        Changelog
+                    </a>
+                    <a class="dropdown-item"
+                       href="http://docs.gammapy.org/en/latest/notebooks.html#tutorials">
+                        Tutorials
+                    </a>
+                    <a class="dropdown-item" href="http://docs.gammapy.org/en/latest/development/index.html">
+                        Developer documentation
+                    </a>
                 </div>
             </li>
             <li class="nav-item">
@@ -42,9 +50,9 @@
             <li class="nav-item">
                 <a class="nav-link" href="help.html">Help</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="team.html">Team</a>
-            </li>
+            <!--<li class="nav-item">-->
+            <!--<a class="nav-link" href="team.html">Team</a>-->
+            <!--</li>-->
         </ul>
     </div>
 </nav>
@@ -57,7 +65,13 @@
             <img src="img/gammapy_banner.png" alt="Gammapy banner" id="gp-banner"
                  width="500px" draggable="false"
             />
-            <!--<p>Gammapy is a community-developed, open-source Python package for gamma-ray astronomy</p>-->
+            <p class="lead text-muted">
+                Gammapy is a prototype for the Cherenkov Telescope Array (CTA) science tools.
+            </p>
+            <!--<p class="lead text-muted">-->
+            <!--It can be used to analyse data from existing gamma-ray telescopes.-->
+            <!--Gammapy is built on Numpy and Astropy.-->
+            <!--</p>-->
             <p>
                 <a class="btn btn-primary btn-lg"
                    href="http://docs.gammapy.org/en/latest/install/index.html"
@@ -81,7 +95,7 @@
                 <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
             </div>
             <div class="col-md-4">
-                <h2>Coming Meetings</h2>
+                <h2>Upcoming meetings</h2>
                 <ol class="list-unstyled">
                     <li><a href=""><p>CTA-gammapy SeeVogh biwikely call</a> on Friday at 11:00 CET
                         (2nd and 4th week of the month)

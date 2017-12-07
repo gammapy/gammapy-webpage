@@ -1,5 +1,21 @@
+/*
+    Define custom colors:
+    https://stackoverflow.com/a/17595596/498873
+*/
+:root {
+    --gammapy-primary: rgb(224, 10, 52);
+    --gammapy-secondary: #1e254a;
+}
+
+
 .navbar {
     margin-bottom: 0;
+}
+
+.bg-dark {
+    background-color: #1e254a !important;
+    /* TODO: Make navbar text brighter! */
+    color: white;
 }
 
 main {
@@ -31,4 +47,23 @@ footer {
     left: 50%;
     /* bring your own prefixes */
     transform: translate(-50%, -50%);
+}
+
+
+body {
+    color: var(--gammapy-secondary);
+}
+
+.btn-outline-primary {
+    background-color: white;
+    border-color: var(--gammapy-primary);
+    color: var(--gammapy-primary);
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:active,
+.btn-outline-primary:focus {
+    background-color: var(--gammapy-primary);
+    border-color: var(--gammapy-primary);
+    color: white;
 }

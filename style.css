@@ -1,7 +1,25 @@
-body {
-    /* Move down content because we have a fixed navbar that is 3.5rem tall */
-    padding-top: 3.5rem;
-    background-color: white;
+.navbar {
+    margin-bottom: 0;
+}
+
+.content {
+    padding-top: 7rem;
+    margin-bottom: 0;
+}
+
+footer {
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.jumbotron {
+    padding-top: 10rem;
+    padding-bottom: 3rem;
+    background-color: #eee;
+}
+
+#gp-banner {
+    padding-bottom: 3rem;
 }
 
 /*

@@ -1,24 +1,129 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Gammapy</title>
-        <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
-    </head>
-    <body>
-        <div class="centered">
-            <a href="http://docs.gammapy.org">
-                <img width="500px" draggable="false" src="gammapy_banner.png" alt="Gammapy banner"/>
-            </a>
-            <!-- <img width="500px" src="gammapy_logo.gif" alt="Gammapy banner" /> -->
-            <!-- <p>
-                This webpage is not set up yet.
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Gammapy</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+          integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href=".">Gammapy</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="cta.html">CTA</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="" data-toggle="dropdown" aria-haspopup="true"
+                   aria-expanded="false">Documentation</a>
+                <div class="dropdown-menu" aria-labelledby="documentation">
+                    <a class="dropdown-item"
+                       href="http://docs.gammapy.org/en/latest/">
+                        Development version
+                    </a>
+                    <a class="dropdown-item"
+                       href="http://docs.gammapy.org/en/stable/">
+                        Latest stable version
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<main role="main">
+
+    <div class="jumbotron">
+        <div class="container2" align="center">
+            <img src="img/gammapy_banner.png" alt="Gammapy banner" id="gp-banner"
+                 width="500px" draggable="false"
+            />
+            <p class="lead text-muted">
+                Gammapy is an open-source Python package for gamma-ray analysis built on Numpy and Astropy. <br>
+                Is is a prototype for the Cherenkov Telescope Array (CTA) science tools,
+                and can also be used to analyse data from existing gamma-ray telescopes.
             </p>
             <p>
-                For now, please visit
-                <a href="http://docs.gammapy.org">docs.gammapy.org</a>.
-            </p> -->
+                <a class="btn btn-outline-primary btn-lg" role="button"
+                   href="http://docs.gammapy.org/en/latest/install/index.html">
+                    Install Gammapy
+                </a>
+                <a class="btn btn-outline-primary btn-lg" role="button"
+                   href="http://docs.gammapy.org">
+                    Documentation
+                </a>
+            </p>
         </div>
 
-    </body>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-header">Releases</div>
+                    <div class="card-body">
+                        <p class="card-text">The latest release of Gammapy is version 0.6 from April 28, 2017</p>
+                        <a href="http://docs.gammapy.org/en/latest/changelog.html" class="card-link">Release history</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-header">Meetings</div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            Bi-weekly telcons for Gammapy users and developers (Friday, 11 am).
+                        </p>
+                        <p>
+                            The next Gammapy coding sprint will be February 5-9, 2018 in Paris.
+                        </p>
+                        <a href="https://github.com/gammapy/gammapy-meetings" class="card-link">Meeting infos</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-header">Other news</div>
+                    <div class="card-body">
+                        <p>Gammapy webpage launched (you're looking at it!)</p>
+                        <p>Gammapy coordination committee started (we're getting organised)</p>
+                        <a href="news.html" class="card-link">More news...</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<footer class="container">
+    <hr>
+    <p>&copy; Gammapy project</p>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+        integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+        integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+        crossorigin="anonymous"></script>
+
+</body>
 </html>

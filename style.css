@@ -17,10 +17,14 @@
     color: white;
 }
 
+body {
+    color: var(--gammapy-secondary);
+    font-family: 'Fira Sans', sans-serif;
+}
+
 main {
     padding-top: 7rem;
     margin-bottom: 0;
-    font-family: 'Fira Sans';
 }
 
 a {
@@ -55,9 +59,6 @@ footer {
     transform: translate(-50%, -50%);
 }
 
-body {
-    color: var(--gammapy-secondary);
-}
 
 .btn-outline-primary {
     background-color: white;

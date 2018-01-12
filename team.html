@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110956727-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        gtag('config', 'UA-110956727-1');
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Gammapy</title>
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+          integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" media="screen">
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href=".">Gammapy</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="cta.html">CTA</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="" data-toggle="dropdown" aria-haspopup="true"
+                   aria-expanded="false">Documentation</a>
+                <div class="dropdown-menu" aria-labelledby="documentation">
+                    <a class="dropdown-item"
+                       href="http://docs.gammapy.org/en/latest/">
+                        Development version
+                    </a>
+                    <a class="dropdown-item"
+                       href="http://docs.gammapy.org/en/stable/">
+                        Latest stable version
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+<main role="main">
+    <div class="container">
+
+        <h1>Project & Team</h1>
+
+        <h2 id="#introduction">Introduction</h2>
+        <p class="lead">
+            This page describes the Gammapy project organisation and the main roles and responsibilities in the Gammapy
+            team.
+        </p>
+        <p>
+            This structure was put in place in December 2017 based on our experience developing Gammapy since 2013,
+            as well more generally with science tool software development in the <a
+                href="https://www.mpi-hd.mpg.de/hfm/HESS/">H.E.S.S.</a>
+            and <a href="https://www.cta-observatory.org/">CTA</a> collaborations. We also took inspiration from the way
+            the <a href="http://www.astropy.org/team.html">Astropy</a> and <a
+                href="http://sunpy.org/team.html">Sunpy</a>
+            projects are organised, since they are in a similar situation as Gammapy: a distributed development team and
+            a variety of people and projects using and depending on them.
+        </p>
+        <p>
+            We expect this structure to evolve over the coming years, adapting to
+            the size and composition of the Gammapy development team, and the requirements and needs of scientists and
+            projects using Gammapy. If you would like to become part of the Gammapy team, please get in <a
+                href="contact.html">contact</a>.
+            Help is always welcome!
+        </p>
+        <h2>Overview</h2>
+        <p>
+            The following sections describe the major roles and responsibilities in the Gammapy team:
+        </p>
+        <ul>
+            <li><a href="#coordination-committee">Coordination committee</a></li>
+            <li><a href="#project-manager">Project manager</a></li>
+            <li><a href="#lead-developer">Lead developer</a></li>
+            <li><a href="#core-developers">Core developers</a></li>
+            <li><a href="#contributors">Contributors</a></li>
+        </ul>
+
+        <h2 id="cc">Coordination Committee</h2>
+        <p class="lead">
+            The Gammapy coordination committee (CC) is the board that is responsible to promote, coordinate and steer
+            Gammapy developments. It also serves as main contact point for the Gammapy project.
+        </p>
+        <p>
+            Gammapy is developed and used by people and projects from several institutes and countries, with different
+            needs, priorities and schedules. Members of the CC are representatives for the major stakeholders, i.e.
+            groups that have contributed significantly to Gammapy development, as well as projects like H.E.S.S. and CTA
+            that are using Gammapy. In addition, the Gammapy project manager and lead developer are part of the Gammapy
+            CC.
+        </p>
+        <p>
+            Responsibilities include:
+        </p>
+        <ul>
+            <li>
+                Ensure that scientists and projects that are using Gammapy have reliable, good and long-term support
+            </li>
+            <li>
+                Promote the use of Gammapy by new projects, especially as science tool for CTA
+            </li>
+            <li>
+                Support and grow the Gammapy team (help find manpower and funding)
+            </li>
+            <li>
+                Make decisions on the scope, content and development priorities for the Gammapy package. <br>
+                In many cases this will be done via <a href="http://docs.gammapy.org/dev/development/pigs/">Proposal for
+                improvement of Gammapy (PIG)</a> documents.
+            </li>
+            <li>
+                Support and coordinate the use of Gammapy for scientific or technical studies and papers
+            </li>
+            <li>
+                The CC is the official contact point for the Gammapy project.
+            </li>
+            <li>
+                Appoint the Gammapy project manager (technical lead) and lead developer (non-technical lead)
+            </li>
+            <li>
+                CC members should join the Gammapy CC mailing list and calls for important discussions <br>
+                (day-to-day management is left to the project manager and technical lead).
+            </li>
+        </ul>
+        <p>
+            Current CC members (alphabetical order):
+        </p>
+        <ul>
+            <li><strong>Bruno Khelifi</strong> (APC, France)</li>
+            <li><strong>Christoph Deil</strong> (MPIK, Germany)</li>
+            <li><strong>Régis Terrier</strong> (APC, France)</li>
+            <li><strong>Roberta Zanin</strong> (MPIK, Germany)</li>
+        </ul>
+
+        <!-- See https://www.finance-ni.gov.uk/articles/roles-and-responsibilities-project-manager-->
+        <h2 class="project-manager">Project manager</h2>
+        <p class="lead">
+            The project manager is the non-technical executive lead for the Gammapy project.
+        </p>
+        <p>
+            The project manager is appointed by the Gammapy coordination committee, and works closely with the Gammapy
+            coordination committee, core developers and users.
+        </p>
+        <p>
+            Responsibilities include:
+        </p>
+        <ul>
+            <li>
+                Organise and drive all non-technical aspects of the project on a day-to-day basis.
+                Keep the overview of ongoing activities, schedules and action items and follow up
+                to make sure all important things get done.
+            </li>
+            <li>
+                Serve as Gammapy coordination committee secretary (schedule and moderate calls; give status reports;
+                write minutes)
+            </li>
+            <li>Organise all Gammapy calls and face-to-face meetings (for users and / or developers) via <a
+                    href="https://github.com/gammapy/gammapy-meetings/">gammapy-meetings</a>
+            </li>
+            <li>
+                Keep an overview and help coordinate all activities that have some involvement of Gammapy,
+                such as e.g. papers, presentations or posters about or using Gammapy at gamma-ray astronomy meetings or
+                conferences, or tutorials at schools / workshops on gamma-ray astronomy data analysis.
+            </li>
+            <li>
+                Maintain Gammapy communication channels (mailing lists, slack, github, ...)
+                as well as the content at <a href="http://gammapy.org/">http://gammapy.org/</a>
+            </li>
+        </ul>
+        <p>
+            The current project manager is <strong>Roberta Zanin</strong>, the deputy project manager is <strong>Bruno
+            Khelifi</strong>.
+        </p>
+        <p class="small">
+            The role of project manager is very time-intensive. The project manager and deputy should aim to distribute
+            tasks to other contributors in the Gammapy team, and split the remaining work.
+        </p>
+
+        <h2 id="lead-developer">Lead developer</h2>
+        <p class="lead">
+            The lead developer is the technical executive lead for the Gammapy project.
+        </p>
+        <p>
+            The lead developer is appointed by the Gammapy coordination committee, and works closely with the Gammapy
+            coordination committee, project manager, core developers and community contributors.
+        </p>
+        <p>
+            Responsibilities include:
+        </p>
+        <ul>
+            <li>
+                Organise and drive all technical aspects of the project on a day-to-day basis.
+                Keep the overview of ongoing activities, schedules and action items and follow up
+                to make sure all important things get done.
+            </li>
+            <li>
+                Serve on the Gammapy coordination committee, as the link between CC and the development team.
+            </li>
+            <li>
+                Ensure that <a href="http://docs.gammapy.org/dev/development/pigs/">Proposal for
+                improvement of Gammapy (PIG)</a> documents are properly reviewed and
+                eventually decisions made by the CC.
+            </li>
+            <li>
+                Manage the Gammapy developer / maintainer / contributor team. Distribute tasks and assign
+                responsibilities to other Gammapy core developers.
+            </li>
+            <li>
+                Ensure that anyone interested in contributing to Gammapy development has good resources (documentation,
+                communication, mentoring) to get started. Specifically: maintain the Gammapy <a
+                    href="http://docs.gammapy.org/dev/development">developer documentation</a>
+                that describes all aspects of Gammapy development (code, testing, documentation, processes).
+            </li>
+            <li>
+                Ensure Gammapy infrastructure is well set up and maintained (issue tracker and pull requests on Github,
+                continuous integration tests, documentation builds, releases and distribution).
+            </li>
+            <li>
+                Schedule Gammapy releases and define which fixes and features go in which release, taking the needs of
+                people and projects using Gammapy as well as available manpower for developments into account.
+                Either execute releases directly or assign a release manager.
+            </li>
+        </ul>
+        <p>
+            The current lead developer is <strong>Christoph Deil</strong>, the deputy lead developer is
+            <strong>tbd</strong>.
+        </p>
+        <p class="small">
+            The role of lead developer is very time-intensive. The lead developer and deputy should aim to distribute
+            tasks to other core developers and contributors in the Gammapy team, and split the remaining work.
+        </p>
+
+        <h2 id="core-developers">Core developers</h2>
+        <p class="lead">The Gammapy core developers regularly contribute to Gammapy, either by writing code, tests or
+            documentation themselves, or by doing review, maintenance, refactoring or cleanup for parts of the Gammapy
+            code.
+        </p>
+        <p>
+            We will define roles and responsibilites for Gammapy core development team and describe them here in
+            February 2017.
+        </p>
+
+        <h2 id="contributors">Contributors</h2>
+        <p class="lead">Anyone is welcome to contribute to Gammapy! Start by using Gammapy.
+            Then if you notice a missing feature or issue, please report it (see <a href="contact.html">contact page</a>),
+            and if you're interested in contributing, we can team you up with a mentor from the Gammapy team to do it.
+        </p>
+        <p>
+            The following people have contributed commits to the Gammapy repository (first name alphabetical order):
+        </p>
+        <ul>
+            <li><strong>Arjun Voruganti</strong> (<a href="https://github.com/vorugantia">@vorugantia</a>), MPIK,
+                Germany
+            </li>
+            <li><strong>Arpit Gogia</strong> (<a href="https://github.com/arpitgogia">@arpitgogia</a>), Delhi
+                Technological
+                University, India
+            </li>
+            <li><strong>Axel Donath</strong> (<a href="https://github.com/adonath">@adonath</a>), MPIK, Germany</li>
+            <li><strong>Brigitta Sipocz</strong> (<a href="https://github.com/bsipocz">@bsipocz</a>), Cambridge, UK</li>
+            <li><strong>Bruno Khelifi</strong> (<a href="https://github.com/bkhelifi">@bkhelifi</a>), APC, France</li>
+            <li><strong>Christoph Deil</strong> (<a href="https://github.com/cdeil">@cdeil</a>), MPIK, Germany</li>
+            <li><strong>Cosimo Nigro</strong> (<a href="https://github.com/cosimoNigro">@cosimoNigro</a>), DESY Zeuthen,
+                Germany
+            </li>
+            <li><strong>Dirk Lennarz</strong> (<a href="https://github.com/dlennarz">@dlennarz</a>), Michigan
+                University, US
+            </li>
+            <li><strong>Domenico Tiziani</strong> (<a href="https://github.com/dltiziani">@dltiziani</a>), Erlangen
+                University,
+                Germany
+            </li>
+            <li><strong>Ellis Owen</strong> (<a href="https://github.com/ellisowen">@ellisowen</a>), UCL, US</li>
+            <li><strong>Fabio Acero</strong> (<a href="https://github.com/facero">@facero</a>), SAP/CEA, France</li>
+            <li><strong>Helen Poon</strong> (<a href="https://github.com/helen-poon">@helen-poon</a>), MPIK, Germany
+            </li>
+            <li><strong>Ignasi Reichardt</strong> (<a href="https://github.com/ignasi-reichardt>">@ignasi-reichardt</a>),
+                APC,
+                France
+            </li>
+            <li><strong>Johannes King</strong> (<a href="https://github.com/joleroi">@joleroi</a>), MPIK, Germany</li>
+            <li><strong>Jonathan Harris</strong> (<a href="https://github.com/JonathanDHarris">@JonathanDHarris</a>),
+                JON, UK
+            </li>
+            <li><strong>José Enrique Ruiz</strong> (<a href="https://github.com/Bultako">@Bultako</a>), IAA, Spain</li>
+            <li><strong>Julien Lefaucheur</strong> (<a href="https://github.com/jjlk">@jjlk</a>), SAP/CEA, France</li>
+            <li><strong>Lars Mohrmann</strong> (<a href="https://github.com/lmohrmann">@lmohrmann</a>), Erlangen
+                University, Germany
+            </li>
+            <li><strong>Léa Jouvin</strong> (<a href="https://github.com/JouvinLea">@JouvinLea</a>), IFAE, Spain</li>
+            <li><strong>Luigi Tibaldo</strong> (<a href="https://github.com/tibaldo">@tibaldo</a>), IRAP, France</li>
+            <li><strong>Manuel Paz Arribas</strong> (<a href="https://github.com/mapazarr">@mapazarr</a>), Humboldt
+                University,
+                Germany
+            </li>
+            <li><strong>Matthew Wood</strong> (<a href="https://github.com/woodmd">@woodmd</a>), SLAC, US</li>
+            <li><strong>Matthias Wegen</strong> (<a href="https://github.com/wegenmat">@wegenmat</a>), DESY Zeuthen,
+                Germany
+            </li>
+            <li><strong>Nachiketa Chakraborty</strong> (<a href="https://github.com/cnachi">@cnachi</a>), MPIK, Germany
+            </li>
+            <li><strong>Olga Vorokh</strong> (<a href="https://github.com/OlgaVorokh">@OlgaVorokh</a>),, Belarus</li>
+            <li><strong>Peter Deiml</strong> (<a href="https://github.com/pdeiml">@pdeiml</a>), Erlangen Univ, Germany
+            </li>
+            <li><strong>Régis Terrier</strong> (<a href="https://github.com/registerrier">@registerrier</a>), APC,
+                France
+            </li>
+            <li><strong>Roberta Zanin</strong> (<a href="https://github.com/robertazanin">@robertazanin</a>), MPIK,
+                Germany
+            </li>
+            <li><strong>Rolf Bühler</strong> (<a href="https://github.com/rbuehler">@rbuehler</a>), DESY Zeuthen,
+                Germany
+            </li>
+            <li><strong>Rubén López-Coto</strong> (<a href="https://github.com/rlopezcoto">@rlopezcoto</a>), Padova
+                Univ, Italy
+            </li>
+            <li><strong>Stefan Klepser</strong> (<a href="https://github.com/klepser">@klepser</a>), DESY Zeuthen,
+                Germany
+            </li>
+            <li><strong>Thomas Armstrong</strong> (<a href="https://github.com/thomasarmstrong">@thomasarmstrong</a>),
+                Manchester
+                University, UK
+            </li>
+            <li><strong>Thomas Vuillaume</strong> (<a href="https://github.com/vuillaut">@vuillaut</a>), LAPP, France
+            </li>
+            <li><strong>Victor Zabalza</strong> (<a href="https://github.com/zblz">@zblz</a>), Leads Univ, UK</li>
+            <li><strong>Zé Vinícius</strong> (<a href="https://github.com/mirca">@mirca</a>), NASA, US</li>
+        </ul>
+        <p>
+            There is no useful automatic way to measure how much someone contributed. The most common measure used
+            is commits to the code repository. This is visible for Gammapy on
+            <a href="https://github.com/gammapy/gammapy/graphs/contributors">GitHub</a> and
+            <a href="https://www.openhub.net/p/gammapy/contributors/summary">Open Hub</a>.
+            However, please note that the number of commits isn't a useful measure. There are people that have spent
+            several days to
+            find and fix an important bug, or implement a big and complex feature and make one commit. If someone
+            makes a good bug report or does code review or mentoring or organisational work for Gammapy it doesn't
+            show up in the commit stats at all.
+        </p>
+        <p>
+            Please know that any contribution to the Gammapy project is valued!
+        </p>
+
+    </div>
+
+</main>
+
+<footer class="container">
+    <hr>
+    <p>&copy; Gammapy project</p>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+        integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+        integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>

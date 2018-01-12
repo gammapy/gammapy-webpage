@@ -26,17 +26,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
     </script>
 
     <meta charset="utf-8">
@@ -118,7 +107,6 @@
             <li><a href="#lead-developer">Lead developer</a></li>
             <li><a href="#core-developers">Core developers</a></li>
             <li><a href="#contributors">Contributors</a></li>
-            <li><a href="#other">Other</a></li>
         </ul>
 
         <h2 id="cc">Coordination Committee</h2>
@@ -148,7 +136,8 @@
             </li>
             <li>
                 Make decisions on the scope, content and development priorities for the Gammapy package. <br>
-                In many cases this will be done via documents we call "proposals for improvement of Gammapy (PIGs)".
+                In many cases this will be done via <a href="http://docs.gammapy.org/dev/development/pigs/">Proposal for
+                improvement of Gammapy (PIG)</a> documents.
             </li>
             <li>
                 Support and coordinate the use of Gammapy for scientific or technical studies and papers
@@ -215,8 +204,7 @@
         </p>
         <p class="small">
             The role of project manager is very time-intensive. The project manager and deputy should aim to distribute
-            tasks to
-            other contributors in the Gammapy team, and split the remaining work.
+            tasks to other contributors in the Gammapy team, and split the remaining work.
         </p>
 
         <h2 id="lead-developer">Lead developer</h2>
@@ -237,35 +225,31 @@
                 to make sure all important things get done.
             </li>
             <li>
-                Propose and outline development activities for Gammapy, e.g. by writing, co-authoring
-                or reviewing "proposal for improvement of Gammapy (PIGs)" documents.
-            </li>
-            <li>
                 Serve on the Gammapy coordination committee, as the link between CC and the development team.
-                Present and explain PIGs to the CC, and make a recommendation.
             </li>
             <li>
-                Manage the Gammapy developer / maintainer / contributor team. Motivate and assign responsibilities to
-                other core developers to maintain sub-packages of Gammapy and to review incoming pull requests
-                or take on a mentoring role for new Gammapy contributors.
+                Ensure that <a href="http://docs.gammapy.org/dev/development/pigs/">Proposal for
+                improvement of Gammapy (PIG)</a> documents are properly reviewed and
+                eventually decisions made by the CC.
             </li>
             <li>
-                Grow and teach the Gammapy developer and contributor team, e.g. via calls or chat,
-                or code review on Github, or via presentations and tutorials at Gammapy developer meetings.
+                Manage the Gammapy developer / maintainer / contributor team. Distribute tasks and assign
+                responsibilities to other Gammapy core developers.
             </li>
             <li>
-                Maintain <a href="http://docs.gammapy.org/">docs.gammapy.org</a>, especially the developer
-                documentation. How things work should be well-documented, processes (e.g. making a release,
-                updating the docs) should be either fully automated, or mostly automated, and a checklist
-                of simple steps available that any core developer can do.
+                Ensure that anyone interested in contributing to Gammapy development has good resources (documentation,
+                communication, mentoring) to get started. Specifically: maintain the Gammapy <a
+                    href="http://docs.gammapy.org/dev/development">developer documentation</a>
+                that describes all aspects of Gammapy development (code, testing, documentation, processes).
             </li>
             <li>
-                Work on Gammapy code and test improvements and clean up, prioritising things that are urgent
-                or difficult and therefore unlikely to be done by others soon.
+                Ensure Gammapy infrastructure is well set up and maintained (issue tracker and pull requests on Github,
+                continuous integration tests, documentation builds, releases and distribution).
             </li>
             <li>
-                Schedule and do Gammapy releases, taking needs of people and projects using Gammapy
-                as well as available manpower for developments into account.
+                Schedule Gammapy releases and define which fixes and features go in which release, taking the needs of
+                people and projects using Gammapy as well as available manpower for developments into account.
+                Either execute releases directly or assign a release manager.
             </li>
         </ul>
         <p>
@@ -274,179 +258,119 @@
         </p>
         <p class="small">
             The role of lead developer is very time-intensive. The lead developer and deputy should aim to distribute
-            tasks to
-            other core developers and contributors in the Gammapy team, and split the remaining work.
+            tasks to other core developers and contributors in the Gammapy team, and split the remaining work.
         </p>
 
         <h2 id="core-developers">Core developers</h2>
         <p class="lead">The Gammapy core developers regularly contribute to Gammapy, either by writing code, tests or
             documentation themselves, or by doing review, maintenance, refactoring or cleanup for parts of the Gammapy
-            code.</p>
-        <p>
-            The Gammapy core developers are PhD students, postdocs or researchers with a permanent position in gamma-ray
-            astronomy that spend a certain fraction of their time on Gammapy. The role of Gammapy core developer isn't
-            well-defined, there is a continuous spectrum from Gammapy contributors that make one small pull request to
-            Gammapy, to Gammapy core developers that spend a large fraction of their work time on Gammapy.
+            code.
         </p>
         <p>
-            Therefore, we do not try to draw a line here and present a list of all core developers.
-            However, to give some credit and to encourage contributors to help improve the quality of the existing
-            Gammapy code, tests and documentation, we do give a list here of the major Gammapy sub-packages,
-            and for each sub-package list a lead and where available deputy maintainer. The goal is to have
-            every sub-package covered, so if you are familiar with one of these sub-packages, and have some time
-            to work on it within the coming months, please sign up by contacting the Gammapy lead developer!
-        </p>
-        <p>
-            It is important to note that no-one "owns" a given sub-package or piece of code in Gammapy. Everyone is
-            welcome to make a proposal or pull request for any file in Gammapy at any time and it is an explicit goal
-            that all parts of the Gammapy codebase are easy to understand and contribute to by new people!
-        </p>
-        <p>
-            By agreeing to maintain a given sub-package for Gammapy, you express to do the following on a best-effort
-            basis (roughly sorted by priority):
-        </p>
-        <ul>
-            <li>Fix known bugs</li>
-            <li>
-                Review and integrate open pull requests with fixes or features.
-            </li>
-            <li>
-                Review and improve the existing code, tests and documentation.
-            </li>
-            <li>
-                If needed, plan and execute major developments, such as new features or re-writes.
-                If useful, write a "proposal for improvement of Gammapy (PIG)" first.
-                This is rare, and will usually be done only after discussion with and in collaboration with other
-                Gammapy developers and the Gammapy lead developer.
-            </li>
-        </ul>
-        <p>
-            Ideally each sub-package has a lead and deputy maintainer, and they pair-code or review each other's pull
-            requests.
-        </p>
-
-        <p>Current sub-package maintainers:</p>
-        <ul>
-            <li>
-                gammapy.astro: <strong>tbd</strong> (lead), <strong>tbd</strong> (deputy)
-            </li>
-            <li>
-                gammapy.background: <strong>tbd</strong> (lead), <strong>tbd</strong> (deputy)
-            </li>
-            <li>
-                gammapy.catalog: <strong>tbd</strong> (lead), <strong>tbd</strong> (deputy)
-            </li>
-            <li>
-                gammapy.cube: <strong>tbd</strong> (lead), <strong>tbd</strong> (deputy)
-            </li>
-            <li>
-                gammapy.data: <strong>tbd</strong> (lead), <strong>tbd</strong> (deputy)
-            </li>
-            <li>
-                gammapy.datasets: <strong>tbd</strong> (lead), <strong>tbd</strong> (deputy)
-            </li>
-            <li>
-                gammapy.detect: <strong>tbd</strong> (lead), <strong>tbd</strong> (deputy)
-            </li>
-            <li>
-                gammapy.image: <strong>tbd</strong> (lead), <strong>tbd</strong> (deputy)
-            </li>
-            <li>
-                gammapy.irf: <strong>Christoph Deil<sup>*</sup></strong> (lead), <strong>Bruno Khelifi</strong> (deputy)
-            </li>
-            <li>
-                gammapy.maps: <strong>Matthew Wood</strong> (lead), <strong>Christoph Deil</strong> (deputy)
-            </li>
-            <li>
-                gammapy.scripts: <strong>Christoph Deil<sup>*</sup></strong> (lead), <strong>tbd</strong> (deputy)
-            </li>
-            <li>
-                gammapy.spectrum: <strong>Johannes King</strong> (lead), <strong>Régis Terrier</strong> (deputy)
-            </li>
-            <li>
-                gammapy.stats: <strong>tbd</strong> (lead), <strong>tbd</strong> (deputy)
-            </li>
-            <li>
-                gammapy.time: <strong>tbd</strong> (lead), <strong>tbd</strong> (deputy)
-            </li>
-            <li>
-                gammapy.utils: <strong>tbd</strong> (lead), <strong>tbd</strong> (deputy)
-            </li>
-        </ul>
-        <p>
-            <strong><sup>*</sup></strong> Would be happy to step take the deputy role or step down, if someone is willing to step up!
+            We will define roles and responsibilites for Gammapy core development team and describe them here in
+            February 2017.
         </p>
 
         <h2 id="contributors">Contributors</h2>
+        <p class="lead">Anyone is welcome to contribute to Gammapy! Start by using Gammapy.
+            Then if you notice a missing feature or issue, please report it (see <a href="contact.html">contact page</a>),
+            and if you're interested in contributing, we can team you up with a mentor from the Gammapy team to do it.
+        </p>
         <p>
             The following people have contributed commits to the Gammapy repository (first name alphabetical order):
         </p>
         <ul>
-            <li><strong>Arjun Voruganti</strong> (<a href="https://github.com/vorugantia">@vorugantia</a>), MPIK, Germany</li>
-            <li><strong>Arpit Gogia</strong> (<a href="https://github.com/arpitgogia">@arpitgogia</a>), Delhi Technological
+            <li><strong>Arjun Voruganti</strong> (<a href="https://github.com/vorugantia">@vorugantia</a>), MPIK,
+                Germany
+            </li>
+            <li><strong>Arpit Gogia</strong> (<a href="https://github.com/arpitgogia">@arpitgogia</a>), Delhi
+                Technological
                 University, India
             </li>
             <li><strong>Axel Donath</strong> (<a href="https://github.com/adonath">@adonath</a>), MPIK, Germany</li>
             <li><strong>Brigitta Sipocz</strong> (<a href="https://github.com/bsipocz">@bsipocz</a>), Cambridge, UK</li>
             <li><strong>Bruno Khelifi</strong> (<a href="https://github.com/bkhelifi">@bkhelifi</a>), APC, France</li>
             <li><strong>Christoph Deil</strong> (<a href="https://github.com/cdeil">@cdeil</a>), MPIK, Germany</li>
-            <li><strong>Cosimo Nigro</strong> (<a href="https://github.com/cosimoNigro">@cosimoNigro</a>), DESY Zeuthen, Germany</li>
-            <li><strong>Dirk Lennarz</strong> (<a href="https://github.com/dlennarz">@dlennarz</a>), Michigan University, US</li>
-            <li><strong>Domenico Tiziani</strong> (<a href="https://github.com/dltiziani">@dltiziani</a>), Erlangen University,
+            <li><strong>Cosimo Nigro</strong> (<a href="https://github.com/cosimoNigro">@cosimoNigro</a>), DESY Zeuthen,
+                Germany
+            </li>
+            <li><strong>Dirk Lennarz</strong> (<a href="https://github.com/dlennarz">@dlennarz</a>), Michigan
+                University, US
+            </li>
+            <li><strong>Domenico Tiziani</strong> (<a href="https://github.com/dltiziani">@dltiziani</a>), Erlangen
+                University,
                 Germany
             </li>
             <li><strong>Ellis Owen</strong> (<a href="https://github.com/ellisowen">@ellisowen</a>), UCL, US</li>
             <li><strong>Fabio Acero</strong> (<a href="https://github.com/facero">@facero</a>), SAP/CEA, France</li>
-            <li><strong>Helen Poon</strong> (<a href="https://github.com/helen-poon">@helen-poon</a>), MPIK, Germany</li>
-            <li><strong>Ignasi Reichardt</strong> (<a href="https://github.com/ignasi-reichardt>">@ignasi-reichardt</a>), APC,
-                France</li>
+            <li><strong>Helen Poon</strong> (<a href="https://github.com/helen-poon">@helen-poon</a>), MPIK, Germany
+            </li>
+            <li><strong>Ignasi Reichardt</strong> (<a href="https://github.com/ignasi-reichardt>">@ignasi-reichardt</a>),
+                APC,
+                France
+            </li>
             <li><strong>Johannes King</strong> (<a href="https://github.com/joleroi">@joleroi</a>), MPIK, Germany</li>
-            <li><strong>Jonathan Harris</strong> (<a href="https://github.com/JonathanDHarris">@JonathanDHarris</a>), JON, UK
+            <li><strong>Jonathan Harris</strong> (<a href="https://github.com/JonathanDHarris">@JonathanDHarris</a>),
+                JON, UK
             </li>
             <li><strong>José Enrique Ruiz</strong> (<a href="https://github.com/Bultako">@Bultako</a>), IAA, Spain</li>
             <li><strong>Julien Lefaucheur</strong> (<a href="https://github.com/jjlk">@jjlk</a>), SAP/CEA, France</li>
-            <li><strong>Lars Mohrmann</strong> (<a href="https://github.com/lmohrmann">@lmohrmann</a>), Erlangen University, Germany
+            <li><strong>Lars Mohrmann</strong> (<a href="https://github.com/lmohrmann">@lmohrmann</a>), Erlangen
+                University, Germany
             </li>
             <li><strong>Léa Jouvin</strong> (<a href="https://github.com/JouvinLea">@JouvinLea</a>), IFAE, Spain</li>
             <li><strong>Luigi Tibaldo</strong> (<a href="https://github.com/tibaldo">@tibaldo</a>), IRAP, France</li>
-            <li><strong>Manuel Paz Arribas</strong> (<a href="https://github.com/mapazarr">@mapazarr</a>), Humboldt University,
-                Germany</li>
-            <li><strong>Matthew Wood</strong> (<a href="https://github.com/woodmd">@woodmd</a>), SLAC, US</li>
-            <li><strong>Matthias Wegen</strong> (<a href="https://github.com/wegenmat">@wegenmat</a>), DESY Zeuthen, Germany</li>
-            <li><strong>Nachiketa Chakraborty</strong> (<a href="https://github.com/cnachi">@cnachi</a>), MPIK, Germany</li>
-            <li><strong>Olga Vorokh</strong> (<a href="https://github.com/OlgaVorokh">@OlgaVorokh</a>),, Belarus</li>
-            <li><strong>Peter Deiml</strong> (<a href="https://github.com/pdeiml">@pdeiml</a>), Erlangen Univ, Germany</li>
-            <li><strong>Régis Terrier</strong> (<a href="https://github.com/registerrier">@registerrier</a>), APC, France</li>
-            <li><strong>Roberta Zanin</strong> (<a href="https://github.com/robertazanin">@robertazanin</a>), MPIK, Germany</li>
-            <li><strong>Rolf Bühler</strong> (<a href="https://github.com/rbuehler">@rbuehler</a>), DESY Zeuthen, Germany</li>
-            <li><strong>Rubén López-Coto</strong> (<a href="https://github.com/rlopezcoto">@rlopezcoto</a>), Padova Univ, Italy
+            <li><strong>Manuel Paz Arribas</strong> (<a href="https://github.com/mapazarr">@mapazarr</a>), Humboldt
+                University,
+                Germany
             </li>
-            <li><strong>Stefan Klepser</strong> (<a href="https://github.com/klepser">@klepser</a>), DESY Zeuthen, Germany</li>
-            <li><strong>Thomas Armstrong</strong> (<a href="https://github.com/thomasarmstrong">@thomasarmstrong</a>), Manchester
+            <li><strong>Matthew Wood</strong> (<a href="https://github.com/woodmd">@woodmd</a>), SLAC, US</li>
+            <li><strong>Matthias Wegen</strong> (<a href="https://github.com/wegenmat">@wegenmat</a>), DESY Zeuthen,
+                Germany
+            </li>
+            <li><strong>Nachiketa Chakraborty</strong> (<a href="https://github.com/cnachi">@cnachi</a>), MPIK, Germany
+            </li>
+            <li><strong>Olga Vorokh</strong> (<a href="https://github.com/OlgaVorokh">@OlgaVorokh</a>),, Belarus</li>
+            <li><strong>Peter Deiml</strong> (<a href="https://github.com/pdeiml">@pdeiml</a>), Erlangen Univ, Germany
+            </li>
+            <li><strong>Régis Terrier</strong> (<a href="https://github.com/registerrier">@registerrier</a>), APC,
+                France
+            </li>
+            <li><strong>Roberta Zanin</strong> (<a href="https://github.com/robertazanin">@robertazanin</a>), MPIK,
+                Germany
+            </li>
+            <li><strong>Rolf Bühler</strong> (<a href="https://github.com/rbuehler">@rbuehler</a>), DESY Zeuthen,
+                Germany
+            </li>
+            <li><strong>Rubén López-Coto</strong> (<a href="https://github.com/rlopezcoto">@rlopezcoto</a>), Padova
+                Univ, Italy
+            </li>
+            <li><strong>Stefan Klepser</strong> (<a href="https://github.com/klepser">@klepser</a>), DESY Zeuthen,
+                Germany
+            </li>
+            <li><strong>Thomas Armstrong</strong> (<a href="https://github.com/thomasarmstrong">@thomasarmstrong</a>),
+                Manchester
                 University, UK
             </li>
-            <li><strong>Thomas Vuillaume</strong> (<a href="https://github.com/vuillaut">@vuillaut</a>), LAPP, France</li>
+            <li><strong>Thomas Vuillaume</strong> (<a href="https://github.com/vuillaut">@vuillaut</a>), LAPP, France
+            </li>
             <li><strong>Victor Zabalza</strong> (<a href="https://github.com/zblz">@zblz</a>), Leads Univ, UK</li>
             <li><strong>Zé Vinícius</strong> (<a href="https://github.com/mirca">@mirca</a>), NASA, US</li>
         </ul>
         <p>
-            A detailed listing of contributions is here:
-            <a href="https://github.com/gammapy/gammapy/graphs/contributors">GitHub Contributors</a>.
+            There is no useful automatic way to measure how much someone contributed. The most common measure used
+            is commits to the code repository. This is visible for Gammapy on
+            <a href="https://github.com/gammapy/gammapy/graphs/contributors">GitHub</a> and
+            <a href="https://www.openhub.net/p/gammapy/contributors/summary">Open Hub</a>.
+            However, please note that the number of commits isn't a useful measure. There are people that have spent
+            several days to
+            find and fix an important bug, or implement a big and complex feature and make one commit. If someone
+            makes a good bug report or does code review or mentoring or organisational work for Gammapy it doesn't
+            show up in the commit stats at all.
         </p>
-
-        <h2 id="other">Other</h2>
         <p>
-            Note that this is not a complete list of contributors to the Gammapy project.
-            There are many ways to contribute, besides commits and pull requests
-            that add code, tests, documentation! Some examples of contributions to the Gammapy project not
-            mentioned on this webpage include using and acknowledging Gammapy for a study, reporting an issue or
-            filing
-            a feature request, teaching or funding a student to work on analysis methods and encouraging her to
-            share
-            her code, organising a workshop where Gammapy is used, ...
-            Please know that your contributions are much appreciated!
+            Please know that any contribution to the Gammapy project is valued!
         </p>
-
 
     </div>
 

@@ -24,7 +24,8 @@ class Dataset:
 
     If you want to add a dataset, make a new class and add it to the list below.
     """
-    _url = "https://github.com/gammapy/gammapy-extra/raw/master/datasets/"
+
+    _url = "https://github.com/gammapy/gammapy-extra/raw/master/datasets"
 
     @property
     def record(self):
@@ -34,44 +35,76 @@ class Dataset:
             "files": list(self.files),
         }
 
+    @property
+    def files(self):
+        for path in (GAMMAPY_DATA / self.name).glob("**/*.*"):
+            urlpath = path.as_posix().replace(GAMMAPY_DATA.as_posix(), "")
+            yield {"path": path.as_posix(), "url": self._url + urlpath}
+
+
+class DatasetCTA1DC(Dataset):
+    name = "cta-1dc"
+    description = "tbd"
+
+
+class DatasetDarkMatter(Dataset):
+    name = "dark_matter_spectra"
+    description = "tbd"
+
+
+class DatasetCatalogFermi(Dataset):
+    name = "catalogs/fermi"
+    description = "tbd"
+
+
+class DatasetFermi2FHL(Dataset):
+    name = "fermi_2fhl"
+    description = "tbd"
+
 
 class DatasetFermi3FHL(Dataset):
     name = "fermi_3fhl"
     description = "tbd"
 
-    @property
-    def files(self):
-        for _ in ["fermi_3fhl_exposure_cube_hpx.fits.gz"]:
-            yield {
-                "path": "fermi_3fhl/" + _,
-                "url": "https://github.com/gammapy/gammapy-fermi-lat-data/raw/master/3fhl/allsky/" + _
-            }
 
-        for _ in ["gll_iem_v06_cutout.fits", "iso_P8R2_SOURCE_V6_v06.txt"]:
-            yield {
-                "path": "fermi_3fhl/" + _,
-                "url": self._url + "fermi_3fhl/gll_iem_v06_cutout.fits",
-            }
+class DatasetFermiSurvey(Dataset):
+    name = "fermi_survey"
+    description = "tbd"
 
 
 class DatasetHESSDL3DR1(Dataset):
     name = "hess-dl3-dr1"
     description = "tbd"
 
-    @property
-    def files(self):
-        for path in (GAMMAPY_DATA / "hess-dl3-dr1").glob("**"):
-            yield {"path": path.as_posix(), "url": self._url + path.as_posix()}
+
+class DatasetImages(Dataset):
+    name = "images"
+    description = "tbd"
+
+
+class DatasetJointCrab(Dataset):
+    name = "joint-crab"
+    description = "tbd"
 
 
 class DatasetIndex:
     path = "download/data/gammapy-data-index.json"
-    datasets = [DatasetFermi3FHL, DatasetHESSDL3DR1]
+    datasets = [
+        DatasetCTA1DC,
+        DatasetDarkMatter,
+        DatasetCatalogFermi,
+        DatasetFermi3FHL,
+        DatasetFermi2FHL,
+        DatasetFermiSurvey,
+        DatasetHESSDL3DR1,
+        DatasetImages,
+        DatasetJointCrab
+    ]
 
     def make(self):
         records = list(self.make_records())
         txt = json.dumps(records, indent=True)
-        log.info(f'Writing {self.path}')
+        log.info(f"Writing {self.path}")
         Path(self.path).write_text(txt)
 
     def make_records(self):
@@ -82,7 +115,7 @@ class DatasetIndex:
 @click.group()
 def cli():
     """Make the gammapy.org webpage."""
-    logging.basicConfig(level='INFO')
+    logging.basicConfig(level="INFO")
 
 
 @cli.command("all")

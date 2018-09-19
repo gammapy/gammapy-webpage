@@ -1,0 +1,34 @@
+[
+ {
+  "name": "fermi_3fhl",
+  "description": "tbd",
+  "files": [
+   {
+    "path": "fermi_3fhl/fermi_3fhl_exposure_cube_hpx.fits.gz",
+    "url": "https://github.com/gammapy/gammapy-fermi-lat-data/raw/master/3fhl/allsky/fermi_3fhl_exposure_cube_hpx.fits.gz"
+   },
+   {
+    "path": "fermi_3fhl/gll_iem_v06_cutout.fits",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/fermi_3fhl/gll_iem_v06_cutout.fits"
+   },
+   {
+    "path": "fermi_3fhl/iso_P8R2_SOURCE_V6_v06.txt",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/fermi_3fhl/gll_iem_v06_cutout.fits"
+   }
+  ]
+ },
+ {
+  "name": "hess-dl3-dr1",
+  "description": "tbd",
+  "files": [
+   {
+    "path": "/Users/deil/work/gammapy-tutorials/datasets/hess-dl3-dr1",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets//Users/deil/work/gammapy-tutorials/datasets/hess-dl3-dr1"
+   },
+   {
+    "path": "/Users/deil/work/gammapy-tutorials/datasets/hess-dl3-dr1/data",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets//Users/deil/work/gammapy-tutorials/datasets/hess-dl3-dr1/data"
+   }
+  ]
+ }
+]

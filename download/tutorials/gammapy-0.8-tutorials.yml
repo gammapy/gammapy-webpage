@@ -88,7 +88,7 @@
   requires:
   datasets:
 - name: spectrum_analysis
-  url: https://raw.githubusercontent.com/gammapy/gammapy/master/tutorials/spectrum_analysis
+  url: https://raw.githubusercontent.com/gammapy/gammapy/master/tutorials/spectrum_analysis.ipynb
   requires: iminuit
   datasets:
     - hess-dl3-dr1

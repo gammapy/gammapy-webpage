@@ -39,7 +39,7 @@ class Dataset:
     def files(self):
         for path in (GAMMAPY_DATA / self.name).glob("**/*.*"):
             urlpath = path.as_posix().replace(GAMMAPY_DATA.as_posix(), "")
-            yield {"path": path.as_posix(), "url": self._url + urlpath}
+            yield {"path": urlpath, "url": self._url + urlpath}
 
 
 class DatasetCTA1DC(Dataset):

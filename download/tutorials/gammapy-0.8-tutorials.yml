@@ -52,6 +52,8 @@
 - name: image_fitting_with_sherpa
   url: https://raw.githubusercontent.com/gammapy/gammapy/master/tutorials/image_fitting_with_sherpa.ipynb
   requires: sherpa
+  datasets:
+    - sherpaCTA
 - name: intro_maps
   url: https://raw.githubusercontent.com/gammapy/gammapy/master/tutorials/intro_maps.ipynb
   datasets:

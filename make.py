@@ -87,6 +87,11 @@ class DatasetJointCrab(Dataset):
     description = "tbd"
 
 
+class DatasetSherpaCTA(Dataset):
+    name = "sherpaCTA"
+    description = "tbd"
+
+
 class DatasetIndex:
     path = "download/data/gammapy-data-index.json"
     datasets = [
@@ -98,7 +103,8 @@ class DatasetIndex:
         DatasetFermiSurvey,
         DatasetHESSDL3DR1,
         DatasetImages,
-        DatasetJointCrab
+        DatasetJointCrab,
+        DatasetSherpaCTA
     ]
 
     def make(self):

@@ -72,10 +72,6 @@
     "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/catalogs/Green_2014-05.reg"
    },
    {
-    "path": "catalogs/.DS_Store",
-    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/catalogs/.DS_Store"
-   },
-   {
     "path": "catalogs/ATNF_v1.51.reg",
     "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/catalogs/ATNF_v1.51.reg"
    },

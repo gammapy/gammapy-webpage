@@ -676,6 +676,10 @@
     "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/hess-dl3-dr1/README.md"
    },
    {
+    "path": "hess-dl3-dr1/hess-dl3-dr3-with-background.fits.gz",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/hess-dl3-dr1/hess-dl3-dr3-with-background.fits.gz"
+   },
+   {
     "path": "hess-dl3-dr1/README.txt",
     "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/hess-dl3-dr1/README.txt"
    },

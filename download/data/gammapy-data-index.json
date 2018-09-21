@@ -56,9 +56,93 @@
   ]
  },
  {
-  "name": "catalogs/fermi",
+  "name": "catalogs",
   "description": "tbd",
   "files": [
+   {
+    "path": "catalogs/2014PASA...31...42G_table2.reg",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/catalogs/2014PASA...31...42G_table2.reg"
+   },
+   {
+    "path": "catalogs/ATNF_v1.51.fits.gz",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/catalogs/ATNF_v1.51.fits.gz"
+   },
+   {
+    "path": "catalogs/Green_2014-05.reg",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/catalogs/Green_2014-05.reg"
+   },
+   {
+    "path": "catalogs/.DS_Store",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/catalogs/.DS_Store"
+   },
+   {
+    "path": "catalogs/ATNF_v1.51.reg",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/catalogs/ATNF_v1.51.reg"
+   },
+   {
+    "path": "catalogs/2HWC.ecsv",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/catalogs/2HWC.ecsv"
+   },
+   {
+    "path": "catalogs/make_2014PASA...31...42G_table2.py",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/catalogs/make_2014PASA...31...42G_table2.py"
+   },
+   {
+    "path": "catalogs/2014PASA...31...42G_table2.fits.gz",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/catalogs/2014PASA...31...42G_table2.fits.gz"
+   },
+   {
+    "path": "catalogs/make_snrcat.py",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/catalogs/make_snrcat.py"
+   },
+   {
+    "path": "catalogs/make_2hwc.py",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/catalogs/make_2hwc.py"
+   },
+   {
+    "path": "catalogs/2HWC.yaml",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/catalogs/2HWC.yaml"
+   },
+   {
+    "path": "catalogs/make_region_files.py",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/catalogs/make_region_files.py"
+   },
+   {
+    "path": "catalogs/make_green.py",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/catalogs/make_green.py"
+   },
+   {
+    "path": "catalogs/2014PASA...31...42G_table2.csv",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/catalogs/2014PASA...31...42G_table2.csv"
+   },
+   {
+    "path": "catalogs/Green_2014-05.fits.gz",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/catalogs/Green_2014-05.fits.gz"
+   },
+   {
+    "path": "catalogs/README.rst",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/catalogs/README.rst"
+   },
+   {
+    "path": "catalogs/snrcat.fits.gz",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/catalogs/snrcat.fits.gz"
+   },
+   {
+    "path": "catalogs/hgps_catalog_v1.fits.gz",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/catalogs/hgps_catalog_v1.fits.gz"
+   },
+   {
+    "path": "catalogs/ATNF_v1.54.fits.gz",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/catalogs/ATNF_v1.54.fits.gz"
+   },
+   {
+    "path": "catalogs/green_snrcat_check.ipynb",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/catalogs/green_snrcat_check.ipynb"
+   },
+   {
+    "path": "catalogs/make_atnf.py",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/catalogs/make_atnf.py"
+   },
    {
     "path": "catalogs/fermi/gll_psch_v07.fit.gz",
     "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/catalogs/fermi/gll_psch_v07.fit.gz"
@@ -582,6 +666,10 @@
    {
     "path": "catalogs/fermi/Extended_archive_v18/Templates/W51C.fits",
     "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/catalogs/fermi/Extended_archive_v18/Templates/W51C.fits"
+   },
+   {
+    "path": "catalogs/gammacat/gammacat.fits.gz",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/catalogs/gammacat/gammacat.fits.gz"
    }
   ]
  },
@@ -1228,6 +1316,32 @@
    {
     "path": "sherpaCTA/G300-0_test_exposure.fits",
     "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/sherpaCTA/G300-0_test_exposure.fits"
+   }
+  ]
+ },
+ {
+  "name": "ebl",
+  "description": "tbd",
+  "files": [
+   {
+    "path": "ebl/frd_abs.fits.gz",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/ebl/frd_abs.fits.gz"
+   },
+   {
+    "path": "ebl/ebl_franceschini.fits.gz",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/ebl/ebl_franceschini.fits.gz"
+   },
+   {
+    "path": "ebl/ebl_models.png",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/ebl/ebl_models.png"
+   },
+   {
+    "path": "ebl/README.md",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/ebl/README.md"
+   },
+   {
+    "path": "ebl/ebl_dominguez11.fits.gz",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/ebl/ebl_dominguez11.fits.gz"
    }
   ]
  }

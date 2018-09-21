@@ -12,7 +12,7 @@ import click
 
 log = logging.getLogger(__name__)
 
-GAMMAPY_DATA = Path(os.environ["GAMMAPY_DATA"])
+GAMMAPY_EXTRA = Path(os.environ["GAMMAPY_EXTRA"]) / "datasets"
 
 
 class Dataset:
@@ -37,8 +37,8 @@ class Dataset:
 
     @property
     def files(self):
-        for path in (GAMMAPY_DATA / self.name).glob("**/*.*"):
-            urlpath = path.as_posix().replace(GAMMAPY_DATA.as_posix(), "")
+        for path in (GAMMAPY_EXTRA / self.name).glob("**/*.*"):
+            urlpath = path.as_posix().replace(GAMMAPY_EXTRA.as_posix(), "")
             yield {"path": urlpath[1:], "url": self._url + urlpath}
 
 
@@ -52,8 +52,8 @@ class DatasetDarkMatter(Dataset):
     description = "tbd"
 
 
-class DatasetCatalogFermi(Dataset):
-    name = "catalogs/fermi"
+class DatasetCatalogs(Dataset):
+    name = "catalogs"
     description = "tbd"
 
 
@@ -92,19 +92,25 @@ class DatasetSherpaCTA(Dataset):
     description = "tbd"
 
 
+class DatasetEBL(Dataset):
+    name = "ebl"
+    description = "tbd"
+
+
 class DatasetIndex:
     path = "download/data/gammapy-data-index.json"
     datasets = [
         DatasetCTA1DC,
         DatasetDarkMatter,
-        DatasetCatalogFermi,
+        DatasetCatalogs,
         DatasetFermi3FHL,
         DatasetFermi2FHL,
         DatasetFermiSurvey,
         DatasetHESSDL3DR1,
         DatasetImages,
         DatasetJointCrab,
-        DatasetSherpaCTA
+        DatasetSherpaCTA,
+        DatasetEBL
     ]
 
     def make(self):

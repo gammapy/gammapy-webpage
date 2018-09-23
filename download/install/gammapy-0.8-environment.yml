@@ -16,7 +16,7 @@ dependencies:
   - jupyterlab==0.34.12
   - jupyterlab_launcher==0.13.1
   - cython==0.28.5
-  - numpy==1.15.2
+  - numpy==1.15.1
   - astropy==3.0.4
   - regions==0.3
   - click==6.7
@@ -27,7 +27,7 @@ dependencies:
   - naima==0.8.1
   - iminuit==1.3.3
   - sherpa==4.10
-  - healpy==1.12.4
+  - healpy==1.11.0
   - matplotlib==2.2.3
   - pandas==0.23.4
   

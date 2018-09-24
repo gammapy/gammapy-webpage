@@ -10,6 +10,7 @@ channels:
   - sherpa
 
 dependencies:
+  - gammapy==0.8
   - python==3.6
   - ipython==6.5.0
   - jupyter==1.0.0
@@ -30,6 +31,3 @@ dependencies:
   - healpy==1.11.0
   - matplotlib==2.2.3
   - pandas==0.23.4
-  
-  - pip:
-    - git+https://github.com/gammapy/gammapy.git#egg=gammapy

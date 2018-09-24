@@ -47,6 +47,10 @@
     - fermi_2fhl
     - images
     - catalogs
+- name: hess
+  url: https://raw.githubusercontent.com/gammapy/gammapy/v0.8/tutorials/hess.ipynb
+  datasets:
+    - hess-dl3-dr1
 - name: hgps
   url: https://raw.githubusercontent.com/gammapy/gammapy/v0.8/tutorials/hgps.ipynb
 - name: image_fitting_with_sherpa

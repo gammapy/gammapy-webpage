@@ -1294,28 +1294,6 @@
   ]
  },
  {
-  "name": "sherpaCTA",
-  "description": "tbd",
-  "files": [
-   {
-    "path": "sherpaCTA/G300-0_test_psf.fits",
-    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/sherpaCTA/G300-0_test_psf.fits"
-   },
-   {
-    "path": "sherpaCTA/G300-0_test_counts.fits",
-    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/sherpaCTA/G300-0_test_counts.fits"
-   },
-   {
-    "path": "sherpaCTA/G300-0_test_background.fits",
-    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/sherpaCTA/G300-0_test_background.fits"
-   },
-   {
-    "path": "sherpaCTA/G300-0_test_exposure.fits",
-    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/sherpaCTA/G300-0_test_exposure.fits"
-   }
-  ]
- },
- {
   "name": "ebl",
   "description": "tbd",
   "files": [

@@ -87,11 +87,6 @@ class DatasetJointCrab(Dataset):
     description = "tbd"
 
 
-class DatasetSherpaCTA(Dataset):
-    name = "sherpaCTA"
-    description = "tbd"
-
-
 class DatasetEBL(Dataset):
     name = "ebl"
     description = "tbd"
@@ -109,8 +104,7 @@ class DatasetIndex:
         DatasetHESSDL3DR1,
         DatasetImages,
         DatasetJointCrab,
-        DatasetSherpaCTA,
-        DatasetEBL
+        DatasetEBL,
     ]
 
     def make(self):

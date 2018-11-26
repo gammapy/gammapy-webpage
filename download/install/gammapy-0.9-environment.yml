@@ -15,7 +15,6 @@ dependencies:
   - ipython=7.1
   - jupyter=1.0
   - jupyterlab=0.35
-  - jupyterlab_launcher=0.13
   - pyyaml=3.13
   - click=7.0
   - numpy=1.15

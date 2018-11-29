@@ -10,7 +10,7 @@ channels:
   - sherpa
 
 dependencies:
-  - gammapy=0.8
+  - gammapy=0.9
   - python=3.6
   - ipython=7.1
   - jupyter=1.0

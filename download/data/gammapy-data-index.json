@@ -1319,4 +1319,24 @@
    }
   ]
  }
+ {
+  "name": "fermi-lat-data",
+  "description": "tbd",
+  "files": [
+   {
+    "path": "fermi_3fhl/fermi_3fhl_events_selected.fits.gz",
+    "url": "https://github.com/gammapy/gammapy-fermi-lat-data/raw/master/3fhl/allsky/fermi_3fhl_events_selected.fits.gz"
+   },
+  ]
+ }
+ {
+  "name": "gamma-cat",
+  "description": "tbd",
+  "files": [
+   {
+    "path": "gamma-cat/gammacat.fits.gz ",
+    "url": "https://github.com/gammapy/gamma-cat/raw/master/output/gammacat.fits.gz"
+   },
+  ]
+ }
 ]

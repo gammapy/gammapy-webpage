@@ -1318,7 +1318,7 @@
     "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/ebl/ebl_dominguez11.fits.gz"
    }
   ]
- }
+ },
  {
   "name": "fermi-lat-data",
   "description": "tbd",
@@ -1327,16 +1327,28 @@
     "path": "fermi_3fhl/fermi_3fhl_events_selected.fits.gz",
     "url": "https://github.com/gammapy/gammapy-fermi-lat-data/raw/master/3fhl/allsky/fermi_3fhl_events_selected.fits.gz"
    },
+   {
+    "path": "fermi_3fhl/fermi_3fhl_exposure_cube_hpx.fits.gz",
+    "url": "https://github.com/gammapy/gammapy-fermi-lat-data/raw/master/3fhl/allsky/fermi_3fhl_exposure_cube_hpx.fits.gz"
+   },
+   {
+    "path": "fermi_3fhl/fermi_3fhl_psf_gc.fits.gz",
+    "url": "https://github.com/gammapy/gammapy-fermi-lat-data/raw/master/3fhl/allsky/fermi_3fhl_psf_gc.fits.gz"
+   },
+   {
+    "path": "fermi_3fhl/iso_P8R2_SOURCE_V6_v06.txt",
+    "url": "https://github.com/gammapy/gammapy-fermi-lat-data/raw/master/isodiff/iso_P8R2_SOURCE_V6_v06.txt"
+   }
   ]
- }
+ },
  {
   "name": "gamma-cat",
   "description": "tbd",
   "files": [
    {
-    "path": "gamma-cat/gammacat.fits.gz ",
+    "path": "gamma-cat/gammacat.fits.gz",
     "url": "https://github.com/gammapy/gamma-cat/raw/master/output/gammacat.fits.gz"
-   },
+   }
   ]
  }
 ]

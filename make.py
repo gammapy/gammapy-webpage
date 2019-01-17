@@ -96,14 +96,26 @@ class DatasetImages(Dataset):
     description = "tbd"
 
 
+class DatasetEBL(Dataset):
+    name = "ebl"
+    description = "tbd"
+
+
 class DatasetJointCrab(Dataset):
     name = "joint-crab"
     description = "tbd"
 
+    base_url = "https://github.com/open-gamma-ray-astro/joint-crab/raw/master/results/spectra"
+    local_repo = Path(os.environ["JOINT_CRAB"])/'results'/'spectra'
+    files = []
 
-class DatasetEBL(Dataset):
-    name = "ebl"
-    description = "tbd"
+    for path in (local_repo).glob("**/*.*"):
+        if not path.name.startswith('.'):
+            jsonpath = str(path).replace(str(local_repo), 'joint-crab/spectra')
+            urlpath = path.as_posix().replace(local_repo.as_posix(), "")
+            filesize = os.path.getsize(path)
+            md5 = hashmd5(path)
+            files.append({"path": jsonpath, "url": base_url + urlpath, "filesize": filesize, "hashmd5": md5})
 
 
 class DatasetGammaCat(Dataset):

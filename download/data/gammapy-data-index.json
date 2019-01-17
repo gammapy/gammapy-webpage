@@ -1810,106 +1810,244 @@
   "description": "tbd",
   "files": [
    {
-    "path": "joint-crab/README.md",
-    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/joint-crab/README.md",
-    "filesize": 418,
-    "hashmd5": "1bbc555b5548d385832d61af6c79b8b8"
-   },
-   {
     "path": "joint-crab/spectra/hess/arf_obs23523.fits",
-    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/joint-crab/spectra/hess/arf_obs23523.fits",
+    "url": "https://github.com/open-gamma-ray-astro/joint-crab/raw/master/results/spectra/hess/arf_obs23523.fits",
     "filesize": 8640,
-    "hashmd5": "fc3123679c8180a04df522165e758ea1"
+    "hashmd5": "26ed95b824b56ee4631b9063b2316b7a"
    },
    {
     "path": "joint-crab/spectra/hess/arf_obs23559.fits",
-    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/joint-crab/spectra/hess/arf_obs23559.fits",
+    "url": "https://github.com/open-gamma-ray-astro/joint-crab/raw/master/results/spectra/hess/arf_obs23559.fits",
     "filesize": 8640,
-    "hashmd5": "151ba8253331bf4229b89dbad25c4339"
+    "hashmd5": "cf7087a9f7cac11767036501bc6d43de"
    },
    {
     "path": "joint-crab/spectra/hess/rmf_obs23526.fits",
-    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/joint-crab/spectra/hess/rmf_obs23526.fits",
-    "filesize": 23040,
-    "hashmd5": "f19015a947d67ec35c4495e8d126aece"
+    "url": "https://github.com/open-gamma-ray-astro/joint-crab/raw/master/results/spectra/hess/rmf_obs23526.fits",
+    "filesize": 20160,
+    "hashmd5": "9f7613b6f5233ddf70457174bec37c6f"
    },
    {
     "path": "joint-crab/spectra/hess/pha_obs23559.fits",
-    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/joint-crab/spectra/hess/pha_obs23559.fits",
+    "url": "https://github.com/open-gamma-ray-astro/joint-crab/raw/master/results/spectra/hess/pha_obs23559.fits",
     "filesize": 17280,
-    "hashmd5": "ed970dc37df804bb49a0f5963601f8c6"
+    "hashmd5": "5e3dc496ee2a57692560c2e9e9b63d22"
    },
    {
     "path": "joint-crab/spectra/hess/rmf_obs23592.fits",
-    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/joint-crab/spectra/hess/rmf_obs23592.fits",
-    "filesize": 23040,
-    "hashmd5": "24e265a4ebda6bdbde01f33eef5fe7a1"
+    "url": "https://github.com/open-gamma-ray-astro/joint-crab/raw/master/results/spectra/hess/rmf_obs23592.fits",
+    "filesize": 20160,
+    "hashmd5": "da08f79d9337b5fa0cb5e3f13dfe3554"
    },
    {
     "path": "joint-crab/spectra/hess/bkg_obs23592.fits",
-    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/joint-crab/spectra/hess/bkg_obs23592.fits",
+    "url": "https://github.com/open-gamma-ray-astro/joint-crab/raw/master/results/spectra/hess/bkg_obs23592.fits",
     "filesize": 14400,
-    "hashmd5": "10dbf62d29a0aae0b81abf4bc8f19885"
+    "hashmd5": "6cb46f78803e974312ac6ddaa02f0862"
    },
    {
     "path": "joint-crab/spectra/hess/pha_obs23523.fits",
-    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/joint-crab/spectra/hess/pha_obs23523.fits",
+    "url": "https://github.com/open-gamma-ray-astro/joint-crab/raw/master/results/spectra/hess/pha_obs23523.fits",
     "filesize": 17280,
-    "hashmd5": "a8cc4e92c9d6399ff3c33ba8e32dd2c5"
+    "hashmd5": "f58d32234e5fdf6d2a47c32421c88c5a"
    },
    {
     "path": "joint-crab/spectra/hess/bkg_obs23526.fits",
-    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/joint-crab/spectra/hess/bkg_obs23526.fits",
+    "url": "https://github.com/open-gamma-ray-astro/joint-crab/raw/master/results/spectra/hess/bkg_obs23526.fits",
     "filesize": 14400,
-    "hashmd5": "520ef1ca5c42ad7d9efa42a2cbe11195"
+    "hashmd5": "6f68c5ce6395fdd5ff05704083161370"
    },
    {
     "path": "joint-crab/spectra/hess/arf_obs23526.fits",
-    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/joint-crab/spectra/hess/arf_obs23526.fits",
+    "url": "https://github.com/open-gamma-ray-astro/joint-crab/raw/master/results/spectra/hess/arf_obs23526.fits",
     "filesize": 8640,
-    "hashmd5": "c7388812f45576531e286b6fa2a22165"
+    "hashmd5": "ef507d28db3afd41da7786c19b9cfd1c"
    },
    {
     "path": "joint-crab/spectra/hess/arf_obs23592.fits",
-    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/joint-crab/spectra/hess/arf_obs23592.fits",
+    "url": "https://github.com/open-gamma-ray-astro/joint-crab/raw/master/results/spectra/hess/arf_obs23592.fits",
     "filesize": 8640,
-    "hashmd5": "70cf783d870c1b478816de06a4dcfa53"
+    "hashmd5": "55fb38a1e371e5a74a04f4df73c59c32"
    },
    {
     "path": "joint-crab/spectra/hess/pha_obs23592.fits",
-    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/joint-crab/spectra/hess/pha_obs23592.fits",
+    "url": "https://github.com/open-gamma-ray-astro/joint-crab/raw/master/results/spectra/hess/pha_obs23592.fits",
     "filesize": 17280,
-    "hashmd5": "120ff32b8e467425b4312b36dee3fc6e"
+    "hashmd5": "94fe3939659befbd1ebc0159ddd9e5a4"
    },
    {
     "path": "joint-crab/spectra/hess/rmf_obs23559.fits",
-    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/joint-crab/spectra/hess/rmf_obs23559.fits",
-    "filesize": 23040,
-    "hashmd5": "12856ab8794862c2035ec5f705ded02f"
+    "url": "https://github.com/open-gamma-ray-astro/joint-crab/raw/master/results/spectra/hess/rmf_obs23559.fits",
+    "filesize": 20160,
+    "hashmd5": "7d9b110d99c2299ed014e656204c92da"
    },
    {
     "path": "joint-crab/spectra/hess/pha_obs23526.fits",
-    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/joint-crab/spectra/hess/pha_obs23526.fits",
+    "url": "https://github.com/open-gamma-ray-astro/joint-crab/raw/master/results/spectra/hess/pha_obs23526.fits",
     "filesize": 17280,
-    "hashmd5": "ef5782f69264bd6ebb69f34b38da7b3d"
+    "hashmd5": "215c77f17084ad5c8b5697f67fe7c7cc"
    },
    {
     "path": "joint-crab/spectra/hess/bkg_obs23523.fits",
-    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/joint-crab/spectra/hess/bkg_obs23523.fits",
+    "url": "https://github.com/open-gamma-ray-astro/joint-crab/raw/master/results/spectra/hess/bkg_obs23523.fits",
     "filesize": 14400,
-    "hashmd5": "0b5cc40f794c03b271d3799eb4db9d97"
+    "hashmd5": "2c6e6f4a6094aac89a6fca8f0a88be47"
    },
    {
     "path": "joint-crab/spectra/hess/rmf_obs23523.fits",
-    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/joint-crab/spectra/hess/rmf_obs23523.fits",
-    "filesize": 23040,
-    "hashmd5": "7e1c4ddac60226e31ef45e846e576103"
+    "url": "https://github.com/open-gamma-ray-astro/joint-crab/raw/master/results/spectra/hess/rmf_obs23523.fits",
+    "filesize": 20160,
+    "hashmd5": "21774ead32e57501e672177e29df7da9"
    },
    {
     "path": "joint-crab/spectra/hess/bkg_obs23559.fits",
-    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/joint-crab/spectra/hess/bkg_obs23559.fits",
+    "url": "https://github.com/open-gamma-ray-astro/joint-crab/raw/master/results/spectra/hess/bkg_obs23559.fits",
     "filesize": 14400,
-    "hashmd5": "ab143c560e3467ecc705f2c07a289152"
+    "hashmd5": "7af2369c2517431c6f88cbede44131da"
+   },
+   {
+    "path": "joint-crab/spectra/magic/arf_obs5029748.fits",
+    "url": "https://github.com/open-gamma-ray-astro/joint-crab/raw/master/results/spectra/magic/arf_obs5029748.fits",
+    "filesize": 8640,
+    "hashmd5": "e5d59ae10543fc105a7a6996e216c313"
+   },
+   {
+    "path": "joint-crab/spectra/magic/pha_obs5029747.fits",
+    "url": "https://github.com/open-gamma-ray-astro/joint-crab/raw/master/results/spectra/magic/pha_obs5029747.fits",
+    "filesize": 17280,
+    "hashmd5": "a6245e03687937e4fcdac6a36e72d864"
+   },
+   {
+    "path": "joint-crab/spectra/magic/rmf_obs5029747.fits",
+    "url": "https://github.com/open-gamma-ray-astro/joint-crab/raw/master/results/spectra/magic/rmf_obs5029747.fits",
+    "filesize": 23040,
+    "hashmd5": "30dcf11e109c9bc253adb5efa1481445"
+   },
+   {
+    "path": "joint-crab/spectra/magic/bkg_obs5029747.fits",
+    "url": "https://github.com/open-gamma-ray-astro/joint-crab/raw/master/results/spectra/magic/bkg_obs5029747.fits",
+    "filesize": 14400,
+    "hashmd5": "49aa0e9a160c112cdf4118c01a0ef054"
+   },
+   {
+    "path": "joint-crab/spectra/magic/bkg_obs5029748.fits",
+    "url": "https://github.com/open-gamma-ray-astro/joint-crab/raw/master/results/spectra/magic/bkg_obs5029748.fits",
+    "filesize": 14400,
+    "hashmd5": "433ac4e639626ed9266d6a87318d22f0"
+   },
+   {
+    "path": "joint-crab/spectra/magic/pha_obs5029748.fits",
+    "url": "https://github.com/open-gamma-ray-astro/joint-crab/raw/master/results/spectra/magic/pha_obs5029748.fits",
+    "filesize": 17280,
+    "hashmd5": "6b60eb115bda81ecda0fe1111688735a"
+   },
+   {
+    "path": "joint-crab/spectra/magic/rmf_obs5029748.fits",
+    "url": "https://github.com/open-gamma-ray-astro/joint-crab/raw/master/results/spectra/magic/rmf_obs5029748.fits",
+    "filesize": 23040,
+    "hashmd5": "298c8d829fa8368d28f0700f94b23717"
+   },
+   {
+    "path": "joint-crab/spectra/magic/arf_obs5029747.fits",
+    "url": "https://github.com/open-gamma-ray-astro/joint-crab/raw/master/results/spectra/magic/arf_obs5029747.fits",
+    "filesize": 8640,
+    "hashmd5": "702aa5a352a9b58628f6e6b05afa856e"
+   },
+   {
+    "path": "joint-crab/spectra/fermi/arf_obs0.fits",
+    "url": "https://github.com/open-gamma-ray-astro/joint-crab/raw/master/results/spectra/fermi/arf_obs0.fits",
+    "filesize": 8640,
+    "hashmd5": "3e59a877f189081b700ba47bbc73c9eb"
+   },
+   {
+    "path": "joint-crab/spectra/fermi/pha_obs0.fits",
+    "url": "https://github.com/open-gamma-ray-astro/joint-crab/raw/master/results/spectra/fermi/pha_obs0.fits",
+    "filesize": 17280,
+    "hashmd5": "ee26efa7407dbafccde4d49bb5b43b68"
+   },
+   {
+    "path": "joint-crab/spectra/fermi/bkg_obs0.fits",
+    "url": "https://github.com/open-gamma-ray-astro/joint-crab/raw/master/results/spectra/fermi/bkg_obs0.fits",
+    "filesize": 14400,
+    "hashmd5": "9b81ecd635750ed0d5072a4ce49adf36"
+   },
+   {
+    "path": "joint-crab/spectra/fermi/rmf_obs0.fits",
+    "url": "https://github.com/open-gamma-ray-astro/joint-crab/raw/master/results/spectra/fermi/rmf_obs0.fits",
+    "filesize": 14400,
+    "hashmd5": "eb4479bce949475f61a4971b96dde39c"
+   },
+   {
+    "path": "joint-crab/spectra/fact/bkg_stacked.fits",
+    "url": "https://github.com/open-gamma-ray-astro/joint-crab/raw/master/results/spectra/fact/bkg_stacked.fits",
+    "filesize": 25920,
+    "hashmd5": "cfa3fd913e41f06537740cbf87edf3da"
+   },
+   {
+    "path": "joint-crab/spectra/fact/rmf_stacked.fits",
+    "url": "https://github.com/open-gamma-ray-astro/joint-crab/raw/master/results/spectra/fact/rmf_stacked.fits",
+    "filesize": 23040,
+    "hashmd5": "4ee7efb2181d973139154b06e32ba029"
+   },
+   {
+    "path": "joint-crab/spectra/fact/arf_stacked.fits",
+    "url": "https://github.com/open-gamma-ray-astro/joint-crab/raw/master/results/spectra/fact/arf_stacked.fits",
+    "filesize": 8640,
+    "hashmd5": "d6aba229280f677d2b3e2334f7d17718"
+   },
+   {
+    "path": "joint-crab/spectra/fact/pha_stacked.fits",
+    "url": "https://github.com/open-gamma-ray-astro/joint-crab/raw/master/results/spectra/fact/pha_stacked.fits",
+    "filesize": 25920,
+    "hashmd5": "02e3b0005b3e407f7b8170c5d21e5104"
+   },
+   {
+    "path": "joint-crab/spectra/veritas/arf_obs57993.fits",
+    "url": "https://github.com/open-gamma-ray-astro/joint-crab/raw/master/results/spectra/veritas/arf_obs57993.fits",
+    "filesize": 8640,
+    "hashmd5": "ca3b6ad785b36083b5fec6461a11f019"
+   },
+   {
+    "path": "joint-crab/spectra/veritas/arf_obs54809.fits",
+    "url": "https://github.com/open-gamma-ray-astro/joint-crab/raw/master/results/spectra/veritas/arf_obs54809.fits",
+    "filesize": 8640,
+    "hashmd5": "541c02fa3be8384ed4aab20e784dc327"
+   },
+   {
+    "path": "joint-crab/spectra/veritas/pha_obs54809.fits",
+    "url": "https://github.com/open-gamma-ray-astro/joint-crab/raw/master/results/spectra/veritas/pha_obs54809.fits",
+    "filesize": 17280,
+    "hashmd5": "114828f35ea4cede066ac4e8b36122fb"
+   },
+   {
+    "path": "joint-crab/spectra/veritas/pha_obs57993.fits",
+    "url": "https://github.com/open-gamma-ray-astro/joint-crab/raw/master/results/spectra/veritas/pha_obs57993.fits",
+    "filesize": 17280,
+    "hashmd5": "cd181b3ab18256c6109abfbb44c785b5"
+   },
+   {
+    "path": "joint-crab/spectra/veritas/rmf_obs57993.fits",
+    "url": "https://github.com/open-gamma-ray-astro/joint-crab/raw/master/results/spectra/veritas/rmf_obs57993.fits",
+    "filesize": 20160,
+    "hashmd5": "985c47683de83325e38bcce30e357dbc"
+   },
+   {
+    "path": "joint-crab/spectra/veritas/rmf_obs54809.fits",
+    "url": "https://github.com/open-gamma-ray-astro/joint-crab/raw/master/results/spectra/veritas/rmf_obs54809.fits",
+    "filesize": 20160,
+    "hashmd5": "221d94dbafffc8657ebe5dc8e3428d44"
+   },
+   {
+    "path": "joint-crab/spectra/veritas/bkg_obs54809.fits",
+    "url": "https://github.com/open-gamma-ray-astro/joint-crab/raw/master/results/spectra/veritas/bkg_obs54809.fits",
+    "filesize": 14400,
+    "hashmd5": "b02838d9b80b620308efe8af93289d8e"
+   },
+   {
+    "path": "joint-crab/spectra/veritas/bkg_obs57993.fits",
+    "url": "https://github.com/open-gamma-ray-astro/joint-crab/raw/master/results/spectra/veritas/bkg_obs57993.fits",
+    "filesize": 14400,
+    "hashmd5": "f169cd9655a172d3ce229d4d678decbb"
    }
   ]
  },

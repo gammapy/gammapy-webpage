@@ -9,8 +9,17 @@ import json
 import os
 from pathlib import Path
 import click
+import hashlib
 
 log = logging.getLogger(__name__)
+
+
+def hashmd5(path):
+    md5_hash = hashlib.md5()
+    with open(path, "rb") as f:
+        for byte_block in iter(lambda: f.read(4096), b""):
+            md5_hash.update(byte_block)
+    return md5_hash.hexdigest()
 
 
 class Dataset:
@@ -22,7 +31,6 @@ class Dataset:
     A dataset has a name as identifier.
     It also has a description and list of files, each file has a given URL
     and a path that tells you where the file will be placed when downloaded.
-    TODO: Add MD5 checksums and file sizes.
 
     If you want to add a dataset, make a new class and add it to the list below.
     """
@@ -43,7 +51,9 @@ class Dataset:
         for path in (self.local_repo / self.name).glob("**/*.*"):
             if not path.name.startswith('.'):
                 urlpath = path.as_posix().replace(self.local_repo.as_posix(), "")
-                yield {"path": urlpath[1:], "url": self.base_url + urlpath}
+                filesize = os.path.getsize(path)
+                md5 = hashmd5(path)
+                yield {"path": urlpath[1:], "url": self.base_url + urlpath, "filesize": filesize, "hashmd5": md5}
 
 
 class DatasetCTA1DC(Dataset):
@@ -99,35 +109,44 @@ class DatasetEBL(Dataset):
 class DatasetGammaCat(Dataset):
     name = "gamma-cat"
     description = "tbd"
-    files = [
-        {
-            "path": "gamma-cat/gammacat.fits.gz",
-            "url": "https://github.com/gammapy/gamma-cat/raw/master/output/gammacat.fits.gz"
-        }
-    ]
+
+    base_url = "https://github.com/gammapy/gamma-cat/raw/master"
+    local_repo = Path(os.environ["GAMMA_CAT"])
+    files = []
+
+    pathlist = [str(Path('output')/'gammacat.fits.gz')]
+
+    for item in pathlist:
+        path = local_repo / item
+        jsonpath = str(Path('gamma-cat') / Path(item).name)
+        urlpath = path.as_posix().replace(local_repo.as_posix(), "")
+        filesize = os.path.getsize(path)
+        md5 = hashmd5(path)
+        files.append({"path": jsonpath, "url": base_url + urlpath, "filesize": filesize, "hashmd5": md5})
 
 
 class DatasetFermiLat(Dataset):
     name = "fermi-lat-data"
     description = "tbd"
-    files = [
-        {
-            "path": "fermi_3fhl/fermi_3fhl_events_selected.fits.gz",
-            "url": "https://github.com/gammapy/gammapy-fermi-lat-data/raw/master/3fhl/allsky/fermi_3fhl_events_selected.fits.gz"
-        },
-        {
-            "path": "fermi_3fhl/fermi_3fhl_exposure_cube_hpx.fits.gz",
-            "url": "https://github.com/gammapy/gammapy-fermi-lat-data/raw/master/3fhl/allsky/fermi_3fhl_exposure_cube_hpx.fits.gz"
-        },
-        {
-            "path": "fermi_3fhl/fermi_3fhl_psf_gc.fits.gz",
-            "url": "https://github.com/gammapy/gammapy-fermi-lat-data/raw/master/3fhl/allsky/fermi_3fhl_psf_gc.fits.gz"
-        },
-        {
-            "path": "fermi_3fhl/iso_P8R2_SOURCE_V6_v06.txt",
-            "url": "https://github.com/gammapy/gammapy-fermi-lat-data/raw/master/isodiff/iso_P8R2_SOURCE_V6_v06.txt"
-        }
+
+    base_url = "https://github.com/gammapy/gammapy-fermi-lat-data/raw/master"
+    local_repo = Path(os.environ["GAMMAPY_FERMI_LAT_DATA"])
+    files = []
+
+    pathlist = [
+        str(Path('3fhl')/'allsky'/'fermi_3fhl_events_selected.fits.gz'),
+        str(Path('3fhl')/'allsky'/'fermi_3fhl_exposure_cube_hpx.fits.gz'),
+        str(Path('3fhl')/'allsky'/'fermi_3fhl_psf_gc.fits.gz'),
+        str(Path('isodiff')/'iso_P8R2_SOURCE_V6_v06.txt')
     ]
+
+    for item in pathlist:
+        path = local_repo / item
+        jsonpath = str(Path('fermi_3fhl') / Path(item).name)
+        urlpath = path.as_posix().replace(local_repo.as_posix(), "")
+        filesize = os.path.getsize(path)
+        md5 = hashmd5(path)
+        files.append({"path": jsonpath, "url": base_url + urlpath, "filesize": filesize, "hashmd5": md5})
 
 
 class DatasetIndex:

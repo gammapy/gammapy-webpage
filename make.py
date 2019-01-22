@@ -203,6 +203,7 @@ class DatasetIndex:
         DatasetEBL,
         DatasetFermiLat,
         DatasetGammaCat,
+        DatasetFermi3FHLGC
     ]
 
     def make(self):

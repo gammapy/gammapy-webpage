@@ -2128,5 +2128,65 @@
     "hashmd5": "391a9763c054345206e073342bb2367b"
    }
   ]
+ },
+ {
+  "name": "fermi-3fhl-gc",
+  "description": "Prepared Fermi-LAT 3FHL dataset of the Galactic center region",
+  "files": [
+   {
+    "path": "fermi-3fhl-gc/fermi-3fhl-gc-background.fits.gz",
+    "url": "https://github.com/gammapy/gammapy-fermi-lat-data/raw/master/3fhl/galactic-center/fermi-3fhl-gc-background.fits.gz",
+    "filesize": 276011,
+    "hashmd5": "d5cc4205d0d7f9fea9e6d032fe7392ac"
+   },
+   {
+    "path": "fermi-3fhl-gc/fermi-3fhl-gc-background-cube.fits.gz",
+    "url": "https://github.com/gammapy/gammapy-fermi-lat-data/raw/master/3fhl/galactic-center/fermi-3fhl-gc-background-cube.fits.gz",
+    "filesize": 3544798,
+    "hashmd5": "34be0106614921d5a6b3a196993b4cf8"
+   },
+   {
+    "path": "fermi-3fhl-gc/fermi-3fhl-gc-counts.fits.gz",
+    "url": "https://github.com/gammapy/gammapy-fermi-lat-data/raw/master/3fhl/galactic-center/fermi-3fhl-gc-counts.fits.gz",
+    "filesize": 25987,
+    "hashmd5": "9a1efcf66efd8690fcf8b252666b2a25"
+   },
+   {
+    "path": "fermi-3fhl-gc/fermi-3fhl-gc-counts-cube.fits.gz",
+    "url": "https://github.com/gammapy/gammapy-fermi-lat-data/raw/master/3fhl/galactic-center/fermi-3fhl-gc-counts-cube.fits.gz",
+    "filesize": 551140,
+    "hashmd5": "10ddcd4ea5b253b54e9db80cd5c2fa12"
+   },
+   {
+    "path": "fermi-3fhl-gc/fermi-3fhl-gc-events.fits.gz",
+    "url": "https://github.com/gammapy/gammapy-fermi-lat-data/raw/master/3fhl/galactic-center/fermi-3fhl-gc-events.fits.gz",
+    "filesize": 1914454,
+    "hashmd5": "68409a296aea8a68681986188f3e82ae"
+   },
+   {
+    "path": "fermi-3fhl-gc/fermi-3fhl-gc-exposure-cube.fits.gz",
+    "url": "https://github.com/gammapy/gammapy-fermi-lat-data/raw/master/3fhl/galactic-center/fermi-3fhl-gc-exposure-cube.fits.gz",
+    "filesize": 572834,
+    "hashmd5": "64088e1015b1b1bdd3f6b047fbd8b033"
+   },
+   {
+    "path": "fermi-3fhl-gc/fermi-3fhl-gc-psf.fits.gz",
+    "url": "https://github.com/gammapy/gammapy-fermi-lat-data/raw/master/3fhl/galactic-center/fermi-3fhl-gc-psf.fits.gz",
+    "filesize": 1299,
+    "hashmd5": "f84b64a46bc2946489553438f91c048f"
+   },
+   {
+    "path": "fermi-3fhl-gc/fermi-3fhl-gc-psf-cube.fits.gz",
+    "url": "https://github.com/gammapy/gammapy-fermi-lat-data/raw/master/3fhl/galactic-center/fermi-3fhl-gc-psf-cube.fits.gz",
+    "filesize": 28072,
+    "hashmd5": "ff6c8b0fa64f703880d2ecefe7e83df0"
+   },
+   {
+    "path": "fermi-3fhl-gc/gll_iem_v06_gc.fits.gz",
+    "url": "https://github.com/gammapy/gammapy-fermi-lat-data/raw/master/3fhl/galactic-center/gll_iem_v06_gc.fits.gz",
+    "filesize": 823469,
+    "hashmd5": "37c3c5d8ad72a918360c6d2b6a72db1e"
+   }
+  ]
  }
 ]

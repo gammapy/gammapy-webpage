@@ -1026,84 +1026,6 @@
   ]
  },
  {
-  "name": "fermi_2fhl",
-  "description": "tbd",
-  "files": [
-   {
-    "path": "fermi_2fhl/fermi_counts_hpx.py",
-    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/fermi_2fhl/fermi_counts_hpx.py",
-    "filesize": 1438,
-    "hashmd5": "b1afc39a9296e2ddf8c043f2a90e3e1c"
-   },
-   {
-    "path": "fermi_2fhl/fermi_2fhl_vela.fits.gz",
-    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/fermi_2fhl/fermi_2fhl_vela.fits.gz",
-    "filesize": 870214,
-    "hashmd5": "d5722563bf85857aebfca1912f3d980c"
-   },
-   {
-    "path": "fermi_2fhl/gll_psch_v08.fit.gz",
-    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/fermi_2fhl/gll_psch_v08.fit.gz",
-    "filesize": 205855,
-    "hashmd5": "60f2f72841cc6217da6a4de0af155b6e"
-   },
-   {
-    "path": "fermi_2fhl/fermi_skyimages.py",
-    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/fermi_2fhl/fermi_skyimages.py",
-    "filesize": 2852,
-    "hashmd5": "e90581eab5f807e123704a4860aad52b"
-   },
-   {
-    "path": "fermi_2fhl/fermi_2fhl_gc.fits.gz",
-    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/fermi_2fhl/fermi_2fhl_gc.fits.gz",
-    "filesize": 1080696,
-    "hashmd5": "33b332554abf7d0763edf1362f79c675"
-   },
-   {
-    "path": "fermi_2fhl/README.rst",
-    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/fermi_2fhl/README.rst",
-    "filesize": 1113,
-    "hashmd5": "a7a99b5a10a2fbe85f070fa0b78711ea"
-   },
-   {
-    "path": "fermi_2fhl/2fhl_events.fits.gz",
-    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/fermi_2fhl/2fhl_events.fits.gz",
-    "filesize": 4563099,
-    "hashmd5": "aa38bee84467ab538e29a90ae7885b96"
-   }
-  ]
- },
- {
-  "name": "fermi_survey",
-  "description": "tbd",
-  "files": [
-   {
-    "path": "fermi_survey/all.fits.gz",
-    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/fermi_survey/all.fits.gz",
-    "filesize": 1578981,
-    "hashmd5": "4f0551c176b1691d8847f5359dbd0bf0"
-   },
-   {
-    "path": "fermi_survey/psf.json",
-    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/fermi_survey/psf.json",
-    "filesize": 193,
-    "hashmd5": "feeed7d859e10d0c7ff8a241fb67e982"
-   },
-   {
-    "path": "fermi_survey/images.py",
-    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/fermi_survey/images.py",
-    "filesize": 1222,
-    "hashmd5": "1235439e9935771e6bb84262d3c7f6af"
-   },
-   {
-    "path": "fermi_survey/model.fits.gz",
-    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/fermi_survey/model.fits.gz",
-    "filesize": 1521729,
-    "hashmd5": "11d7e429f3c0e3364241af9e632c2203"
-   }
-  ]
- },
- {
   "name": "hess-dl3-dr1",
   "description": "tbd",
   "files": [
@@ -2084,36 +2006,6 @@
     "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/ebl/ebl_dominguez11.fits.gz",
     "filesize": 431576,
     "hashmd5": "02f0e2324256bd5070490dccedbad0df"
-   }
-  ]
- },
- {
-  "name": "fermi-lat-data",
-  "description": "tbd",
-  "files": [
-   {
-    "path": "fermi_3fhl/fermi_3fhl_events_selected.fits.gz",
-    "url": "https://github.com/gammapy/gammapy-fermi-lat-data/raw/master/3fhl/allsky/fermi_3fhl_events_selected.fits.gz",
-    "filesize": 39307510,
-    "hashmd5": "da91bb56be09ea68ea00c8079ed178a0"
-   },
-   {
-    "path": "fermi_3fhl/fermi_3fhl_exposure_cube_hpx.fits.gz",
-    "url": "https://github.com/gammapy/gammapy-fermi-lat-data/raw/master/3fhl/allsky/fermi_3fhl_exposure_cube_hpx.fits.gz",
-    "filesize": 3858696,
-    "hashmd5": "a3963741e22e09651aeefb5c646d8c37"
-   },
-   {
-    "path": "fermi_3fhl/fermi_3fhl_psf_gc.fits.gz",
-    "url": "https://github.com/gammapy/gammapy-fermi-lat-data/raw/master/3fhl/allsky/fermi_3fhl_psf_gc.fits.gz",
-    "filesize": 42267,
-    "hashmd5": "2d18ca761629320ae1e3e7da224eb595"
-   },
-   {
-    "path": "fermi_3fhl/iso_P8R2_SOURCE_V6_v06.txt",
-    "url": "https://github.com/gammapy/gammapy-fermi-lat-data/raw/master/isodiff/iso_P8R2_SOURCE_V6_v06.txt",
-    "filesize": 1255,
-    "hashmd5": "85de2d6a9896fe15f1a4298edd9d7641"
    }
   ]
  },

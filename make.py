@@ -196,13 +196,10 @@ class DatasetIndex:
         DatasetDarkMatter,
         DatasetCatalogs,
         DatasetFermi3FHL,
-        DatasetFermi2FHL,
-        DatasetFermiSurvey,
         DatasetHESSDL3DR1,
         DatasetImages,
         DatasetJointCrab,
         DatasetEBL,
-        DatasetFermiLat,
         DatasetGammaCat,
         DatasetFermi3FHLGC
     ]

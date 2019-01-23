@@ -174,6 +174,7 @@ class DatasetFermi3FHLGC(Dataset):
         "fermi-3fhl-gc-counts-cube.fits.gz",
         "fermi-3fhl-gc-events.fits.gz",
         "fermi-3fhl-gc-exposure-cube.fits.gz",
+        "fermi-3fhl-gc-exposure.fits.gz",
         "fermi-3fhl-gc-psf.fits.gz",
         "fermi-3fhl-gc-psf-cube.fits.gz",
         "gll_iem_v06_gc.fits.gz",

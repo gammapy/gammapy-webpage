@@ -208,6 +208,12 @@
     "hashmd5": "b0471fe06a96141f22407878e24bac64"
    },
    {
+    "path": "catalogs/fermi/gll_iem_v05_rev1_cutout.fits",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/catalogs/fermi/gll_iem_v05_rev1_cutout.fits",
+    "filesize": 3121920,
+    "hashmd5": "fd5298745a3cfd94a9524ae0bf571638"
+   },
+   {
     "path": "catalogs/fermi/gll_psch_v13.fit.gz",
     "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/catalogs/fermi/gll_psch_v13.fit.gz",
     "filesize": 373649,
@@ -2130,8 +2136,8 @@
    {
     "path": "tests/models/fermi_model.xml",
     "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/tests/models/fermi_model.xml",
-    "filesize": 2674,
-    "hashmd5": "6afe1111fd573d58e7405c4a65e912fd"
+    "filesize": 2656,
+    "hashmd5": "9bd8ffcad7e2a2e53356207b31320193"
    },
    {
     "path": "tests/models/ctadc_skymodel_gps_sources_bright.xml",
@@ -2142,8 +2148,8 @@
    {
     "path": "tests/models/examples.xml",
     "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/tests/models/examples.xml",
-    "filesize": 5195,
-    "hashmd5": "be2367c64e0fd1d33917828a82752281"
+    "filesize": 5190,
+    "hashmd5": "ae18c74e970ca970daa57e0f0e09e266"
    },
    {
     "path": "tests/models/README.rst",

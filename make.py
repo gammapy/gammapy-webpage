@@ -101,6 +101,19 @@ class DatasetEBL(Dataset):
     description = "tbd"
 
 
+class DatasetTests(Dataset):
+    name = "tests"
+    description = "tbd"
+
+
+class DatasetFigures(Dataset):
+    name = "figures"
+    description = "tbd"
+
+    base_url = "https://github.com/gammapy/gammapy-extra/raw/master"
+    local_repo = Path(os.environ["GAMMAPY_EXTRA"])
+
+
 class DatasetJointCrab(Dataset):
     name = "joint-crab"
     description = "tbd"
@@ -201,7 +214,9 @@ class DatasetIndex:
         DatasetJointCrab,
         DatasetEBL,
         DatasetGammaCat,
-        DatasetFermi3FHLGC
+        DatasetFermi3FHLGC,
+        DatasetTests,
+        DatasetFigures
     ]
 
     def make(self):

@@ -988,6 +988,12 @@
     "hashmd5": "dea38edcb9002c986bfccef5e9b99ffe"
    },
    {
+    "path": "catalogs/gammacat/gammacat-datasets.json",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/catalogs/gammacat/gammacat-datasets.json",
+    "filesize": 125360,
+    "hashmd5": "4fed701d65ecc72cd6fcf4fe78cd2259"
+   },
+   {
     "path": "catalogs/gammacat/gammacat.fits.gz",
     "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/catalogs/gammacat/gammacat.fits.gz",
     "filesize": 33941,
@@ -2084,6 +2090,534 @@
     "url": "https://github.com/gammapy/gammapy-fermi-lat-data/raw/master/3fhl/galactic-center/gll_iem_v06_gc.fits.gz",
     "filesize": 823469,
     "hashmd5": "37c3c5d8ad72a918360c6d2b6a72db1e"
+   }
+  ]
+ },
+ {
+  "name": "tests",
+  "description": "tbd",
+  "files": [
+   {
+    "path": "tests/phasecurve_LSI_DC.fits",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/tests/phasecurve_LSI_DC.fits",
+    "filesize": 8640,
+    "hashmd5": "fe0444d0c51306c4626840e744127da6"
+   },
+   {
+    "path": "tests/psf_table_023523.fits.gz",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/tests/psf_table_023523.fits.gz",
+    "filesize": 273506,
+    "hashmd5": "3ea3a042ceebb05a22ddc1b090f16be5"
+   },
+   {
+    "path": "tests/hess_event_list.fits",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/tests/hess_event_list.fits",
+    "filesize": 1238400,
+    "hashmd5": "6d3de88c6d6b5f5d6ecaf9ae3e2666d1"
+   },
+   {
+    "path": "tests/cta/perf_prod2/point_like_non_smoothed/South_5h.fits.gz",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/tests/cta/perf_prod2/point_like_non_smoothed/South_5h.fits.gz",
+    "filesize": 43333,
+    "hashmd5": "9d904a9966f6bfc6d4737b19b550ee57"
+   },
+   {
+    "path": "tests/models/shell.xml",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/tests/models/shell.xml",
+    "filesize": 1491,
+    "hashmd5": "25832149ee91987d1698cbbd5a09ecf0"
+   },
+   {
+    "path": "tests/models/fermi_model.xml",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/tests/models/fermi_model.xml",
+    "filesize": 2674,
+    "hashmd5": "6afe1111fd573d58e7405c4a65e912fd"
+   },
+   {
+    "path": "tests/models/ctadc_skymodel_gps_sources_bright.xml",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/tests/models/ctadc_skymodel_gps_sources_bright.xml",
+    "filesize": 29281,
+    "hashmd5": "da20a7007173d86930ec22625be495e1"
+   },
+   {
+    "path": "tests/models/examples.xml",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/tests/models/examples.xml",
+    "filesize": 5195,
+    "hashmd5": "be2367c64e0fd1d33917828a82752281"
+   },
+   {
+    "path": "tests/models/README.rst",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/tests/models/README.rst",
+    "filesize": 461,
+    "hashmd5": "c382cec8b5f5c621d4c4f3f6c5c7258c"
+   },
+   {
+    "path": "tests/models/light_curve/model.xml",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/tests/models/light_curve/model.xml",
+    "filesize": 944,
+    "hashmd5": "73c3f10e8da1946f2554a0be7380f6cf"
+   },
+   {
+    "path": "tests/models/light_curve/README.md",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/tests/models/light_curve/README.md",
+    "filesize": 622,
+    "hashmd5": "78f49339b3cacf2e33e6b8353aa8a292"
+   },
+   {
+    "path": "tests/models/light_curve/lightcrv_PKSB1222+216.fits",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/tests/models/light_curve/lightcrv_PKSB1222+216.fits",
+    "filesize": 48960,
+    "hashmd5": "de1018e14e03b1f89f3734437cebbf89"
+   },
+   {
+    "path": "tests/irf/hess/README.rst",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/tests/irf/hess/README.rst",
+    "filesize": 447,
+    "hashmd5": "7fe0fb2a64882d3d3475958595c129dd"
+   },
+   {
+    "path": "tests/irf/hess/ogip/run_rmf60741.fits",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/tests/irf/hess/ogip/run_rmf60741.fits",
+    "filesize": 40320,
+    "hashmd5": "97b37c7c465da3bc832ea780a87cff39"
+   },
+   {
+    "path": "tests/irf/hess/ogip/run_arf60741.fits",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/tests/irf/hess/ogip/run_arf60741.fits",
+    "filesize": 11520,
+    "hashmd5": "9dc00a067c55577e1ecad4f854de2f87"
+   },
+   {
+    "path": "tests/irf/hess/pa/hess_aeff_2d_023523.fits.gz",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/tests/irf/hess/pa/hess_aeff_2d_023523.fits.gz",
+    "filesize": 1359,
+    "hashmd5": "3ec50960fa81b0285790e09c7d6ec036"
+   },
+   {
+    "path": "tests/irf/hess/pa/ctskymap.fits.gz",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/tests/irf/hess/pa/ctskymap.fits.gz",
+    "filesize": 4292,
+    "hashmd5": "ea384acdd189e1109fee5fe4049be467"
+   },
+   {
+    "path": "tests/irf/hess/pa/hess_edisp_2d_023523.fits.gz",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/tests/irf/hess/pa/hess_edisp_2d_023523.fits.gz",
+    "filesize": 15084,
+    "hashmd5": "baa473f5669410f5452a054a16363a5c"
+   },
+   {
+    "path": "tests/irf/hess/pa/hess_psf_king_023523.fits.gz",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/tests/irf/hess/pa/hess_psf_king_023523.fits.gz",
+    "filesize": 1511,
+    "hashmd5": "d719f6916e08cebf258acf9e932eaa39"
+   },
+   {
+    "path": "tests/irf/hess/pa/make.py",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/tests/irf/hess/pa/make.py",
+    "filesize": 617,
+    "hashmd5": "70bdad658758f2959991fb762f207de8"
+   },
+   {
+    "path": "tests/irf/hess/pa/hess_bkg_offruns_023523.fits.gz",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/tests/irf/hess/pa/hess_bkg_offruns_023523.fits.gz",
+    "filesize": 239772,
+    "hashmd5": "5017ece9f7bba2b5802dacb39694685d"
+   },
+   {
+    "path": "tests/irf/hess/pa/hess_events_023523.fits.gz",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/tests/irf/hess/pa/hess_events_023523.fits.gz",
+    "filesize": 59678,
+    "hashmd5": "62bfbaa4569f9dccf41507fb036e7f7c"
+   },
+   {
+    "path": "tests/spectrum/total_spectrum_stats_reference.yaml",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/tests/spectrum/total_spectrum_stats_reference.yaml",
+    "filesize": 175,
+    "hashmd5": "c60e95c6e319724f85d6ed6303dfc039"
+   },
+   {
+    "path": "tests/spectrum/fit_result_PowerLaw_reference.yaml",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/tests/spectrum/fit_result_PowerLaw_reference.yaml",
+    "filesize": 531,
+    "hashmd5": "e0f06bbb36f9ef17fd39dea08e83e3da"
+   },
+   {
+    "path": "tests/spectrum/spectrum_analysis_example.yaml",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/tests/spectrum/spectrum_analysis_example.yaml",
+    "filesize": 377,
+    "hashmd5": "9cd19c8e71e8d808144f2fdd033a0aad"
+   },
+   {
+    "path": "tests/spectrum/flux_points/1es0229_hess_spectrum.fits",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/tests/spectrum/flux_points/1es0229_hess_spectrum.fits",
+    "filesize": 8640,
+    "hashmd5": "e6900ce51bee3b3dfc36f35798a65f14"
+   },
+   {
+    "path": "tests/spectrum/flux_points/flux_points.fits",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/tests/spectrum/flux_points/flux_points.fits",
+    "filesize": 8640,
+    "hashmd5": "a8c527216d0e2cf0665c67553511176e"
+   },
+   {
+    "path": "tests/spectrum/flux_points/flux_points.ecsv",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/tests/spectrum/flux_points/flux_points.ecsv",
+    "filesize": 2063,
+    "hashmd5": "e562dde1a2fc05438901338de2cd6acd"
+   },
+   {
+    "path": "tests/spectrum/flux_points/1es0229_hess_spectrum.ecsv",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/tests/spectrum/flux_points/1es0229_hess_spectrum.ecsv",
+    "filesize": 603,
+    "hashmd5": "bee0793ddad5328b39bbcba1a8ce01cd"
+   },
+   {
+    "path": "tests/spectrum/flux_points/diff_flux_points.fits",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/tests/spectrum/flux_points/diff_flux_points.fits",
+    "filesize": 8640,
+    "hashmd5": "c8974f171c0022674a011f2c3e827c3a"
+   },
+   {
+    "path": "tests/spectrum/flux_points/README.md",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/tests/spectrum/flux_points/README.md",
+    "filesize": 378,
+    "hashmd5": "dff522a0fa9e389a6aac6c927993d9e6"
+   },
+   {
+    "path": "tests/spectrum/flux_points/diff_flux_points.ecsv",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/tests/spectrum/flux_points/diff_flux_points.ecsv",
+    "filesize": 1570,
+    "hashmd5": "d1c351e8680435118c6f08593c8778a6"
+   },
+   {
+    "path": "tests/spectrum/flux_points/flux_points_ctb_37b.txt",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/tests/spectrum/flux_points/flux_points_ctb_37b.txt",
+    "filesize": 386,
+    "hashmd5": "7a0340e0a568ad9755304f4f4cf0fb1a"
+   },
+   {
+    "path": "tests/spectrum/flux_points/binlike.fits",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/tests/spectrum/flux_points/binlike.fits",
+    "filesize": 20160,
+    "hashmd5": "92209c4d47784f5c9db70541ecd0fb4f"
+   },
+   {
+    "path": "tests/unbundled/README.rst",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/tests/unbundled/README.rst",
+    "filesize": 257,
+    "hashmd5": "7f2b2e7e963faf6464224434fbe474b3"
+   },
+   {
+    "path": "tests/unbundled/hess/run_0023037_hard_eventlist.fits.gz",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/tests/unbundled/hess/run_0023037_hard_eventlist.fits.gz",
+    "filesize": 7622,
+    "hashmd5": "529d15b10d8961d77f9ca2e4d9294a5e"
+   },
+   {
+    "path": "tests/unbundled/hess/README.rst",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/tests/unbundled/hess/README.rst",
+    "filesize": 407,
+    "hashmd5": "514cb2ee58686547234bd6a6360a4e86"
+   },
+   {
+    "path": "tests/unbundled/hess/survey/hess_survey_snippet.fits.gz",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/tests/unbundled/hess/survey/hess_survey_snippet.fits.gz",
+    "filesize": 1491989,
+    "hashmd5": "a17033e411f6f1b14c59167783731cda"
+   },
+   {
+    "path": "tests/unbundled/hess/survey/make.py",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/tests/unbundled/hess/survey/make.py",
+    "filesize": 2023,
+    "hashmd5": "89b1b90b82d99508fb60abce7669456d"
+   },
+   {
+    "path": "tests/unbundled/fermi/gll_iem_v02_cutout.fits",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/tests/unbundled/fermi/gll_iem_v02_cutout.fits",
+    "filesize": 167040,
+    "hashmd5": "74ff01baa83fc9faf09137ae4f5ba7fd"
+   },
+   {
+    "path": "tests/unbundled/fermi/make.sh",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/tests/unbundled/fermi/make.sh",
+    "filesize": 747,
+    "hashmd5": "769340ef97c95c225852234f28c4dde4"
+   },
+   {
+    "path": "tests/unbundled/fermi/psf.fits",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/tests/unbundled/fermi/psf.fits",
+    "filesize": 60480,
+    "hashmd5": "1c1ea4e148592a9532a7b6593716115b"
+   },
+   {
+    "path": "tests/unbundled/fermi/isotropic_iem_v02.txt",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/tests/unbundled/fermi/isotropic_iem_v02.txt",
+    "filesize": 649,
+    "hashmd5": "b3cca3fc4e5db1c3b0c96856962692ec"
+   },
+   {
+    "path": "tests/unbundled/fermi/fermi_exposure.fits.gz",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/tests/unbundled/fermi/fermi_exposure.fits.gz",
+    "filesize": 26271,
+    "hashmd5": "452cc0460dd5bb5561db04e97aa0c3f5"
+   },
+   {
+    "path": "tests/unbundled/fermi/fermi_irf_data.fits",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/tests/unbundled/fermi/fermi_irf_data.fits",
+    "filesize": 25920,
+    "hashmd5": "5c37c62623761487fd0d2498f357d61c"
+   },
+   {
+    "path": "tests/unbundled/fermi/fermi_counts.fits.gz",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/tests/unbundled/fermi/fermi_counts.fits.gz",
+    "filesize": 20912,
+    "hashmd5": "e8076e99111323c5c5bc3655574bb1d9"
+   },
+   {
+    "path": "tests/unbundled/fermi/README.rst",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/tests/unbundled/fermi/README.rst",
+    "filesize": 1710,
+    "hashmd5": "dbdc9ad06a186cb955414939241881d3"
+   },
+   {
+    "path": "tests/unbundled/poisson_stats_image/expected_ts_0.200.fits.gz",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/tests/unbundled/poisson_stats_image/expected_ts_0.200.fits.gz",
+    "filesize": 158597,
+    "hashmd5": "9ce87f442aae7131e5f43229ab83090a"
+   },
+   {
+    "path": "tests/unbundled/poisson_stats_image/fit_sherpa_output.txt",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/tests/unbundled/poisson_stats_image/fit_sherpa_output.txt",
+    "filesize": 1545,
+    "hashmd5": "c28b5c12dba4b9226a3ed26717eb8c8c"
+   },
+   {
+    "path": "tests/unbundled/poisson_stats_image/exclusion.fits.gz",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/tests/unbundled/poisson_stats_image/exclusion.fits.gz",
+    "filesize": 733,
+    "hashmd5": "ded0afa7af66204b6619f54b460009a7"
+   },
+   {
+    "path": "tests/unbundled/poisson_stats_image/counts.fits.gz",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/tests/unbundled/poisson_stats_image/counts.fits.gz",
+    "filesize": 15736,
+    "hashmd5": "8547c52beba37132ae90c0d5e1df5f87"
+   },
+   {
+    "path": "tests/unbundled/poisson_stats_image/expected_ts_0.050.fits.gz",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/tests/unbundled/poisson_stats_image/expected_ts_0.050.fits.gz",
+    "filesize": 372466,
+    "hashmd5": "01f9f8569c59f664e8ff8977e95613a0"
+   },
+   {
+    "path": "tests/unbundled/poisson_stats_image/fit_sherpa.py",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/tests/unbundled/poisson_stats_image/fit_sherpa.py",
+    "filesize": 1656,
+    "hashmd5": "d7fc6bf5f86fed4c3c04a5b346e6fdba"
+   },
+   {
+    "path": "tests/unbundled/poisson_stats_image/psf.json",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/tests/unbundled/poisson_stats_image/psf.json",
+    "filesize": 201,
+    "hashmd5": "3f748d332f91bf84cc2e72be8c87b9a6"
+   },
+   {
+    "path": "tests/unbundled/poisson_stats_image/expected_ts_0.000.fits.gz",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/tests/unbundled/poisson_stats_image/expected_ts_0.000.fits.gz",
+    "filesize": 357359,
+    "hashmd5": "495536584aef49fba5cd73394d8fdbe1"
+   },
+   {
+    "path": "tests/unbundled/poisson_stats_image/input_all.fits.gz",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/tests/unbundled/poisson_stats_image/input_all.fits.gz",
+    "filesize": 21958,
+    "hashmd5": "17af22fe4aa722acd2cbb2d2cd7a4636"
+   },
+   {
+    "path": "tests/unbundled/poisson_stats_image/README.md",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/tests/unbundled/poisson_stats_image/README.md",
+    "filesize": 1748,
+    "hashmd5": "c08cf45e24ca23f1437efe0c578c0b1f"
+   },
+   {
+    "path": "tests/unbundled/poisson_stats_image/background.fits.gz",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/tests/unbundled/poisson_stats_image/background.fits.gz",
+    "filesize": 614,
+    "hashmd5": "e49c0d50b26a818f930397978f20cb1c"
+   },
+   {
+    "path": "tests/unbundled/poisson_stats_image/exposure.fits.gz",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/tests/unbundled/poisson_stats_image/exposure.fits.gz",
+    "filesize": 615,
+    "hashmd5": "0d270a544a1e134c8e645088a494ccad"
+   },
+   {
+    "path": "tests/unbundled/poisson_stats_image/make.py",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/tests/unbundled/poisson_stats_image/make.py",
+    "filesize": 4519,
+    "hashmd5": "5add240ba9eebe98f0f09b5456edc4f5"
+   },
+   {
+    "path": "tests/unbundled/poisson_stats_image/model.fits.gz",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/tests/unbundled/poisson_stats_image/model.fits.gz",
+    "filesize": 4222,
+    "hashmd5": "bc256ff4b8e8699162dc1f59da60ede3"
+   },
+   {
+    "path": "tests/unbundled/poisson_stats_image/expected_ts_0.100.fits.gz",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/tests/unbundled/poisson_stats_image/expected_ts_0.100.fits.gz",
+    "filesize": 278529,
+    "hashmd5": "e78f838abcf84fe9ceb99b236638561b"
+   },
+   {
+    "path": "tests/unbundled/poisson_stats_image/source.fits.gz",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/tests/unbundled/poisson_stats_image/source.fits.gz",
+    "filesize": 33637,
+    "hashmd5": "45ba50d3e49c2dcd138a681650620161"
+   },
+   {
+    "path": "tests/unbundled/irfs/aeff2D.fits",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/tests/unbundled/irfs/aeff2D.fits",
+    "filesize": 20160,
+    "hashmd5": "0111e52b2d764effaa5b52a6d6248628"
+   },
+   {
+    "path": "tests/unbundled/irfs/psf.fits",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/tests/unbundled/irfs/psf.fits",
+    "filesize": 14400,
+    "hashmd5": "c7be3386faab9bcff09865988e3957c0"
+   },
+   {
+    "path": "tests/unbundled/irfs/arf.fits",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/tests/unbundled/irfs/arf.fits",
+    "filesize": 11520,
+    "hashmd5": "e63c21afb39ab6319a1e578a50401700"
+   },
+   {
+    "path": "tests/unbundled/tev_spectra/electron_spectrum_fermi.txt",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/tests/unbundled/tev_spectra/electron_spectrum_fermi.txt",
+    "filesize": 5757,
+    "hashmd5": "7ad394aa1c4fbe64baf9aa4495000c15"
+   },
+   {
+    "path": "tests/unbundled/tev_spectra/format_crab_sed.py",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/tests/unbundled/tev_spectra/format_crab_sed.py",
+    "filesize": 5895,
+    "hashmd5": "d56f8fd5ff9daca34f258e71c6c673ea"
+   },
+   {
+    "path": "tests/unbundled/tev_spectra/electron_spectrum_hess_low_energy_systematic_uncertainty.txt",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/tests/unbundled/tev_spectra/electron_spectrum_hess_low_energy_systematic_uncertainty.txt",
+    "filesize": 551,
+    "hashmd5": "eac8ed2f88ada7971ee9d831ba9250a3"
+   },
+   {
+    "path": "tests/unbundled/tev_spectra/electron_spectrum_hess_low_energy.txt",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/tests/unbundled/tev_spectra/electron_spectrum_hess_low_energy.txt",
+    "filesize": 602,
+    "hashmd5": "d8652a02161768523c0c0d9ac4fb9882"
+   },
+   {
+    "path": "tests/unbundled/tev_spectra/crab_mwl.rst",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/tests/unbundled/tev_spectra/crab_mwl.rst",
+    "filesize": 798,
+    "hashmd5": "af9cad4e8b3fac6962473ffb0a00cb54"
+   },
+   {
+    "path": "tests/unbundled/tev_spectra/diffuse_isotropic_gamma_spectrum_fermi.txt",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/tests/unbundled/tev_spectra/diffuse_isotropic_gamma_spectrum_fermi.txt",
+    "filesize": 1065,
+    "hashmd5": "ebfd873e126764669a37351fdae9e148"
+   },
+   {
+    "path": "tests/unbundled/tev_spectra/electron_spectrum_hess_systematic_uncertainty.txt",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/tests/unbundled/tev_spectra/electron_spectrum_hess_systematic_uncertainty.txt",
+    "filesize": 461,
+    "hashmd5": "8501c3e531ad8dbf08896b90945cbfa4"
+   },
+   {
+    "path": "tests/unbundled/tev_spectra/diffuse_isotropic_gamma_spectrum_fermi2.txt",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/tests/unbundled/tev_spectra/diffuse_isotropic_gamma_spectrum_fermi2.txt",
+    "filesize": 2398,
+    "hashmd5": "7c7f170911f246fdeb342e097f0907b4"
+   },
+   {
+    "path": "tests/unbundled/tev_spectra/crab_hess_spec.txt",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/tests/unbundled/tev_spectra/crab_hess_spec.txt",
+    "filesize": 1160,
+    "hashmd5": "ddfe9884be993372d57da86b9e4074f6"
+   },
+   {
+    "path": "tests/unbundled/tev_spectra/crab_mwl.fits.gz",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/tests/unbundled/tev_spectra/crab_mwl.fits.gz",
+    "filesize": 14132,
+    "hashmd5": "008c8993e87831d8af9a35d13717d6be"
+   },
+   {
+    "path": "tests/unbundled/tev_spectra/electron_spectrum_hess.txt",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/tests/unbundled/tev_spectra/electron_spectrum_hess.txt",
+    "filesize": 491,
+    "hashmd5": "197d86aecb7f765d6c58e04ade159104"
+   }
+  ]
+ },
+ {
+  "name": "figures",
+  "description": "tbd",
+  "files": [
+   {
+    "path": "figures/README.rst",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/figures/README.rst",
+    "filesize": 394,
+    "hashmd5": "f1c2f5041cfec175494a49e23b7f0549"
+   },
+   {
+    "path": "figures/detect/fermi_ts_image.png",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/figures/detect/fermi_ts_image.png",
+    "filesize": 86096,
+    "hashmd5": "4e86dc05a5987812aa879b8fcf0864d2"
+   },
+   {
+    "path": "figures/background/bg_cube_model_true_reco.png",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/figures/background/bg_cube_model_true_reco.png",
+    "filesize": 270031,
+    "hashmd5": "9d78b3514ae1c7c2d90f76b1feb99b75"
+   },
+   {
+    "path": "figures/image/survey_example.png",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/figures/image/survey_example.png",
+    "filesize": 18305,
+    "hashmd5": "5cc9be28fb1f5675043c9c6574ef81ac"
+   },
+   {
+    "path": "figures/time/example_robust_periodogram.png",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/figures/time/example_robust_periodogram.png",
+    "filesize": 87468,
+    "hashmd5": "2b567895a0f68f026806782e8fd06b29"
+   },
+   {
+    "path": "figures/time/example_spectral_window_function.png",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/figures/time/example_spectral_window_function.png",
+    "filesize": 51871,
+    "hashmd5": "fe2286ca3f07d9199a97d0f3ab9b97c9"
+   },
+   {
+    "path": "figures/time/example_robust_periodogram.py",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/figures/time/example_robust_periodogram.py",
+    "filesize": 2670,
+    "hashmd5": "fb502cd1fa578fd2d4a11d7a8db387ed"
+   },
+   {
+    "path": "figures/tutorials/crab_mwl.png",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/figures/tutorials/crab_mwl.png",
+    "filesize": 55226,
+    "hashmd5": "59d7ce08ce854701acb96a2f2bd593aa"
+   },
+   {
+    "path": "figures/spectrum/simulated_obs.png",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/figures/spectrum/simulated_obs.png",
+    "filesize": 100201,
+    "hashmd5": "01c2b735983713674b69ff981f6cc374"
    }
   ]
  }

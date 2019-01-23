@@ -2170,6 +2170,12 @@
     "hashmd5": "64088e1015b1b1bdd3f6b047fbd8b033"
    },
    {
+    "path": "fermi-3fhl-gc/fermi-3fhl-gc-exposure.fits.gz",
+    "url": "https://github.com/gammapy/gammapy-fermi-lat-data/raw/master/3fhl/galactic-center/fermi-3fhl-gc-exposure.fits.gz",
+    "filesize": 7062,
+    "hashmd5": "dfbd4d9494ca7c3de21faaf499765c6e"
+   },
+   {
     "path": "fermi-3fhl-gc/fermi-3fhl-gc-psf.fits.gz",
     "url": "https://github.com/gammapy/gammapy-fermi-lat-data/raw/master/3fhl/galactic-center/fermi-3fhl-gc-psf.fits.gz",
     "filesize": 1299,

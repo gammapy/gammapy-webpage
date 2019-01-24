@@ -1012,28 +1012,34 @@
   "description": "tbd",
   "files": [
    {
+    "path": "fermi_3fhl/fermi_3fhl_exposure_cube_hpx.fits.gz",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/fermi_3fhl/fermi_3fhl_exposure_cube_hpx.fits.gz",
+    "filesize": 3858696,
+    "hashmd5": "a3963741e22e09651aeefb5c646d8c37"
+   },
+   {
     "path": "fermi_3fhl/iso_P8R2_SOURCE_V6_v06.txt",
     "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/fermi_3fhl/iso_P8R2_SOURCE_V6_v06.txt",
     "filesize": 1255,
     "hashmd5": "85de2d6a9896fe15f1a4298edd9d7641"
    },
    {
-    "path": "fermi_3fhl/README.md",
-    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/fermi_3fhl/README.md",
-    "filesize": 667,
-    "hashmd5": "1dafd6d1c0b7ce6a13323a1ecdfa6f1d"
+    "path": "fermi_3fhl/fermi_3fhl_events_selected.fits.gz",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/fermi_3fhl/fermi_3fhl_events_selected.fits.gz",
+    "filesize": 39307510,
+    "hashmd5": "da91bb56be09ea68ea00c8079ed178a0"
+   },
+   {
+    "path": "fermi_3fhl/fermi_3fhl_psf_gc.fits.gz",
+    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/fermi_3fhl/fermi_3fhl_psf_gc.fits.gz",
+    "filesize": 42267,
+    "hashmd5": "2d18ca761629320ae1e3e7da224eb595"
    },
    {
     "path": "fermi_3fhl/gll_iem_v06_cutout.fits",
     "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/fermi_3fhl/gll_iem_v06_cutout.fits",
     "filesize": 515520,
     "hashmd5": "a6ab040128cba3100670d6f4e00a76fa"
-   },
-   {
-    "path": "fermi_3fhl/make.py",
-    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/fermi_3fhl/make.py",
-    "filesize": 315,
-    "hashmd5": "ae97d1d069414864d1927a678e41d047"
    }
   ]
  },

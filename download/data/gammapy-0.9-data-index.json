@@ -1006,22 +1006,10 @@
     "hashmd5": "85de2d6a9896fe15f1a4298edd9d7641"
    },
    {
-    "path": "fermi_3fhl/README.md",
-    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/fermi_3fhl/README.md",
-    "filesize": 667,
-    "hashmd5": "1dafd6d1c0b7ce6a13323a1ecdfa6f1d"
-   },
-   {
     "path": "fermi_3fhl/gll_iem_v06_cutout.fits",
     "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/fermi_3fhl/gll_iem_v06_cutout.fits",
     "filesize": 515520,
     "hashmd5": "a6ab040128cba3100670d6f4e00a76fa"
-   },
-   {
-    "path": "fermi_3fhl/make.py",
-    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/fermi_3fhl/make.py",
-    "filesize": 315,
-    "hashmd5": "ae97d1d069414864d1927a678e41d047"
    }
   ]
  },

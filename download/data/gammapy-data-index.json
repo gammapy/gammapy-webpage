@@ -2338,12 +2338,6 @@
     "hashmd5": "5dc6ee7eb3d6eb37d1c35ead8e2e9e70"
    },
    {
-    "path": "tests/cta/perf_prod2/point_like_non_smoothed/South_5h.fits.gz",
-    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/tests/cta/perf_prod2/point_like_non_smoothed/South_5h.fits.gz",
-    "filesize": 43333,
-    "hashmd5": "9d904a9966f6bfc6d4737b19b550ee57"
-   },
-   {
     "path": "tests/models/shell.xml",
     "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/tests/models/shell.xml",
     "filesize": 1491,

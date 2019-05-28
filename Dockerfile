@@ -29,7 +29,9 @@ RUN adduser --disabled-password \
 
 # download tutorials and datasets
 RUN gammapy download notebooks --out=${HOME}/gammapy-tutorials --release=0.8
-RUN gammapy download datasets --out=${HOME}/gammapy-datasets --release=0.8
+RUN git clone https://github.com/gammapy/gammapy-extra.git ${HOME}/gammapy-extra
+WORKDIR ${HOME}/gammapy-extra
+RUN git checkout dfc299568b630af7d327a466123364819573cd9e
 
 # setting ownerships
 USER root
@@ -40,4 +42,4 @@ USER ${NB_USER}
 WORKDIR ${HOME}/gammapy-tutorials/notebooks-0.8
 
 # env vars used in tutorials
-ENV GAMMAPY_DATA ${HOME}/gammapy-datasets
+ENV GAMMAPY_DATA ${HOME}/gammapy-extra/datasets

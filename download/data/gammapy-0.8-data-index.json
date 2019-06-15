@@ -678,16 +678,8 @@
     "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/fermi_3fhl/iso_P8R2_SOURCE_V6_v06.txt"
    },
    {
-    "path": "fermi_3fhl/README.md",
-    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/fermi_3fhl/README.md"
-   },
-   {
     "path": "fermi_3fhl/gll_iem_v06_cutout.fits",
     "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/fermi_3fhl/gll_iem_v06_cutout.fits"
-   },
-   {
-    "path": "fermi_3fhl/make.py",
-    "url": "https://github.com/gammapy/gammapy-extra/raw/master/datasets/fermi_3fhl/make.py"
    }
   ]
  },

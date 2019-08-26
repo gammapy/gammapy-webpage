@@ -2,6 +2,6 @@
 # It's used for downloading of scripts with gammapy download.
 # Let's keep it alphabetical.
 - name: example_2_gauss
-  url: https://raw.githubusercontent.com/gammapy/gammapy/v0.12/examples/example_2_gauss.py
+  url: https://raw.githubusercontent.com/gammapy/gammapy/v0.13/examples/example_2_gauss.py
   datasets:
     - cta-1dc

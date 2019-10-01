@@ -30,6 +30,6 @@ dependencies:
   - healpy=1.12
   - naima=0.8
   - jsonschema=3.0
-  - emcee=3.0
+  - emcee=2.2
   - corner=2.0
   - parfive=1.0

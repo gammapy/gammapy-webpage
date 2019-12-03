@@ -10,7 +10,7 @@ channels:
   - sherpa
 
 dependencies:
-  # - gammapy=0.15
+  - gammapy=0.15
   - python=3.7
   - ipython=7.10
   # Cython isn't really needed when installing binaries,
@@ -35,5 +35,6 @@ dependencies:
   - corner=2.0
   - parfive=1.0
   - pip
+  # temp solution until https://github.com/conda-forge/naima-feedstock/pull/10 is merged
   - pip:
     - naima

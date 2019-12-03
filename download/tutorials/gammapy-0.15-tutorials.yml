@@ -82,8 +82,8 @@
   url: https://docs.gammapy.org/0.15/_static/notebooks/pulsar_analysis.ipynb
   datasets:
     - cta-1dc
-- name: sed_fitting_gammacat_fermi
-  url: https://docs.gammapy.org/0.15/_static/notebooks/sed_fitting_gammacat_fermi.ipynb
+- name: sed_fitting
+  url: https://docs.gammapy.org/0.15/_static/notebooks/sed_fitting.ipynb
   datasets:
     - catalogs
     - gamma-cat
@@ -99,8 +99,8 @@
   url: https://docs.gammapy.org/0.15/_static/notebooks/spectrum_simulation.ipynb
   datasets:
     - cta-1dc
-- name: joint_1d_3d_analysis
-  url: https://docs.gammapy.org/0.15/_static/notebooks/joint_1d_3d_analysis.ipynb
+- name: analysis_mwl
+  url: https://docs.gammapy.org/0.15/_static/notebooks/analysis_mwl.ipynb
   datasets:
     - crab-3datasets
 - name: light_curve_flare

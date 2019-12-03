@@ -6,10 +6,11 @@ in the docker container built for the Binder service.
 """
 import yaml
 import conda.cli
-from pip._internal import main as pip_main
+import subprocess
+import sys
 
 with open("environment.yml") as stream:
-    content = yaml.load(stream)
+    content = yaml.safe_load(stream)
 
 for chan in content['channels']:
     print("RUN conda config --add channels {}".format(chan))
@@ -21,4 +22,4 @@ for pack in content['dependencies']:
         conda.cli.main('conda', 'install',  '-y', '-q', pack)
     else:
         print("RUN pip install {}".format(pack['pip'][0]))
-        pip_main(["install", pack['pip'][0]])
+        subprocess.call([sys.executable, "-m", "pip", "install", pack['pip'][0]])

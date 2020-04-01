@@ -1,6 +1,6 @@
-# Conda environment for Gammapy version 0.15
-# Install:    conda env create -f gammapy-0.15-environment.yml
-# Activate:   conda activate gammapy-0.15
+# Conda environment for Gammapy version 0.17
+# Install:    conda env create -f gammapy-0.17-environment.yml
+# Activate:   conda activate gammapy-0.17
 # Deactivate: conda deactivate
 
 name: gammapy-0.17

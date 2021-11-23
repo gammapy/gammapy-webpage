@@ -30,7 +30,7 @@ RUN adduser --disabled-password \
 
 # download tutorials and datasets
 RUN gammapy download notebooks --out=${HOME}/gammapy-tutorials --release=0.19
-RUN gammapy download datasets --out=${HOME}/gammapy-datasets --release=0.19
+RUN gammapy download datasets --out=${HOME}/gammapy-datasets
 
 # setting ownerships
 USER root

@@ -8,6 +8,9 @@ name: gammapy-0.19
 channels:
   - conda-forge
   - sherpa
+  
+variables:
+  PYTHONNOUSERSITE: "1"
 
 dependencies:
   - gammapy=0.19

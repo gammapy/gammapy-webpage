@@ -29,7 +29,7 @@ RUN adduser --disabled-password \
     ${NB_USER}
 
 # download tutorials and datasets
-RUN gammapy download notebooks --out=${HOME}/gammapy-tutorials --release 0.19
+RUN gammapy download notebooks --out=${HOME}/gammapy-tutorials
 RUN gammapy download datasets --out=${HOME}/gammapy-datasets
 
 # setting ownerships
@@ -38,7 +38,7 @@ RUN chown -R gammapy:gammapy ${HOME}
 
 # start JupyterLab server in tutorials dir
 USER ${NB_USER}
-WORKDIR ${HOME}/gammapy-tutorials/0.19
+WORKDIR ${HOME}/gammapy-tutorials/dev
 
 # env vars used in tutorials
 ENV GAMMAPY_DATA ${HOME}/gammapy-datasets

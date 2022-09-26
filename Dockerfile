@@ -32,8 +32,8 @@ RUN adduser --disabled-password \
 RUN python -m pip install git+https://github.com/gammapy/gammapy.git#egg=gammapy
 
 # download tutorials and datasets
-RUN gammapy download notebooks --out=${HOME}/notebooks
-RUN gammapy download datasets --out=${HOME}/datasets
+RUN python -m gammapy download notebooks --out=${HOME}/notebooks
+RUN python -m gammapy download datasets --out=${HOME}/datasets
 
 # setting ownerships
 USER root

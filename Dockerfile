@@ -1,7 +1,7 @@
 # This is the Dockerfile to run Gammapy on Binder.
 #
 
-FROM continuumio/miniconda3:4.7.12
+FROM continuumio/miniconda3:4.12.0
 MAINTAINER Gammapy developers <gammapy@googlegroups.com>
 
 # compilers
@@ -15,7 +15,7 @@ RUN curl -o tmp/environment.yml https://raw.githubusercontent.com/gammapy/gammap
 WORKDIR tmp/
 RUN conda update conda
 RUN conda install -c conda-forge mamba
-RUN mamba install -q -y pyyaml pip python==3.9
+RUN mamba install -q -y pyyaml pip
 RUN python binder.py
 
 # add gammapy user running the jupyter notebook process

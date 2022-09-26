@@ -22,9 +22,9 @@ for pack in content['dependencies']:
         conda.cli.main('conda', 'install',  '-y', '-q', pack)
     else:
         print("RUN pip install {}".format(pack['pip'][0]))
-        subprocess.call([sys.executable, "-m", "pip", "install", pack['pip'][0]])
+        subprocess.call([sys.executable, "-m", "pip", "install", "--no-cache-dir", pack['pip'][0]])
 
 # install development version using pip
 if "gammapy" not in content['dependencies']:
     print("RUN pip install gammapy dev")
-    subprocess.call([sys.executable, "-m", "pip", "install", "git+https://github.com/gammapy/gammapy.git#egg=gammapy"])
+    subprocess.call([sys.executable, "-m", "pip", "install", "--no-cache-dir", "git+https://github.com/gammapy/gammapy.git#egg=gammapy"])

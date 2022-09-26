@@ -28,6 +28,9 @@ RUN adduser --disabled-password \
     --uid ${NB_UID} \
     ${NB_USER}
 
+# only for dev version, comment out for normal stable versions
+RUN python -m pip install git+https://github.com/gammapy/gammapy.git#egg=gammapy
+
 # download tutorials and datasets
 RUN gammapy download notebooks --out=${HOME}/notebooks
 RUN gammapy download datasets --out=${HOME}/datasets
@@ -41,4 +44,4 @@ USER ${NB_USER}
 WORKDIR ${HOME}/notebooks/dev
 
 # env vars used in tutorials
-ENV GAMMAPY_DATA ${HOME}/gammapy-datasets
+ENV GAMMAPY_DATA ${HOME}/datasets/dev

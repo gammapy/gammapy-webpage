@@ -10,7 +10,7 @@ RUN apt install -y curl
 
 # install dependencies - including the stable version of Gammapy
 COPY binder.py tmp/
-RUN curl -o tmp/environment.yml https://gammapy.org/download/install/gammapy-0.19-environment.yml
+RUN curl -o tmp/environment.yml https://raw.githubusercontent.com/gammapy/gammapy/master/environment-dev.yml
 
 WORKDIR tmp/
 RUN conda update conda
@@ -29,8 +29,8 @@ RUN adduser --disabled-password \
     ${NB_USER}
 
 # download tutorials and datasets
-RUN gammapy download notebooks --out=${HOME}/gammapy-tutorials
-RUN gammapy download datasets --out=${HOME}/gammapy-datasets
+RUN gammapy download notebooks --out=${HOME}/notebooks
+RUN gammapy download datasets --out=${HOME}/datasets
 
 # setting ownerships
 USER root
@@ -38,7 +38,7 @@ RUN chown -R gammapy:gammapy ${HOME}
 
 # start JupyterLab server in tutorials dir
 USER ${NB_USER}
-WORKDIR ${HOME}/gammapy-tutorials/dev
+WORKDIR ${HOME}/notebooks/dev
 
 # env vars used in tutorials
 ENV GAMMAPY_DATA ${HOME}/gammapy-datasets

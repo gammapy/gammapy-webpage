@@ -23,3 +23,8 @@ for pack in content['dependencies']:
     else:
         print("RUN pip install {}".format(pack['pip'][0]))
         subprocess.call([sys.executable, "-m", "pip", "install", pack['pip'][0]])
+
+# install development version using pip
+if "gammapy" not in content['dependencies']:
+    print("RUN pip install gammapy dev")
+    subprocess.call([sys.executable, "-m", "pip", "install", "git+https://github.com/gammapy/gammapy.git#egg=gammapy"])

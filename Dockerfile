@@ -15,7 +15,7 @@ RUN curl -o tmp/environment.yml https://raw.githubusercontent.com/gammapy/gammap
 WORKDIR tmp/
 RUN conda update conda
 RUN conda install -c conda-forge mamba
-RUN mamba install -q -y pyyaml
+RUN mamba install -q -y pyyaml pip
 RUN python binder.py
 
 # add gammapy user running the jupyter notebook process

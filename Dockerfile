@@ -7,6 +7,7 @@ MAINTAINER Gammapy developers <gammapy@googlegroups.com>
 # compilers
 RUN apt-get --allow-releaseinfo-change update
 RUN apt install -y curl
+RUN apt install -y gcc
 
 # install dependencies - including the stable version of Gammapy
 COPY binder.py tmp/

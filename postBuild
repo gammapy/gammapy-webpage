@@ -1,0 +1,5 @@
+#!/bin/bash
+
+gammapy download notebooks --out notebooks/
+gammapy download datasets --out datasets/
+export GAMMAPY_DATA=$PWD/datasets/dev

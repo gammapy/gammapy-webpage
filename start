@@ -1,0 +1,3 @@
+ #!/bin/bash
+export GAMMAPY_DATA=$PWD/datasets/dev
+exec "$@"

@@ -4,4 +4,3 @@ mv notebooks/dev tmp
 mkdir notebooks/dev
 mv tmp notebooks/dev/tutorials
 gammapy download datasets --out datasets/
-export GAMMAPY_DATA=$PWD/datasets/dev

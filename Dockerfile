@@ -33,7 +33,7 @@ RUN adduser --disabled-password \
 RUN python -m pip install --no-cache-dir git+https://github.com/gammapy/gammapy.git#egg=gammapy
 
 # download tutorials and datasets
-RUN python -m gammapy download notebooks --out=${HOME}/notebooks/dev/tutorials
+RUN python -m gammapy download notebooks --out=${HOME}/notebooks
 RUN python -m gammapy download datasets --out=${HOME}/datasets
 
 # setting ownerships
@@ -42,7 +42,7 @@ RUN chown -R gammapy:gammapy ${HOME}
 
 # start JupyterLab server in tutorials dir
 USER ${NB_USER}
-WORKDIR ${HOME}/notebooks/dev/tutorials
+WORKDIR ${HOME}
 
 # env vars used in tutorials
 ENV GAMMAPY_DATA ${HOME}/datasets/dev

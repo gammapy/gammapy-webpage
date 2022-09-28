@@ -1,5 +1,6 @@
 #!/bin/bash
 
 gammapy download notebooks --out notebooks/
+cp -r notebooks/dev notebooks/dev/tutorials
 gammapy download datasets --out datasets/
 export GAMMAPY_DATA=$PWD/datasets/dev

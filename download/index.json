@@ -4,6 +4,11 @@
         "datasets": "https://github.com/gammapy/gammapy-data/tarball/master",
         "conda-environment": "https://raw.githubusercontent.com/gammapy/gammapy/master/environment-dev.yml" 
     },
+    "1.0rc1": {
+        "notebooks": "https://docs.gammapy.org/dev/_downloads/a5659940aa3f8f568547d47752a43172/tutorials_jupyter.zip",
+        "datasets": "https://github.com/gammapy/gammapy-data/tarball/master",
+        "conda-environment": "https://raw.githubusercontent.com/gammapy/gammapy/master/environment-dev.yml" 
+    },
     "0.20.1": {
         "notebooks": "https://docs.gammapy.org/0.20.1/_downloads/notebooks-0.20.1.tar",
         "datasets": "https://github.com/gammapy/gammapy-data/tarball/master",

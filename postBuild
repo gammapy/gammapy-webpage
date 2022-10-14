@@ -1,6 +1,7 @@
 #!/bin/bash
+gp_version=1.0rc1
 gammapy download notebooks --out notebooks/
-mv notebooks/dev tmp
-mkdir notebooks/dev
-mv tmp notebooks/dev/tutorials
+mv notebooks/$gp_version tmp
+mkdir notebooks/$gp_version
+mv tmp notebooks/$gp_version/tutorials
 gammapy download datasets --out datasets/

@@ -36,5 +36,5 @@ dependencies:
   - pip
   - requests
   - pip:
-    - gammapy=1.0rc1
+    - gammapy==1.0rc1
     

@@ -1,9 +1,9 @@
-# Conda environment for Gammapy version 1.0rc1
-# Install:    conda env create -f gammapy-1.0rc1-environment.yml
-# Activate:   conda activate gammapy-1.0rc1
+# Conda environment for Gammapy version 1.0rc2
+# Install:    conda env create -f gammapy-1.0rc2-environment.yml
+# Activate:   conda activate gammapy-1.0rc2
 # Deactivate: conda deactivate
 
-name: gammapy-1.0rc1
+name: gammapy-1.0rc2
 
 channels:
   - conda-forge
@@ -36,5 +36,5 @@ dependencies:
   - pip
   - requests
   - pip:
-    - gammapy==1.0rc1
+    - gammapy==1.0rc2
     

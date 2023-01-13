@@ -23,6 +23,27 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" media="screen">
+
+    <style>
+    table, th {
+      border: 1px solid #000;
+      border-collapse: collapse;
+      text-align: center;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      padding: 10px;
+    }
+    td {
+      border: 1px solid #000;
+      border-collapse: collapse;
+      text-align: left;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      padding: 10px;
+    }
+    </style>
 </head>
 
 <body>
@@ -103,6 +124,7 @@
             <li><a href="#coordination-committee">Coordination committee</a></li>
             <li><a href="#project-manager">Project managers</a></li>
             <li><a href="#lead-developer">Lead developers</a></li>
+            <li><a href="#module-maintainer">Sub-package maintainers</a></li>
             <li><a href="#contributors">Contributors</a></li>
             <li><a href="#support">Institutional support</a></li>
             <li><a href="#grants">Grants</a></li>
@@ -263,6 +285,41 @@
             The current lead developers are <strong>Axel Donath</strong> and <strong>Régis Terrier</strong>.
         </p>
 
+        <h2 id="module-maintainer">Sub-package maintainers</h2>
+          <p>Among the Gammapy core developer team, they are some experts that are devoted to the maintenance of some sub-packages.</p>
+          
+          <p>They are in charge of:
+          <ul>
+            <li>perform initial triage of issues and pull requests,</li>
+            <li>supporting developers on tasks associated to the sub-package(s),</li>
+            <li>evaluating new pull requests for quality, API consistency and Gammapy coding standards,</li>
+            <li>taking care of the global design of the sub-package(s) in the context of the global Gammapy architecture,</li>
+            <li>participating to the User Support for questions related to the sub-package(s).</li>
+          </ul>
+          </p>
+
+          <p> The list of sub-package maintainers is given below:
+              <table>
+                  <tr>
+                      <th>Maintainer</th>
+                      <th>Sub-package(s)</th>
+                  </tr>
+                  <tr>
+                      <td>Quentin Rémy (MPIK)</td>
+                      <td><a href="https://docs.gammapy.org/dev/api-reference/catalog.html">catalog</a>,
+                          <a href="https://docs.gammapy.org/dev/api-reference/datasets.html">datasets</a>,
+                          <a href="https://docs.gammapy.org/dev/api-reference/modeling.html">modeling</a></td>
+                  </tr>
+                  <tr>
+                      <td>Atreyee Sinha (GAE-UCM)</td>
+                      <td><a href="https://docs.gammapy.org/dev/api-reference/datasets.html">datasets</a>,
+                          <a href="https://docs.gammapy.org/dev/api-reference/irf.html">irf</a>,
+                          <a href="https://docs.gammapy.org/dev/api-reference/makers.html">makers</a></td>
+                  </tr>
+              </table>
+          </p>
+
+
         <h2 id="contributors">Contributors</h2>
         <p>
             As of March 2021, there have been ~70 different contributors to Gammapy from ~10 countries and
@@ -306,10 +363,12 @@
                     <a href="https://www.ucm.es/">Web site</a></li>
                <li><strong>CTA Observatory</strong> - <a href="https://www.cta-observatory.org/">Web site</a></li>
             </ul>
-            <center>
-                <img src="img/LogoList_V2021_V2.png" alt="Institutions supporting the project" align="middle">
-            </center>
         </p>
+        <br>
+        <center>
+            <img src="img/LogoList_V2021_V2.png" alt="Institutions supporting the project" align="middle">
+        </center>
+
         <br>
         <h2 id="grants">Grants</h2>
         <p>
@@ -318,7 +377,9 @@
                 <li><strong>ESCAPE H2020 project</strong> (European Science Cluster of Astronomy & Particle Physics ESFRI research Infrastructure):
                     grant agreemant n. 824064, 2019/2022 in Germany and France (from EU)</li>
                 <li><strong>PECORA ANR project</strong>: 2019/2022 (from France)</li>
-                <li><strong>Action Fédératrice CTA</strong>: 2018, 2019, 2020 (from Observatoire de Paris)</li>
+                <li><strong>Action Fédératrice CTA</strong>: 2018, 2019, 2020, 2021 (from Observatoire de Paris)</li>
+                <li><strong>Action Pluri-annauelle Initiatrice "Astrophysique des hautes énergies"</strong>: 2022,
+                    2023 (from Observatoire de Paris)</li>
                 <li><strong>ASTERICS H2020 project</strong> (Astronomy ESFRI & Research Infrastructure Cluster):
                     grant agreement n. 653477, 2015/2019 in France and Spain (from EU)</li>
                 <li><strong>Spanish MINECO/AEI projects</strong>: FPA2015-69210-C6-3-R, FPA2017-82729-C6-3-R, AYA2016-8089-P (from Spain)</li>

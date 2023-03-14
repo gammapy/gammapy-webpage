@@ -5,9 +5,9 @@
         "conda-environment": "https://raw.githubusercontent.com/gammapy/gammapy/master/environment-dev.yml" 
     },
    "1.0.1": {
-        "notebooks": "https://docs.gammapy.org/1.0/_downloads/a5659940aa3f8f568547d47752a43172/tutorials_jupyter.zip",
+        "notebooks": "https://docs.gammapy.org/1.0.1/_downloads/a5659940aa3f8f568547d47752a43172/tutorials_jupyter.zip",
         "datasets": "https://github.com/gammapy/gammapy-data/tarball/v1.0",
-        "conda-environment": "https://gammapy.org/download/install/gammapy-1.0-environment.yml"
+        "conda-environment": "https://gammapy.org/download/install/gammapy-1.0.1-environment.yml"
     },
     "1.0": {
         "notebooks": "https://docs.gammapy.org/1.0/_downloads/a5659940aa3f8f568547d47752a43172/tutorials_jupyter.zip",

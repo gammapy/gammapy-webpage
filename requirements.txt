@@ -1,1 +1,1 @@
-gammapy[all]==v1.0
+gammapy[all]==v1.0.1

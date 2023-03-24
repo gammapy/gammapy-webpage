@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html>
 
+<style type="text/css" media="screen">
+    h2[id]::before {
+        display: block; 
+        content: " "; 
+        margin-top: -125px; 
+        height: 125px; 
+    }
+</style>
+
+
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110956727-1"></script>
@@ -83,9 +93,14 @@ function copyToClipboard(element) {
     <div class="container">
 
         <h1>Acknowledging or Citing gammapy</h1>
-
         <br>
-        <h2 id="publication">In Publications</h2>
+        
+        <p>
+        <a href="#pub">In publications</a> | <a href="#pres">In presentations</a> | <a href="#projects">In projects</a> 
+        </p>
+
+        <br><br>
+        <h2 id="publication"><a href="#pub">In publications</a></h2>
         <p class="lead">
             If you use Gammapy for work or research presented in a publication (whether directly, or as a dependency to
             another package), we ask you to add two citations to Gammapy:
@@ -139,7 +154,7 @@ adsnote = {Provided by the SAO/NASA Astrophysics Data System}
 
         <br>
         <hr>
-        <h2 id="presentation">In Presentations</h2>
+        <h2 id="presentation"><a href="#pres">In presentations</a></h2>
         <p class="lead">
             If you are giving a presentation or talk featuring work/research that makes use of Gammapy, we suggest
             using this logo on your title slide:
@@ -148,8 +163,7 @@ adsnote = {Provided by the SAO/NASA Astrophysics Data System}
 
         <br>
         <br>
-        <hr>
-        <h2 id="projects">In Projects</h2>
+        <h2 id="projects"><a href="#projects">In projects</a></h2>
         <p class="lead">
             If you are using Gammapy as part of a code project (e.g., affiliated packages), a useful way to acknowledge
             your use of Gammapy is with a badge in your README. We suggest this badge:

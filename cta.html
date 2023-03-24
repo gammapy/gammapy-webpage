@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html>
 
+<style type="text/css" media="screen">
+    h2[id]::before {
+        display: block; 
+        content: " "; 
+        margin-top: -125px; 
+        height: 125px; 
+    }
+</style>
+
+
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110956727-1"></script>
@@ -71,8 +81,14 @@
 <main>
     <div class="container">
         <h1>CTA</h1>
+        <br>
 
-        <h2 id="introduction">Introduction</h2>
+        <p>
+        <a href="#intro">Introduction</a> | <a href="#started">Getting started</a> | <a href="#resources">Resources</a> 
+        </p>
+
+        <br><br>
+        <h2 id="introduction"><a href="#intro">Introduction</a></h2>
         <p>
             The <a href="https://www.cta-observatory.org/">Cherenkov Telescope Array</a> (CTA) is the next generation
             ground-based observatory for gamma-ray astronomy at very-high energies.
@@ -84,7 +100,9 @@
             analysis of CTA data with Gammapy.
             Most of the pages we link to here require a CTA user account to access the information.
         </p>
-        <h2 id="getting-started">Getting started</h2>
+        
+        <br><br>
+        <h2 id="getting-started"><a href="#started">Getting started</a></h2>
         <p>
             To learn how to use Gammapy for CTA analysis, use the
             <a href="https://docs.gammapy.org/dev/tutorials/index.html">Gammapy tutorials</a>.
@@ -102,7 +120,8 @@
             functionality for CTA.
         </p>
 
-        <h2 id="resources">Resources</h2>
+        <br><br>
+        <h2 id="resources"><a href="#resources">Resources</a></h2>
         <ul>
             <li>
                 <a href="https://forge.in2p3.fr/projects/data-challenge-1-dc-1/wiki">CTA first data challenge (CTA DC-1)

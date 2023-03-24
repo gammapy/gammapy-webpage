@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html>
 
+<style type="text/css" media="screen">
+    h1[id]::before {
+        display: block; 
+        content: " "; 
+        margin-top: -125px; 
+        height: 125px; 
+    }
+</style>
+
+
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110956727-1"></script>
@@ -72,7 +82,15 @@
 <main>
 
     <div class="container">
-        <h1 id="releases">Releases</h1>
+    
+        <br>
+        <p>
+        <a href="#releases">Releases</a> | <a href="#news">News</a>
+        </p>
+        <br>
+    
+        <h1 id="releases"><a href="#releases">Releases</a></h1>
+        <br>
         <p>
             The Gammapy documentation and changelog for the last Gammapy releases is available here:
         </p>
@@ -171,7 +189,8 @@
         </ul>
 
         <br><br>
-        <h1 id="news">News</h1>
+        <h1 id="news"><a href="#news">News</a></h1>
+        <br>
         <p>
             Join the <a href="mailto:gammapy-cta-l@in2p3.fr">Gammapy mailing list</a> ot or the Gammapy slack 
             (<a href="https://gammapy.slack.com">gammapy.slack.com</a>) to get Gammapy-related news.
@@ -184,9 +203,15 @@
             <a href="mailto:Christopher.van.Eldik@physik.uni-erlangen.de">Christoper van Eldik</a>.
         </p>
 
-        <h2 id="2022">2022</h2>
+        <h2 id="2023"><a href="#2023">2023</a></h2>
         <ul>
-	   <li><em>November 10th, 2022</em> - Gammapy <strong>1.0</strong>
+          <li><em>March 14th, 2023</em> - Gammapy <strong>1.0.1</strong>
+            (<a href="https://docs.gammapy.org/1.0.1/release-notes/v1.0.1.html" class="card-link">changelog</a>)</li>
+        </ul>
+
+        <h2 id="2022"><a href="#2022">2022</a></h2>
+        <ul>
+	   <li><em>November 10th, 2022</em> - Gammapy <strong>1.0</strong> release - <strong>LTS</strong>
                     (<a href="https://docs.gammapy.org/1.0/release-notes/v1.0.html">changelog</a>)</li>
             <li><em>June 27th-July 1st, 2022</em> - Gammapy co-working week (via Zoom) (<a href="https://github.com/gammapy/gammapy-meetings/tree/master/coding-sprints/2022-06-Barcelona" class="card-link">infos</a>) </li>
             <li><em>June 16th, 2022</em> - Gammapy <strong>0.20.1</strong>, the V1.0 release candidate
@@ -197,7 +222,7 @@
             <li><em>Jan 24-28, 2022</em> - Gammapy co-working week (via Zoom, as a coding sprint is not possible due to the pandemic) (<a href="https://github.com/gammapy/gammapy-meetings/tree/master/coding-sprints/2022-01-Co-Working-Week" class="card-link">infos</a>) </li>
         </ul>
         
-        <h2 id="2021">2021</h2>
+        <h2 id="2021"><a href="#2021">2021</a></h2>
         <ul>
             <li><em>Nov 22nd, 2021</em> - Gammapy <strong>0.19</strong> release
             (<a href="https://docs.gammapy.org/0.19/changelog.html" class="card-link">changelog</a>)</li>
@@ -211,7 +236,7 @@
             </li>
         </ul>
 
-        <h2 id="2020">2020</h2>
+        <h2 id="2020"><a href="#2020">2020</a></h2>
         <ul>
             <li>
                 <em>Nov 23-27, 2020</em> -  Gammapy co-working week (via Zoom, as a coding sprint is not possible due to the pandemic)
@@ -247,7 +272,7 @@
             </li>
         </ul>
 
-        <h2 id="2019">2019</h2>
+        <h2 id="2019"><a href="#2019">2019</a></h2>
         <ul>
             <li>
                 <em>Dec 3, 2019</em> - Gammapy <strong>0.15</strong> release
@@ -287,7 +312,7 @@
             </li>
         </ul>
 
-        <h2 id="2018">2018</h2>
+        <h2 id="2018"><a href="#2018">2018</a></h2>
         <ul>
             <li>
                 <em>Nov 29, 2018</em> - Gammapy <strong>0.9</strong> release
@@ -319,7 +344,7 @@
             </li>
         </ul>
 
-        <h2 id="2017">2017</h2>
+        <h2 id="2017"><a href="#2017">2017</a></h2>
         <ul>
             <li>
                 <em>Dec 8, 2017</em> - Gammapy webpage launched at <a href="https://gammapy.org/">gammapy.org</a>. <br/>
@@ -340,7 +365,7 @@
                     href="https://github.com/gammapy/gammapy-meetings/blob/master/2017-02_Paris.md">link</a>)
             </li>
         </ul>
-        <h2 id="2016">2016</h2>
+        <h2 id="2016"><a href="#2016">2016</a></h2>
         <ul>
             <li>
                 <em>November 22, 2016</em> - Gammapy <strong>0.5</strong> release (<a
@@ -374,7 +399,7 @@
                     href="https://github.com/open-gamma-ray-astro/2016-04_IACT_DL3_Meeting/">webpage</a>)
             </li>
         </ul>
-        <h2 id="2015">2015</h2>
+        <h2 id="2015"><a href="#2015">2015</a></h2>
         <ul>
             <li>
                 <em>November 16 - 20, 2015</em> - Python for gamma-ray astronomy workshop at MPIK, Heidelberg (<a
@@ -397,7 +422,7 @@
                     href="https://docs.gammapy.org/dev/changelog.html#april-13-2015">changelog</a>)
             </li>
         </ul>
-        <h2 id="2014">2014</h2>
+        <h2 id="2014"><a href="#2014">2014</a></h2>
         <ul>
             <li>
                 <em>August 25, 2014</em> - Gammapy <strong>0.1</strong> release (<a

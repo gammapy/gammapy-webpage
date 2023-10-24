@@ -76,8 +76,8 @@ footer {
 .button-fancy {
 	background-color: #23b83c;
 	color: whitesmoke;
-	/* padding: 0.5em 1.1em; */
-	padding: 1px
+	/* padding: 0.5em 1.1em;  */
+	padding: 0px
 	text-align: center;
 	text-decoration: none;
 	font-size: 1em;

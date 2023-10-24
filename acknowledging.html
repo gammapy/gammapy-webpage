@@ -86,6 +86,7 @@
     </div>
 </nav>
 
+
 <script>
 function copyToClipboard(element) {
   var $temp = $("<textarea>");
@@ -97,30 +98,7 @@ function copyToClipboard(element) {
 }
 </script>
 
-<main role="main">
-    <div class="container">
-
-        <h1>Acknowledging or Citing gammapy</h1>
-        <br>
-        
-        <p>
-        <a href="#pub">In publications</a> | <a href="#pres">In presentations</a> | <a href="#projects">In projects</a> 
-        </p>
-
-        <br><br>
-        <h2 id="publication"><a href="#pub">In publications</a></h2>
-        <p class="lead">
-            If you use Gammapy for work or research presented in a publication (whether directly, or as a dependency to
-            another package), we ask you to add two citations to Gammapy:
-        </p>
-        <ul>
-            <li><a href="https://arxiv.org/abs/1709.01751">Gammapy paper</a>
-                (<a href="https://ui.adsabs.harvard.edu/abs/2017ICRC...35..766D/abstract">ADS</a>) (as a general citation)</li>
-            <li><a href="https://doi.org/10.5281/zenodo.4701488">Gammapy on Zenodo</a> (with the specific version used)</li>
-
-        </ul>
-
-        <p id="bibtex" style="display:none;">
+<p id="bibtex-proc" style="display:none;">
 @INPROCEEDINGS{gammapy:2017,
 author = {{Deil}, C. and {Zanin}, R. and {Lefaucheur}, J. and {Boisson}, C. and
          {Khelifi}, B. and {Terrier}, R. and {Wood}, M. and {Mohrmann}, L. and
@@ -146,11 +124,88 @@ primaryClass = {astro-ph.IM},
 adsurl = {https://ui.adsabs.harvard.edu/abs/2017ICRC...35..766D},
 adsnote = {Provided by the SAO/NASA Astrophysics Data System}
 }
-        </p>
+</p>
+
+<p id="bibtex-paper" style="display:none;">
+@article{gammapy:2023,
+    author = {{Donath, Axel} and {Terrier, R\'egis} and {Remy, Quentin} and {Sinha, Atreyee} and {Nigro, Cosimo} and {Pintore, Fabio} and {Kh\'elifi, Bruno} and {Olivera-Nieto, Laura} and {Ruiz, Jose Enrique} and {Br\"ugge, Kai} and {Linhoff, Maximilian} and {Contreras, Jose Luis} and {Acero, Fabio} and {Aguasca-Cabot, Arnau} and {Berge, David} and {Bhattacharjee, Pooja} and {Buchner, Johannes} and {Boisson, Catherine} and {Carreto Fidalgo, David} and {Chen, Andrew} and {de Bony de Lavergne, Mathieu} and {de Miranda Cardoso, Jos\'e Vinicius} and {Deil, Christoph} and {F\"u\ss{}ling, Matthias} and {Funk, Stefan} and {Giunti, Luca} and {Hinton, Jim} and {Jouvin, L\'ea} and {King, Johannes} and {Lefaucheur, Julien} and {Lemoine-Goumard, Marianne} and {Lenain, Jean-Philippe} and {L\'opez-Coto, Rub\'en} and {Mohrmann, Lars} and {Morcuende, Daniel} and {Panny, Sebastian} and {Regeard, Maxime} and {Saha, Lab} and {Siejkowski, Hubert} and {Siemiginowska, Aneta} and {Sip"ocz, Brigitta M.} and {Unbehaun, Tim} and {van Eldik, Christopher} and {Vuillaume, Thomas} and {Zanin, Roberta}},
+    title = {Gammapy: A Python package for gamma-ray astronomy},
+    DOI= "10.1051/0004-6361/202346488",
+    url= "https://doi.org/10.1051/0004-6361/202346488",
+    journal = {A\&A},
+    year = 2023,
+    volume = 678,
+    pages = "A157",
+}
+</p>
+
+<p id="bibtex-zenodo-11" style="display:none;">
+@software{gammapy:zenodo-1.1,
+  author       = {Aguasca-Cabot, Arnau and
+                  Donath, Axel and
+                  Feijen, Kirsty and
+                  Gr\'eaux, Lucas and
+                  Giunti, Luca and
+                  Kh\'elifi, Bruno and
+                  Linhoff, Maximilian and
+                  Mender, Simone and
+                  Mohrmann, Lars and
+                  Nigro, Cosimo and
+                  Olivera-Nieto, Laura and
+                  Pintore, Fabio and
+                  Regeard, Maxime and
+                  Remy, Quentin and
+                  Sinha, Atreyee and
+                  Streil, Katrin and
+                  Terrier, R\'egis},
+  title        = {Gammapy: Python toolbox for gamma-ray astronomy},
+  month        = jun,
+  year         = 2023,
+  publisher    = {Zenodo},
+  version      = {v1.1},
+  url          = "https://zenodo.org/records/8033275",
+}
+</p>
+
+
+<main role="main">
+    <div class="container">
+
+        <h1>Acknowledging or Citing gammapy</h1>
+        <br>
+        
         <p>
-            <button type="button" class="button-fancy" onclick="copyToClipboard('#bibtex')">Copy BibTeX to clipboard</button>
+        <a href="#pub">In publications</a> | <a href="#pres">In presentations</a> | <a href="#projects">In projects</a> 
         </p>
 
+        <br><br>
+        <h2 id="publication"><a href="#pub">In publications</a></h2>
+        <p class="lead">
+            If you use Gammapy for work or research presented in a publication (whether directly, or as a dependency to
+            another package), we ask you to add two citations to Gammapy:
+        </p>
+        <ul>
+            <li><a href="https://www.aanda.org/component/article?access=doi&doi=10.1051/0004-6361/202346488">Gammapy paper in A&amp;A</a>
+                 (as a general citation) &nbsp; &nbsp;
+                <button class="button-fancy"
+                    onclick="copyToClipboard('#bibtex-paper'); alert('A&amp;A BibTeX copied!');">
+                    <small>Copy BibTeX to clipboard</small>
+                </button>
+            </li>
+<!--            <li><a href="https://arxiv.org/abs/1709.01751">Gammapy paper</a>
+                (<a href="https://ui.adsabs.harvard.edu/abs/2017ICRC...35..766D/abstract">ADS</a>) (as a general citation)</li> -->
+            <li><a href="https://doi.org/10.5281/zenodo.4701488">Gammapy on Zenodo</a> (with the specific version used) &nbsp; &nbsp; &nbsp;
+                -  &nbsp; &nbsp; for the v1.1: <button class="button-fancy"
+                    onclick="copyToClipboard('#bibtex-zenodo-11'); alert('Zenodo v1.1 BibTeX copied!');">
+                    <small>Copy BibTeX to clipboard</small>
+                </button>
+            </li>
+
+        </ul>
+
+
+
+<!--
         <br>
         <p>
              We provide the following LaTeX/BibTeX acknowledgment if there is no specific place to cite the papers:
@@ -159,6 +214,7 @@ adsnote = {Provided by the SAO/NASA Astrophysics Data System}
         package for TeV gamma-ray astronomy \citep{gammapy:2017}
             </center>
         </p>
+-->
 
         <br>
         <hr>
@@ -169,8 +225,9 @@ adsnote = {Provided by the SAO/NASA Astrophysics Data System}
         </p>
         <img src="img/gammapy_banner.png" style="width:40%;">
 
-        <br>
-        <br>
+
+        <br><br><br>
+        <hr>
         <h2 id="projects"><a href="#projects">In projects</a></h2>
         <p class="lead">
             If you are using Gammapy as part of a code project (e.g., affiliated packages), a useful way to acknowledge
@@ -184,10 +241,10 @@ adsnote = {Provided by the SAO/NASA Astrophysics Data System}
         </p>
 
         <p>
-            If your code is hosted on github, You can place the following in your README.md file to get the badge:
-        <br><font face="arial narrow">
-[![gammapy](https://img.shields.io/badge/powered%20by-gammapy-orange.svg?style=flat)](https://www.gammapy.org/)
-        </font></p>
+            If your code is hosted on GitHub, you can place the following in your README.md file to get the badge:
+        <br>
+        <code>[![gammapy](https://img.shields.io/badge/powered%20by-gammapy-orange.svg?style=flat)](https://www.gammapy.org/)</code>
+        </p>
         <br>
     </div>
 

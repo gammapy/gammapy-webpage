@@ -76,11 +76,13 @@ footer {
 .button-fancy {
 	background-color: #23b83c;
 	color: whitesmoke;
-	padding: 0.5em 1.1em;
+	/* padding: 0.5em 1.1em; */
+	padding: 1px
 	text-align: center;
 	text-decoration: none;
 	font-size: 1em;
 	display: inline-block;
 	border-radius: 5px;
 	box-shadow: 3px 3px 8px 0 #000; /* h-offset v-offset blur spread color */
+	cursor: pointer;
 }

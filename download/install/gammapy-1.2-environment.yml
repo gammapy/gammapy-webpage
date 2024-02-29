@@ -1,0 +1,45 @@
+# Conda environment for Gammapy version 1.2
+# Install:    conda env create -f gammapy-1.2-environment.yml
+# Activate:   conda activate gammapy-1.2
+# Deactivate: conda deactivate
+
+name: gammapy-1.2
+
+channels:
+  - conda-forge
+  - sherpa
+
+variables:
+  PYTHONNOUSERSITE: "1"
+
+dependencies:
+  - python=3.10
+  - gammapy=1.2
+  - ipython=8.20
+  - cython
+  - jupyter
+  - jupyterlab=4.0
+  - pyyaml=6.0
+  - click=8.1
+  - numpy=1.26
+  - scipy=1.12
+  - pandas=2.1
+  - matplotlib=3.8
+  - astropy=6.0
+  - regions=0.8
+  - iminuit=2.24
+  - healpy=1.16
+  - naima=0.10
+  - pydantic=2.5
+  - emcee=3.1
+  - corner=2.2
+  - pip
+  - requests
+  - tqdm
+  - pip:
+    - sherpa==4.16
+    - ray[default]==2.9
+
+
+
+    

@@ -1,5 +1,5 @@
 #!/bin/bash
-gp_version=1.1
+gp_version=1.2
 gammapy download notebooks --out notebooks/
 mv notebooks/$gp_version tmp
 mkdir notebooks/$gp_version

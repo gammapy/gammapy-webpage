@@ -89,7 +89,7 @@
     </div>
 </nav>
 
-
+<!-- OLD VERSION
 <script>
 function copyToClipboard(element) {
   var $temp = $("<textarea>");
@@ -100,6 +100,19 @@ function copyToClipboard(element) {
   $temp.remove();
 }
 </script>
+-->
+
+<script>
+function copyToClipboard(element) {
+  var $temp = $("<textarea>");
+  $("body").append($temp);
+  var x = $(element).text().trim().replace(/<br>/g, '\n').replace(/<\/?[^>]+>/g, '');
+  $temp.val(x).select();
+  document.execCommand("copy");
+  $temp.remove();
+}
+</script>
+
 
 <p id="bibtex-proc" style="display:none;">
 @INPROCEEDINGS{gammapy:2017,
@@ -145,7 +158,7 @@ adsnote = {Provided by the SAO/NASA Astrophysics Data System}
     title = {Gammapy: A Python package for gamma-ray astronomy},
     DOI= "10.1051/0004-6361/202346488",
     url= "https://doi.org/10.1051/0004-6361/202346488",
-    journal = {A\&A},
+    journal = {A&A},
     year = 2023,
     volume = 678,
     pages = "A157",
@@ -172,7 +185,7 @@ adsnote = {Provided by the SAO/NASA Astrophysics Data System}
                   Streil, Katrin and
                   Terrier, R\'egis},
   title        = {Gammapy: Python toolbox for gamma-ray astronomy},
-  month        = jun,
+  month        = 06,
   year         = 2023,
   publisher    = {Zenodo},
   version      = {v1.1},
@@ -180,6 +193,43 @@ adsnote = {Provided by the SAO/NASA Astrophysics Data System}
 }
 </p>
 
+
+<p id="bibtex-zenodo-12" style="display:none;">
+@software{gammapy:zenodo-1.2,
+  author       = {Acero, Fabio and
+                  Bernete, Juan and
+                  Biederbeck, Noah and
+                  Djuvsland, Julia and
+                  Donath, Axel and
+                  Feijen, Kirsty and
+                  Fröse, Stefan and
+                  Galelli, Claudio and
+                  Khélifi, Bruno and
+                  Konrad, Jana and
+                  Kornecki, Paula and
+                  Linhoff, Maximilian and
+                  McKee, Kurt and
+                  Mender, Simone and
+                  Morcuende, Daniel and
+                  Olivera-Nieto, Laura and
+                  Pintore, Fabio and
+                  Punch, Michael and
+                  Regeard, Maxime and
+                  Remy, Quentin and
+                  Sinha, Atreyee and
+                  Stapel, Hanna and
+                  Streil, Katrin and
+                  Terrier, Régis and
+                  Unbehaun, Tim},
+  title        = {Gammapy: Python toolbox for gamma-ray astronomy},
+  month        = 02,
+  year         = 2024,
+  publisher    = {Zenodo},
+  version      = {v1.2},
+  doi          = {10.5281/zenodo.10726484},
+  url          = {https://doi.org/10.5281/zenodo.10726484}
+}
+</p>
 
 <main role="main">
     <div class="container">
@@ -208,8 +258,8 @@ adsnote = {Provided by the SAO/NASA Astrophysics Data System}
 <!--            <li><a href="https://arxiv.org/abs/1709.01751">Gammapy paper</a>
                 (<a href="https://ui.adsabs.harvard.edu/abs/2017ICRC...35..766D/abstract">ADS</a>) (as a general citation)</li> -->
             <li><a href="https://doi.org/10.5281/zenodo.4701488">Gammapy on Zenodo</a> (with the specific version used) &nbsp; &nbsp; &nbsp;
-                -  &nbsp; &nbsp; for the v1.1: <button class="button-fancy"
-                    onclick="copyToClipboard('#bibtex-zenodo-11'); alert('Zenodo v1.1 BibTeX copied!');">
+                -  &nbsp; &nbsp;e.g. for the v1.2: &nbsp; <button class="button-fancy"
+                    onclick="copyToClipboard('#bibtex-zenodo-12'); alert('Zenodo v1.2 BibTeX copied!');">
                     <small>Copy BibTeX to clipboard</small>
                 </button>
             </li>

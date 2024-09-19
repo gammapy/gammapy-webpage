@@ -11,6 +11,20 @@
     margin-bottom: 0;
 }
 
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-collapse {
+        background-color: var(--gammapy-secondary); /* For a full-width menu on mobile */
+    }
+
+    .bg-dark {
+        color: white; /* Ensure text is bright on dark background */
+    }
+}
+
 .bg-dark {
     background-color: #1e254a !important;
     /* TODO: Make navbar text brighter! */
@@ -77,7 +91,7 @@ footer {
 	background-color: #23b83c;
 	color: whitesmoke;
 	/* padding: 0.5em 1.1em;  */
-	padding: 0px
+	padding: 0px;
 	text-align: center;
 	text-decoration: none;
 	font-size: 1em;

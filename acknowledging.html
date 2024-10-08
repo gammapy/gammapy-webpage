@@ -1,122 +1,51 @@
 <!DOCTYPE html>
 <html>
-
-<style type="text/css" media="screen">
-    h2[id]::before {
-        display: block; 
-        content: " "; 
-        margin-top: -125px; 
-        height: 125px; 
-    }
-</style>
-
-
-<head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110956727-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-
-        gtag('js', new Date());
-        gtag('config', 'UA-110956727-1');
-
-    </script>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Acknowledging or Citing gammapy</title>
-    <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-          crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css" media="screen">
-    <link rel="icon" type="image/x-icon" href="img/gp_favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-          integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-          crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-
-<body>
-
-<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <a class="navbar-brand" href=".">Gammapy</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="https://github.com/gammapy/gammapy" target="_blank" rel="noopener"
-                   aria-label="GitHub">
-                    <svg width="20px" height="20px" class="navbar-nav-svg" xmlns="https://www.w3.org/2000/svg"
-                         viewbox="0 0 512 499.36" focusable="false"><title>GitHub</title>
-                        <path d="M256 0C114.64 0 0 114.61 0 256c0 113.09 73.34 209 175.08 242.9 12.8 2.35 17.47-5.56 17.47-12.34 0-6.08-.22-22.18-.35-43.54-71.2 15.49-86.2-34.34-86.2-34.34-11.64-29.57-28.42-37.45-28.42-37.45-23.27-15.84 1.73-15.55 1.73-15.55 25.69 1.81 39.21 26.38 39.21 26.38 22.84 39.12 59.92 27.82 74.5 21.27 2.33-16.54 8.94-27.82 16.25-34.22-56.84-6.43-116.6-28.43-116.6-126.49 0-27.95 10-50.8 26.35-68.69-2.63-6.48-11.42-32.5 2.51-67.75 0 0 21.49-6.88 70.4 26.24a242.65 242.65 0 0 1 128.18 0c48.87-33.13 70.33-26.24 70.33-26.24 14 35.25 5.18 61.27 2.55 67.75 16.41 17.9 26.31 40.75 26.31 68.69 0 98.35-59.85 120-116.88 126.32 9.19 7.9 17.38 23.53 17.38 47.41 0 34.22-.31 61.83-.31 70.23 0 6.85 4.61 14.81 17.6 12.31C438.72 464.97 512 369.08 512 256.02 512 114.62 397.37 0 256 0z"
-                              fill="currentColor" fill-rule="evenodd"/>
-                    </svg>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="gammapy_song.mp3" target="_blank" rel="noopener"
-                   aria-label="Listen to the Gammapy song">
-                    <svg width="20px" height="20px" class="navbar-nav-svg" xmlns="https://www.w3.org/2000/svg"
-                         viewbox="0 0 512 499.36" focusable="false"><title>Listen to the Gammapy song</title>
-                        <path d="M159.582,75.459v285.32c-14.274-10.374-32.573-16.616-52.5-16.616c-45.491,0-82.5,32.523-82.5,72.5s37.009,72.5,82.5,72.5  s82.5-32.523,82.5-72.5V168.942l245-60.615v184.416c-14.274-10.374-32.573-16.616-52.5-16.616c-45.491,0-82.5,32.523-82.5,72.5  s37.009,72.5,82.5,72.5s82.5-32.523,82.5-72.5V0L159.582,75.459z"
-                        fill="currentColor" fill-rule="evenodd"/>
-                    </svg>
-                </a>
-            </li>
-            <li class="nav-item">
-             <a class="nav-link" href="https://twitter.com/gammapyST" rel="noopener" target="_blank" title="X" aria-label="X">
-                <span><i class="fab fa-square-x-twitter" style="font-size:20px" fill="currentColor" fill-rule="evenodd"></i></span>
-              </a>
-            </li>
-            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
-            <li class="nav-item"><a class="nav-link" href="cta.html">CTA</a></li>
-            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-            <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
-            <li class="nav-item"><a class="nav-link" href="contribute.html">Contribute</a></li>
-            <li class="nav-item"><a class="nav-link" href="https://docs.gammapy.org/">Documentation</a></li>
-            <li class="nav-item"><a class="nav-link" href="CoC.html">Code of Conduct</a></li>
-            <li class="nav-item"><a class="nav-link active" href="acknowledging.html">Acknowledging</a></li>
-        </ul>
-    </div>
-</nav>
-
-<!-- OLD VERSION
-<script>
-function copyToClipboard(element) {
-  var $temp = $("<textarea>");
-  $("body").append($temp);
-  var x = $(element).html().trim().replace(/<br>/g, '\n').replace(/<\/?[^>]+>/g, '');
-  $temp.val(x).select();
-  document.execCommand("copy");
-  $temp.remove();
-}
-</script>
--->
-
-<script>
-function copyToClipboard(element) {
-  var $temp = $("<textarea>");
-  $("body").append($temp);
-  var x = $(element).text().trim().replace(/<br>/g, '\n').replace(/<\/?[^>]+>/g, '');
-  $temp.val(x).select();
-  document.execCommand("copy");
-  $temp.remove();
-}
-</script>
-
-
-<p id="bibtex-proc" style="display:none;">
-@INPROCEEDINGS{gammapy:2017,
-author = {{Deil}, C. and {Zanin}, R. and {Lefaucheur}, J. and {Boisson}, C. and
+   <style type="text/css" media="screen">
+      h2[id]::before {
+      display: block;
+      content: " ";
+      margin-top: -125px;
+      height: 125px;
+      }
+   </style>
+   <head>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110956727-1"></script>
+      <script src="load-scripts.js"></script>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title>Acknowledging or Citing gammapy</title>
+      <!-- head placeholder -->
+      <div id="head-placeholder"></div>
+   </head>
+   <body>
+      <!-- Navbar placeholder -->
+      <div id="navbar-placeholder"></div>
+      <!-- OLD VERSION
+         <script>
+         function copyToClipboard(element) {
+           var $temp = $("<textarea>");
+           $("body").append($temp);
+           var x = $(element).html().trim().replace(/<br>/g, '\n').replace(/<\/?[^>]+>/g, '');
+           $temp.val(x).select();
+           document.execCommand("copy");
+           $temp.remove();
+         }
+         </script>
+         -->
+      <script>
+         function copyToClipboard(element) {
+           var $temp = $("<textarea>");
+           $("body").append($temp);
+           var x = $(element).text().trim().replace(/<br>/g, '\n').replace(/<\/?[^>]+>/g, '');
+           $temp.val(x).select();
+           document.execCommand("copy");
+           $temp.remove();
+         }
+      </script>
+      <p id="bibtex-proc" style="display:none;">
+         @INPROCEEDINGS{gammapy:2017,
+         author = {{Deil}, C. and {Zanin}, R. and {Lefaucheur}, J. and {Boisson}, C. and
          {Khelifi}, B. and {Terrier}, R. and {Wood}, M. and {Mohrmann}, L. and
          {Chakraborty}, N. and {Watson}, J. and {Lopez-Coto}, R. and
          {Klepser}, S. and {Cerruti}, M. and {Lenain}, J.~P. and {Acero}, F. and
@@ -125,206 +54,176 @@ author = {{Deil}, C. and {Zanin}, R. and {Lefaucheur}, J. and {Boisson}, C. and
          {Consortium}, CTA and {King}, J. and {Jouvin}, L. and {Owen}, E. and
          {Sipocz}, B. and {Lennarz}, D. and {Voruganti}, A. and
          {Spir-Jacob}, M. and {Ruiz}, J. Enrique and {Arribas}, M. Paz},
-title = "{Gammapy - A prototype for the CTA science tools}",
-keywords = {Astrophysics - Instrumentation and Methods for Astrophysics},
-booktitle = {35th International Cosmic Ray Conference (ICRC2017)},
-year = 2017,
-series = {International Cosmic Ray Conference},
-volume = {301},
-month = jan,
-eid = {766},
-pages = {766},
-archivePrefix = {arXiv},
-eprint = {1709.01751},
-primaryClass = {astro-ph.IM},
-adsurl = {https://ui.adsabs.harvard.edu/abs/2017ICRC...35..766D},
-adsnote = {Provided by the SAO/NASA Astrophysics Data System}
-}
-</p>
-
-<p id="bibtex-paper" style="display:none;">
-@article{gammapy:2023,
-    author = {{Donath}, Axel and {Terrier}, R\'egis and {Remy}, Quentin and {Sinha}, Atreyee and {Nigro}, Cosimo and
-        {Pintore}, Fabio and {Kh\'elifi}, Bruno and {Olivera-Nieto}, Laura and {Ruiz}, Jose Enrique and
-        {Br\"ugge}, Kai and {Linhoff}, Maximilian and {Contreras}, Jose Luis and {Acero}, Fabio and
-        {Aguasca-Cabot}, Arnau and {Berge}, David and {Bhattacharjee}, Pooja and {Buchner}, Johannes and
-        {Boisson}, Catherine and {Carreto Fidalgo}, David and {Chen}, Andrew and {de Bony de Lavergne}, Mathieu and
-        {de Miranda Cardoso}, Jos\'e Vinicius and {Deil}, Christoph and {F\"u\ss{}ling}, Matthias and
-        {Funk}, Stefan and {Giunti}, Luca and {Hinton}, Jim and {Jouvin}, L\'ea and {King}, Johannes and
-        {Lefaucheur}, Julien and {Lemoine-Goumard}, Marianne and {Lenain}, Jean-Philippe and {L\'opez-Coto}, Rub\'en
-        and {Mohrmann}, Lars and {Morcuende}, Daniel and {Panny}, Sebastian and {Regeard}, Maxime and {Saha}, Lab
-        and {Siejkowski}, Hubert and {Siemiginowska}, Aneta and {Sip"ocz}, Brigitta M. and {Unbehaun}, Tim
-        and {van Eldik}, Christopher and {Vuillaume}, Thomas and {Zanin}, Roberta},
-    title = {Gammapy: A Python package for gamma-ray astronomy},
-    DOI= "10.1051/0004-6361/202346488",
-    url= "https://doi.org/10.1051/0004-6361/202346488",
-    journal = {A&A},
-    year = 2023,
-    volume = 678,
-    pages = "A157",
-}
-</p>
-
-<p id="bibtex-zenodo-11" style="display:none;">
-@software{gammapy:zenodo-1.1,
-  author       = {Aguasca-Cabot, Arnau and
-                  Donath, Axel and
-                  Feijen, Kirsty and
-                  Gr\'eaux, Lucas and
-                  Giunti, Luca and
-                  Kh\'elifi, Bruno and
-                  Linhoff, Maximilian and
-                  Mender, Simone and
-                  Mohrmann, Lars and
-                  Nigro, Cosimo and
-                  Olivera-Nieto, Laura and
-                  Pintore, Fabio and
-                  Regeard, Maxime and
-                  Remy, Quentin and
-                  Sinha, Atreyee and
-                  Streil, Katrin and
-                  Terrier, R\'egis},
-  title        = {Gammapy: Python toolbox for gamma-ray astronomy},
-  month        = 06,
-  year         = 2023,
-  publisher    = {Zenodo},
-  version      = {v1.1},
-  url          = "https://zenodo.org/records/8033275",
-}
-</p>
-
-
-<p id="bibtex-zenodo-12" style="display:none;">
-@software{gammapy:zenodo-1.2,
-  author       = {Acero, Fabio and
-                  Bernete, Juan and
-                  Biederbeck, Noah and
-                  Djuvsland, Julia and
-                  Donath, Axel and
-                  Feijen, Kirsty and
-                  Fröse, Stefan and
-                  Galelli, Claudio and
-                  Khélifi, Bruno and
-                  Konrad, Jana and
-                  Kornecki, Paula and
-                  Linhoff, Maximilian and
-                  McKee, Kurt and
-                  Mender, Simone and
-                  Morcuende, Daniel and
-                  Olivera-Nieto, Laura and
-                  Pintore, Fabio and
-                  Punch, Michael and
-                  Regeard, Maxime and
-                  Remy, Quentin and
-                  Sinha, Atreyee and
-                  Stapel, Hanna and
-                  Streil, Katrin and
-                  Terrier, Régis and
-                  Unbehaun, Tim},
-  title        = {Gammapy: Python toolbox for gamma-ray astronomy},
-  month        = 02,
-  year         = 2024,
-  publisher    = {Zenodo},
-  version      = {v1.2},
-  doi          = {10.5281/zenodo.10726484},
-  url          = {https://doi.org/10.5281/zenodo.10726484}
-}
-</p>
-
-<main role="main">
-    <div class="container">
-
-        <h1>Acknowledging or Citing gammapy</h1>
-        <br>
-        
-        <p>
-        <a href="#pub">In publications</a> | <a href="#pres">In presentations</a> | <a href="#projects">In projects</a> 
-        </p>
-
-        <br><br>
-        <h2 id="publication"><a href="#pub">In publications</a></h2>
-        <p class="lead">
-            If you use Gammapy for work or research presented in a publication (whether directly, or as a dependency to
-            another package), we ask you to add two citations to Gammapy:
-        </p>
-        <ul>
-            <li><a href="https://www.aanda.org/component/article?access=doi&doi=10.1051/0004-6361/202346488">Gammapy paper in A&amp;A</a>
-                 (as a general citation) &nbsp; &nbsp;
-                <button class="button-fancy"
-                    onclick="copyToClipboard('#bibtex-paper'); alert('A&amp;A BibTeX copied!');">
-                    <small>Copy BibTeX to clipboard</small>
-                </button>
-            </li>
-<!--            <li><a href="https://arxiv.org/abs/1709.01751">Gammapy paper</a>
-                (<a href="https://ui.adsabs.harvard.edu/abs/2017ICRC...35..766D/abstract">ADS</a>) (as a general citation)</li> -->
-            <li><a href="https://doi.org/10.5281/zenodo.4701488">Gammapy on Zenodo</a> (with the specific version used) &nbsp; &nbsp; &nbsp;
-                -  &nbsp; &nbsp;e.g. for the v1.2: &nbsp; <button class="button-fancy"
-                    onclick="copyToClipboard('#bibtex-zenodo-12'); alert('Zenodo v1.2 BibTeX copied!');">
-                    <small>Copy BibTeX to clipboard</small>
-                </button>
-            </li>
-
-        </ul>
-
-<!--
-        <br><br>
-        <p>
-             We provide the following LaTeX/BibTeX acknowledgment if there is no specific place to cite the papers:
-            <center>
-                This research made use of gammapy,\footnote{https://www.gammapy.org} a community-developed core Python
-        package for TeV gamma-ray astronomy \citep{gammapy:2023}
-            </center>
-        </p>
--->
-        <br>
-        <hr>
-        <h2 id="presentation"><a href="#pres">In presentations</a></h2>
-        <p class="lead">
-            If you are giving a presentation or talk featuring work/research that makes use of Gammapy, we suggest
-            using this logo on your title slide:
-        </p>
-        <img src="img/gammapy_banner.png" style="width:40%;">
-
-
-        <br><br><br>
-        <hr>
-        <h2 id="projects"><a href="#projects">In projects</a></h2>
-        <p class="lead">
-            If you are using Gammapy as part of a code project (e.g., affiliated packages), a useful way to acknowledge
-            your use of Gammapy is with a badge in your README. We suggest this badge:
-        </p>
-        <img src="https://img.shields.io/badge/powered%20by-gammapy-orange.svg?style=flat" style="width:20%;">
-
-        <p>
-             Which is available at the URL <a href="https://img.shields.io/badge/powered%20by-gammapy-orange.svg?style=flat">
-            <font face="arial narrow">https://img.shields.io/badge/powered%20by-gammapy-orange.svg?style=flat</font></a>.
-        </p>
-
-        <p>
-            If your code is hosted on GitHub, you can place the following in your README.md file to get the badge:
-        <br>
-        <code>[![gammapy](https://img.shields.io/badge/powered%20by-gammapy-orange.svg?style=flat)](https://www.gammapy.org/)</code>
-        </p>
-        <br>
-    </div>
-
-</main>
-
-<footer class="container">
-    <hr>
-    <p>&copy; Gammapy project</p>
-</footer>
-
-
-<script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
-        integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
-        crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/cjs/popper-base.min.js"
-        integrity="sha512-o0ub2Xb68yocD2zlJF3T68IBMS6Tcci0ELYFMSZg22LpCZ9/zceGsjt9k7sH/HZbqCAzwewcXCzyOcjfIG21Ow=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-
-</body>
+         title = "{Gammapy - A prototype for the CTA science tools}",
+         keywords = {Astrophysics - Instrumentation and Methods for Astrophysics},
+         booktitle = {35th International Cosmic Ray Conference (ICRC2017)},
+         year = 2017,
+         series = {International Cosmic Ray Conference},
+         volume = {301},
+         month = jan,
+         eid = {766},
+         pages = {766},
+         archivePrefix = {arXiv},
+         eprint = {1709.01751},
+         primaryClass = {astro-ph.IM},
+         adsurl = {https://ui.adsabs.harvard.edu/abs/2017ICRC...35..766D},
+         adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+         }
+      </p>
+      <p id="bibtex-paper" style="display:none;">
+         @article{gammapy:2023,
+         author = {{Donath}, Axel and {Terrier}, R\'egis and {Remy}, Quentin and {Sinha}, Atreyee and {Nigro}, Cosimo and
+         {Pintore}, Fabio and {Kh\'elifi}, Bruno and {Olivera-Nieto}, Laura and {Ruiz}, Jose Enrique and
+         {Br\"ugge}, Kai and {Linhoff}, Maximilian and {Contreras}, Jose Luis and {Acero}, Fabio and
+         {Aguasca-Cabot}, Arnau and {Berge}, David and {Bhattacharjee}, Pooja and {Buchner}, Johannes and
+         {Boisson}, Catherine and {Carreto Fidalgo}, David and {Chen}, Andrew and {de Bony de Lavergne}, Mathieu and
+         {de Miranda Cardoso}, Jos\'e Vinicius and {Deil}, Christoph and {F\"u\ss{}ling}, Matthias and
+         {Funk}, Stefan and {Giunti}, Luca and {Hinton}, Jim and {Jouvin}, L\'ea and {King}, Johannes and
+         {Lefaucheur}, Julien and {Lemoine-Goumard}, Marianne and {Lenain}, Jean-Philippe and {L\'opez-Coto}, Rub\'en
+         and {Mohrmann}, Lars and {Morcuende}, Daniel and {Panny}, Sebastian and {Regeard}, Maxime and {Saha}, Lab
+         and {Siejkowski}, Hubert and {Siemiginowska}, Aneta and {Sip"ocz}, Brigitta M. and {Unbehaun}, Tim
+         and {van Eldik}, Christopher and {Vuillaume}, Thomas and {Zanin}, Roberta},
+         title = {Gammapy: A Python package for gamma-ray astronomy},
+         DOI= "10.1051/0004-6361/202346488",
+         url= "https://doi.org/10.1051/0004-6361/202346488",
+         journal = {A&A},
+         year = 2023,
+         volume = 678,
+         pages = "A157",
+         }
+      </p>
+      <p id="bibtex-zenodo-11" style="display:none;">
+         @software{gammapy:zenodo-1.1,
+         author       = {Aguasca-Cabot, Arnau and
+         Donath, Axel and
+         Feijen, Kirsty and
+         Gr\'eaux, Lucas and
+         Giunti, Luca and
+         Kh\'elifi, Bruno and
+         Linhoff, Maximilian and
+         Mender, Simone and
+         Mohrmann, Lars and
+         Nigro, Cosimo and
+         Olivera-Nieto, Laura and
+         Pintore, Fabio and
+         Regeard, Maxime and
+         Remy, Quentin and
+         Sinha, Atreyee and
+         Streil, Katrin and
+         Terrier, R\'egis},
+         title        = {Gammapy: Python toolbox for gamma-ray astronomy},
+         month        = 06,
+         year         = 2023,
+         publisher    = {Zenodo},
+         version      = {v1.1},
+         url          = "https://zenodo.org/records/8033275",
+         }
+      </p>
+      <p id="bibtex-zenodo-12" style="display:none;">
+         @software{gammapy:zenodo-1.2,
+         author       = {Acero, Fabio and
+         Bernete, Juan and
+         Biederbeck, Noah and
+         Djuvsland, Julia and
+         Donath, Axel and
+         Feijen, Kirsty and
+         Frï¿½se, Stefan and
+         Galelli, Claudio and
+         Khï¿½lifi, Bruno and
+         Konrad, Jana and
+         Kornecki, Paula and
+         Linhoff, Maximilian and
+         McKee, Kurt and
+         Mender, Simone and
+         Morcuende, Daniel and
+         Olivera-Nieto, Laura and
+         Pintore, Fabio and
+         Punch, Michael and
+         Regeard, Maxime and
+         Remy, Quentin and
+         Sinha, Atreyee and
+         Stapel, Hanna and
+         Streil, Katrin and
+         Terrier, Rï¿½gis and
+         Unbehaun, Tim},
+         title        = {Gammapy: Python toolbox for gamma-ray astronomy},
+         month        = 02,
+         year         = 2024,
+         publisher    = {Zenodo},
+         version      = {v1.2},
+         doi          = {10.5281/zenodo.10726484},
+         url          = {https://doi.org/10.5281/zenodo.10726484}
+         }
+      </p>
+      <main role="main">
+         <div class="container">
+            <h1>Acknowledging or Citing gammapy</h1>
+            <br>
+            <p>
+               <a href="#pub">In publications</a> | <a href="#pres">In presentations</a> | <a href="#projects">In projects</a>
+            </p>
+            <br><br>
+            <h2 id="publication"><a href="#pub">In publications</a></h2>
+            <p class="lead">
+               If you use Gammapy for work or research presented in a publication (whether directly, or as a dependency to
+               another package), we ask you to add two citations to Gammapy:
+            </p>
+            <ul>
+               <li><a href="https://www.aanda.org/component/article?access=doi&doi=10.1051/0004-6361/202346488">Gammapy paper in A&amp;A</a>
+                  (as a general citation) &nbsp; &nbsp;
+                  <button class="button-fancy"
+                     onclick="copyToClipboard('#bibtex-paper'); alert('A&amp;A BibTeX copied!');">
+                  <small>Copy BibTeX to clipboard</small>
+                  </button>
+               </li>
+               <!--            <li><a href="https://arxiv.org/abs/1709.01751">Gammapy paper</a>
+                  (<a href="https://ui.adsabs.harvard.edu/abs/2017ICRC...35..766D/abstract">ADS</a>) (as a general citation)</li> -->
+               <li><a href="https://doi.org/10.5281/zenodo.4701488">Gammapy on Zenodo</a> (with the specific version used) &nbsp; &nbsp; &nbsp;
+                  -  &nbsp; &nbsp;e.g. for the v1.2: &nbsp; <button class="button-fancy"
+                     onclick="copyToClipboard('#bibtex-zenodo-12'); alert('Zenodo v1.2 BibTeX copied!');">
+                  <small>Copy BibTeX to clipboard</small>
+                  </button>
+               </li>
+            </ul>
+            <!--
+               <br><br>
+               <p>
+                    We provide the following LaTeX/BibTeX acknowledgment if there is no specific place to cite the papers:
+                   <center>
+                       This research made use of gammapy,\footnote{https://www.gammapy.org} a community-developed core Python
+               package for TeV gamma-ray astronomy \citep{gammapy:2023}
+                   </center>
+               </p>
+               -->
+            <br>
+            <hr>
+            <h2 id="presentation"><a href="#pres">In presentations</a></h2>
+            <p class="lead">
+               If you are giving a presentation or talk featuring work/research that makes use of Gammapy, we suggest
+               using this logo on your title slide:
+            </p>
+            <img src="img/gammapy_banner.png" style="width:40%;">
+            <br><br><br>
+            <hr>
+            <h2 id="projects"><a href="#projects">In projects</a></h2>
+            <p class="lead">
+               If you are using Gammapy as part of a code project (e.g., affiliated packages), a useful way to acknowledge
+               your use of Gammapy is with a badge in your README. We suggest this badge:
+            </p>
+            <img src="https://img.shields.io/badge/powered%20by-gammapy-orange.svg?style=flat" style="width:20%;">
+            <p>
+               Which is available at the URL <a href="https://img.shields.io/badge/powered%20by-gammapy-orange.svg?style=flat">
+               <font face="arial narrow">https://img.shields.io/badge/powered%20by-gammapy-orange.svg?style=flat</font></a>.
+            </p>
+            <p>
+               If your code is hosted on GitHub, you can place the following in your README.md file to get the badge:
+               <br>
+               <code>[![gammapy](https://img.shields.io/badge/powered%20by-gammapy-orange.svg?style=flat)](https://www.gammapy.org/)</code>
+            </p>
+            <br>
+         </div>
+      </main>
+      <div id="footer-placeholder"></div>
+      <script src="load-components.js"></script>
+   </body>
 </html>

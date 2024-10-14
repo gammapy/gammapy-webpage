@@ -100,3 +100,22 @@ footer {
 	box-shadow: 3px 3px 8px 0 #000; /* h-offset v-offset blur spread color */
 	cursor: pointer;
 }
+
+.myfooter {
+  width:100%;
+}
+
+.alignLeft {
+    width:33%;
+    float:left;
+}
+.alignCenter {
+    float:left;
+    width:33%;
+    text-align:center;
+}
+.alignRight {
+    float:right;
+    overflow:visible !important;
+}
+

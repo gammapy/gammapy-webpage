@@ -11,19 +11,4 @@ function TodayDate(){
 
 }
 document.getElementById("TodayDate").innerHTML = TodayDate();
-
-
-
-theDate();
-
-function dateHere() {
-    var date = new Date();
-    var months = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
-    var currentDate = date.getDate();
-    var month = months[date.getMonth()];
-    var year = date.getFullYear();
-
-    var todaysDate = document.getElementById("dateHere").innerHTML = month + "/" + 
-currentDate + "/" + year;
-}
   

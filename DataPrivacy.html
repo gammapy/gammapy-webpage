@@ -52,6 +52,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
           integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
           crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="date" content="2024-10-22"> <!-- Should be automatic with a js -->
 </head>
 
 <body>
@@ -209,14 +210,15 @@
         <!-- Center part -->
         <div class="alignCenter">Last updated on <div id="TodayDate"></div></div>
         <script src="myscripts.js"></script>
+        <!-- TODO: use better html5 date object: https://www.bastianmoritz.com/doc/displaying-both-the-publication-and-update-dates-on-webpages/ -->
 
         <!-- Right part -->
         <span class="alignRight"><a href="DataPrivacy.html">Data Privacy</a>.</span>
 
-        <!-- Matomo-opt-out -->
+        <!-- Matomo-opt-out
         <div id="matomo-opt-out"></div>
         <script src="https://apcstatview.in2p3.fr/index.php?module=CoreAdminHome&action=optOutJS&divId=matomo-opt-out&language=auto&backgroundColor=f3f4f5&fontColor=1e254a&fontSize=14px&fontFamily=Fira Sans&showIntro=1"></script>
-
+        -->
     </div>
 </footer>
 

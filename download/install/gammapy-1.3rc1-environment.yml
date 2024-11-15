@@ -7,14 +7,13 @@ name: gammapy-1.3rc1
 
 channels:
   - conda-forge
-  - sherpa
+  - https://cxc.cfa.harvard.edu/conda/sherpa
 
 variables:
   PYTHONNOUSERSITE: "1"
 
 dependencies:
   - python=3.11
-  - gammapy=1.3rc1
   - ipython=8.27
   - cython
   - jupyter
@@ -38,4 +37,5 @@ dependencies:
   - requests
   - tqdm
   - pip:
+    - gammapy=1.3rc1
     - ray[default]==2.35

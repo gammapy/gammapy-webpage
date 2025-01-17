@@ -14,18 +14,17 @@
 @media (max-width: 768px) {
     .navbar-nav {
         text-align: center;
-        width: 100%; /* BKH test Full width for mobile */
+        width: 100%; /* Full width for mobile */
     }
 
     .navbar-collapse {
         background-color: var(--gammapy-secondary); /* For a full-width menu on mobile */
-        /* BKH test display: flex !important; /* Ensure visibility */
-        flex-direction: column; /* BKH test  Stack menu items */
-        display: none; /* BKH test  Hidden by default */
-        transition: height 0.3s ease; /* BKH test  Smooth transition */
+        /* display: flex !important; /* Ensure visibility */
+        flex-direction: column; /* Stack menu items */
+        display: none; /* Hidden by default */
+        transition: height 0.3s ease; /* Smooth transition */
      }
 
-    /* BKH test */
     .navbar-collapse.show {
         display: block; /*flex !important; /* Shown when toggled */
     }
@@ -44,7 +43,7 @@
 body {
     color: var(--gammapy-secondary);
     font-family: 'Fira Sans', sans-serif;
-    padding-top: 56px; /* BKH test Adjust for fixed navbar height */
+    padding-top: 56px; /* Adjust for fixed navbar height */
 }
 
 main {

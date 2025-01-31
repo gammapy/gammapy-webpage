@@ -33,16 +33,36 @@ function copyToClipboard(element) {
 </script>
 -->
 
+<!--<script>-->
+<!--function copyToClipboard(element) {-->
+<!--  var $temp = $("<textarea>");-->
+<!--  $("body").append($temp);-->
+<!--  var x = $(element).text().trim().replace(/<br>/g, '\n').replace(/<\/?[^>]+>/g, '');-->
+<!--  $temp.val(x).select();-->
+<!--  document.execCommand("copy");-->
+<!--  $temp.remove();-->
+<!--}-->
+<!--</script>-->
+
 <script>
-function copyToClipboard(element) {
-  var $temp = $("<textarea>");
-  $("body").append($temp);
-  var x = $(element).text().trim().replace(/<br>/g, '\n').replace(/<\/?[^>]+>/g, '');
-  $temp.val(x).select();
-  document.execCommand("copy");
-  $temp.remove();
-}
+    function copyToClipboard(elementId) {
+        var element = document.querySelector(elementId);
+        if (!element) {
+            alert("Error: Element not found!");
+            return;
+        }
+
+        var textToCopy = element.innerText || element.textContent;
+
+        navigator.clipboard.writeText(textToCopy).then(function() {
+            alert('Copied to clipboard!');
+        }).catch(function(err) {
+            alert('Failed to copy: ' + err);
+        });
+    }
 </script>
+
+
 
 
 <p id="bibtex-proc" style="display:none;">

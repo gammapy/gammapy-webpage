@@ -20,30 +20,6 @@
 <div data-include="navbar.html"></div>
 
 
-<!-- OLD VERSION
-<script>
-function copyToClipboard(element) {
-  var $temp = $("<textarea>");
-  $("body").append($temp);
-  var x = $(element).html().trim().replace(/<br>/g, '\n').replace(/<\/?[^>]+>/g, '');
-  $temp.val(x).select();
-  document.execCommand("copy");
-  $temp.remove();
-}
-</script>
--->
-
-<!--<script>-->
-<!--function copyToClipboard(element) {-->
-<!--  var $temp = $("<textarea>");-->
-<!--  $("body").append($temp);-->
-<!--  var x = $(element).text().trim().replace(/<br>/g, '\n').replace(/<\/?[^>]+>/g, '');-->
-<!--  $temp.val(x).select();-->
-<!--  document.execCommand("copy");-->
-<!--  $temp.remove();-->
-<!--}-->
-<!--</script>-->
-
 <script>
     function copyToClipboard(elementId) {
         var element = document.querySelector(elementId);

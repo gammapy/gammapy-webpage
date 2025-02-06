@@ -1,3 +1,4 @@
+<!--  Licensed under the MIT license - see LICENSE -->
 <!DOCTYPE html>
 <html>
 
@@ -10,93 +11,90 @@
     }
 </style>
 
-
-<script src="scripts/matomo.js" defer></script>
-<script src="scripts/myscripts.js" defer></script>
-<script src="scripts/includeHTML.js" defer></script>
-
-<div data-include="header.html"></div>
+<head>
+      <!-- Common scripts  -->
+      <script src="load-scripts.js"></script>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title>Gammapy - CTAO</title>
+      <!-- head placeholder -->
+      <div id="head-placeholder"></div>
+ </head>
 
 <body>
+    <!-- Navbar placeholder -->
+    <div id="navbar-placeholder"></div>
 
-<div data-include="navbar.html"></div>
+    <main>
+        <div class="container">
+            <h1>CTAO</h1>
+            <br>
 
-<main>
-    <div class="container">
-        <h1>CTAO</h1>
-        <br>
+            <p>
+            <a href="#intro">Introduction</a> | <a href="#started">Getting started</a> | <a href="#resources">Resources</a>
+            </p>
 
-        <p>
-        <a href="#intro">Introduction</a> | <a href="#started">Getting started</a> | <a href="#resources">Resources</a> 
-        </p>
+            <br><br>
+            <h2 id="introduction"><a href="#intro">Introduction</a></h2>
+            <p>
+                The <a href="https://www.ctao.org/">Cherenkov Telescope Array Observatory</a> (CTAO) is the next generation
+                ground-based observatory for gamma-ray astronomy at very high energies.
+                Gammapy was chosen on June 1<sup>st</sup> 2021 to be the official Science Analysis Tool library for the CTAO (see <a
+                    href="https://www.ctao.org/news/ctao-adopts-the-gammapy-software-package-for-science-analysis/">CTAO news</a>).
+            </p>
+            <p>
+                This page provides some information and links to useful resources concerning simulation and
+                analysis of CTAO data with Gammapy.
+                Most of the pages we link here require a CTAO user account to access the information.
+            </p>
 
-        <br><br>
-        <h2 id="introduction"><a href="#intro">Introduction</a></h2>
-        <p>
-            The <a href="https://www.ctao.org/">Cherenkov Telescope Array Observatory</a> (CTAO) is the next generation
-            ground-based observatory for gamma-ray astronomy at very high energies.
-            Gammapy was chosen on June 1<sup>st</sup> 2021 to be the official Science Analysis Tool library for the CTAO (see <a
-                href="https://www.ctao.org/news/ctao-adopts-the-gammapy-software-package-for-science-analysis/">CTAO news</a>).
-        </p>
-        <p>
-            This page provides some information and links to useful resources concerning simulation and
-            analysis of CTAO data with Gammapy.
-            Most of the pages we link here require a CTAO user account to access the information.
-        </p>
-        
-        <br><br>
-        <h2 id="getting-started"><a href="#started">Getting started</a></h2>
-        <p>
-            To learn how to use Gammapy for CTAO analysis, use the
-            <a href="https://docs.gammapy.org/dev/tutorials/index.html">Gammapy tutorials</a>.
-            We suggest you first consult the "Getting started" page. Then continue with the "CTAO with Gammapy"
-            tutorial, followed by the "3D map simulation" tutorial.
-        </p>
-        <p>
-            If you have any questions, please post on the Gammapy CTAO mailing list or contact the Gammapy coordination committee (see <a
-                href="contact.html">Gammapy contact page</a>)
-        </p>
-        <p>
-            Please note that Gammapy is a very young project and is under heavy development.
-            At the moment, we are participating in the first CTAO Science Data Challenge, fixing issues and adding new
-            functionalities for CTAO.
-        </p>
+            <br><br>
+            <h2 id="getting-started"><a href="#started">Getting started</a></h2>
+            <p>
+                To learn how to use Gammapy for CTAO analysis, use the
+                <a href="https://docs.gammapy.org/dev/tutorials/index.html">Gammapy tutorials</a>.
+                We suggest you first consult the "Getting started" page. Then continue with the "CTAO with Gammapy"
+                tutorial, followed by the "3D map simulation" tutorial.
+            </p>
+            <p>
+                If you have any questions, please post on the Gammapy CTAO mailing list or contact the Gammapy coordination committee (see <a
+                    href="contact.html">Gammapy contact page</a>)
+            </p>
+            <p>
+                Please note that Gammapy is a very young project and is under heavy development.
+                At the moment, we are participating in the first CTAO Science Data Challenge, fixing issues and adding new
+                functionalities for CTAO.
+            </p>
 
-        <br><br>
-        <h2 id="resources"><a href="#resources">Resources</a></h2>
-        <ul>
-            <li>
-                <a href="https://forge.in2p3.fr/projects/data-challenge-1-dc-1/wiki">CTA first data challenge (CTA DC-1)
-                    page</a> - this page contains information about data, sky models, links to forums for discussion and
-                checks, ... (private access with the old access system)
-            </li>
-            <li>
-                <a href="https://github.com/gammasky/cta-analyses">cta-analyses</a> - a private repository on GitHub
-                that we use to share analysis scripts and notebooks
-                that use CTAO-internal data and IRFs. The main purpose is to make it easy to collaborate on issues and
-                code. Eventually results should be shared on the official CTAO pages of course!
-                To get access, send an email to <a href="mailto:khelifi@in2p3.fr">Bruno Khélifi</a>
-                or anyone else that you know that is involved in Gammapy and CTAO.
-            </li>
-            <li>
-                If you're doing simulations or analysis for CTAO with Gammapy and would like to discuss your results or
-                get help, please join the <a href="mailto:gammapy-cta-l@in2p3.fr">Gammapy mailing list</a>,
-                and the regular Gammapy calls.
-            </li>
-        </ul>
+            <br><br>
+            <h2 id="resources"><a href="#resources">Resources</a></h2>
+            <ul>
+                <li>
+                    <a href="https://forge.in2p3.fr/projects/data-challenge-1-dc-1/wiki">CTA first data challenge (CTA DC-1)
+                        page</a> - this page contains information about data, sky models, links to forums for discussion and
+                    checks, ... (private access with the old access system)
+                </li>
+                <li>
+                    <a href="https://github.com/gammasky/cta-analyses">cta-analyses</a> - a private repository on GitHub
+                    that we use to share analysis scripts and notebooks
+                    that use CTAO-internal data and IRFs. The main purpose is to make it easy to collaborate on issues and
+                    code. Eventually results should be shared on the official CTAO pages of course!
+                    To get access, send an email to <a href="mailto:khelifi@in2p3.fr">Bruno Khélifi</a>
+                    or anyone else that you know that is involved in Gammapy and CTAO.
+                </li>
+                <li>
+                    If you're doing simulations or analysis for CTAO with Gammapy and would like to discuss your results or
+                    get help, please join the <a href="mailto:gammapy-cta-l@in2p3.fr">Gammapy mailing list</a>,
+                    and the regular Gammapy calls.
+                </li>
+            </ul>
 
-    </div>
-</main>
+        </div>
+    </main>
 
-<!-- Footer Section -->
-<div data-include="footer.html"></div>
-
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-
-<script src="scripts/navbarCollapse.js" defer></script>
+    <!-- Footer Section -->
+    <div id="footer-placeholder"></div>
+    <script src="load-components.js"></script>
 
 </body>
 </html>

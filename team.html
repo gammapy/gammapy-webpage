@@ -1,3 +1,4 @@
+<!--  Licensed under the MIT license - see LICENSE -->
 <!DOCTYPE html>
 <html>
 
@@ -10,350 +11,348 @@
     }
 </style>
 
-<script src="scripts/matomo.js" defer></script>
-<script src="scripts/myscripts.js" defer></script>
-<script src="scripts/includeHTML.js" defer></script>
-
-<div data-include="header.html"></div>
+<head>
+      <!-- Common scripts  -->
+      <script src="load-scripts.js"></script>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title>Gammapy - Team</title>
+      <!-- head placeholder -->
+      <div id="head-placeholder"></div>
+ </head>
 
 <body>
+    <!-- Navbar placeholder -->
+    <div id="navbar-placeholder"></div>
 
-<div data-include="navbar.html"></div>
+    <main role="main">
+        <div class="container">
 
-<main role="main">
-    <div class="container">
+            <h1>Project & Team</h1>
+            <br>
 
-        <h1>Project & Team</h1>
-        <br>
+            <p>
+            <a href="#introduction">Introduction</a> | <a href="#overview">Composition</a> | <a href="#grants">Grants</a>
+            </p>
 
-        <p>
-        <a href="#introduction">Introduction</a> | <a href="#overview">Composition</a> | <a href="#grants">Grants</a> 
-        </p>
+            <br><br>
+            <h2 id="introduction"><a href="#introduction"> Introduction </a></h2>
+            <p class="lead">
+                This page describes the Gammapy project organisation and the main roles and responsibilities in the Gammapy
+                team.
+            </p>
+            <p>
+                This structure has been put in place in January 2018 based on our experience developing Gammapy since 2013,
+                as well more generally with science tool software development in the <a
+                    href="https://www.mpi-hd.mpg.de/hfm/HESS/">H.E.S.S.</a>
+                and <a href="https://www.ctao.org/">CTAO</a> collaborations. We also took inspiration from the way
+                the <a href="https://www.astropy.org/team.html">Astropy</a> and <a
+                    href="https://sunpy.org/">Sunpy</a>
+                projects are organised, since they are in a similar situation as Gammapy: a distributed development team and
+                a variety of people and projects using and depending on them.
+            </p>
+            <p>
+                We expect this structure to evolve over the coming years, adapting to
+                the size and composition of the Gammapy development team, and the requirements and needs of scientists and
+                projects using Gammapy. If you would like to become part of the Gammapy team, please get in <a
+                    href="contact.html">contact</a>.
+                Help is always welcome!
+            </p>
 
-        <br><br>
-        <h2 id="introduction"><a href="#introduction"> Introduction </a></h2>
-        <p class="lead">
-            This page describes the Gammapy project organisation and the main roles and responsibilities in the Gammapy
-            team.
-        </p>
-        <p>
-            This structure has been put in place in January 2018 based on our experience developing Gammapy since 2013,
-            as well more generally with science tool software development in the <a
-                href="https://www.mpi-hd.mpg.de/hfm/HESS/">H.E.S.S.</a>
-            and <a href="https://www.ctao.org/">CTAO</a> collaborations. We also took inspiration from the way
-            the <a href="https://www.astropy.org/team.html">Astropy</a> and <a
-                href="https://sunpy.org/">Sunpy</a>
-            projects are organised, since they are in a similar situation as Gammapy: a distributed development team and
-            a variety of people and projects using and depending on them.
-        </p>
-        <p>
-            We expect this structure to evolve over the coming years, adapting to
-            the size and composition of the Gammapy development team, and the requirements and needs of scientists and
-            projects using Gammapy. If you would like to become part of the Gammapy team, please get in <a
-                href="contact.html">contact</a>.
-            Help is always welcome!
-        </p>
-
-        <br><br><br>
-        <h2 id="overview"><a href="#overview"> Composition </a></h2>
-        <p>
-            The following sections describe the major roles and responsibilities in the Gammapy team:
-        </p>
-        <ul>
-            <li><a href="#coordination-committee">Coordination committee</a></li>
-            <li><a href="#project-manager">Project managers</a></li>
-            <li><a href="#lead-developer">Lead developers</a></li>
-            <li><a href="#module-maintainer">Sub-package maintainers</a></li>
-            <li><a href="#contributors">Contributors</a></li>
-            <li><a href="#support">Institutional support</a></li>
-        </ul>
-
-        <br><br>
-        <h2 id="coordination-committee"><a href="#cc"> Coordination Committee </a></h2>
-        <p class="lead">
-            The Gammapy coordination committee (CC) is the board that is responsible to promote, coordinate and steer
-            Gammapy developments. It also serves as the main contact point for the Gammapy project.
-        </p>
-        <p>
-            Gammapy is developed and used by people and projects from several institutes and countries, with different
-            needs, priorities and schedules. Members of the CC are representatives for the major stakeholders, i.e.
-            groups that have contributed significantly to Gammapy development, as well as projects like H.E.S.S. and CTAO
-            that are using Gammapy. In addition, the Gammapy project managers and lead developers are part of the Gammapy
-            CC.
-        </p>
-        <p>
-            Responsibilities include:
-        </p>
-        <ul>
-            <li>
-                Ensure that scientists and projects that are using Gammapy have reliable, good and long-term support
-            </li>
-            <li>
-                Promote the use of Gammapy by new projects, especially as Science Tool for CTAO
-            </li>
-            <li>
-                Support and grow the Gammapy team (help find manpower and funding)
-            </li>
-            <li>
-                Make decisions on the scope, content and development priorities for the Gammapy package. <br>
-                In many cases, this will be done via <a href="https://docs.gammapy.org/dev/development/pigs/">Proposal for
-                improvement of Gammapy (PIG)</a> documents.
-            </li>
-            <li>
-                Support and coordinate the use of Gammapy for scientific or technical studies and papers
-            </li>
-            <li>
-                The CC is the official contact point for the Gammapy project.
-            </li>
-            <li>
-                Appoint the Gammapy project managers (non-technical lead) and lead developers (technical lead)
-            </li>
-            <li>
-                CC members should join the Gammapy CC mailing list and call for important discussions <br>
-                (day-to-day management is left to the project managers and lead developers).
-            </li>
-        </ul>
-        <p>
-            Current CC members (alphabetical order):
-        </p>
-        <ul>
-            <li><strong>Axel Donath</strong> (CfA/Harvard, U.S.A.)</li>
-            <li><strong>Bruno Kh&eacute;lifi</strong> (APC, France)</li>
-            <li><strong>Catherine Boisson</strong> (LUTh, France)</li>
-            <li><strong>Christopher van Eldik</strong> (Erlangen University, Germany)</li>
-            <li><strong>David Berge</strong>, as deputy <strong>Emma de Ona Wilhelmi</strong> (DESY, Germany)</li>
-            <li><strong>Fabio Acero</strong> (CEA/Irfu/DAp-AIM, France)</li>
-            <li><strong>Fabio Pintore</strong> (IASF Palermo/INAF, Italy), as deputy <strong>Martina Cardillo</strong> (Roma, INAF)</li>
-            <li><strong>Jim Hinton</strong> (MPIK, Germany)</li>
-            <li><strong>Jose Luis Contreras</strong> (UCM, Spain)</li>
-<!--            <li><strong>Jose Enrique Ruiz</strong> (IAA/CSIC, Spain)</li> -->
-            <li><strong>Matthias Fuessling</strong> (S.U.S.S. coordinator of CTAO)</li>
-            <li><strong>R&eacute;gis Terrier</strong> (APC, France)</li>
-            <li><strong>Roberta Zanin</strong> (Project Scientist of CTAO)</li>
-            <li><strong>Rub&eacute;n L&oacute;pez-Coto</strong> (IAA/CSIC, Spain)</li>
-            <li><strong>Stefan Funk</strong> (Erlangen University, Germany)</li>
-        </ul>
-
-        <br><br>
-        <h2 id="project-manager"><a href="#pm"> Project managers </a></h2>
-        <p class="lead">
-            The project manager and the deputy project manager are the non-technical executive lead for the Gammapy project.
-        </p>
-        <p>
-            The project managers are appointed by the Gammapy coordination committee, and work closely with the Gammapy
-            coordination committee, lead developers, contributors and users.
-        </p>
-        <p>
-            Responsibilities include:
-        </p>
-        <ul>
-            <li>
-                Organise and drive all non-technical aspects of the project on a day-to-day basis.
-                Keep the overview of ongoing activities, schedules and action items and follow up
-                to make sure all important things get done.
-            </li>
-            <li>
-                Serve as Gammapy coordination committee secretary (schedule and moderate calls; give status reports;
-                write minutes)
-            </li>
-            <li>Organise Gammapy user calls and training events via <a
-                    href="https://github.com/gammapy/gammapy-meetings/">gammapy-meetings</a>
-            </li>
-            <li>
-                Keep an overview and help coordinate all activities that have some involvement of Gammapy,
-                such as e.g. papers, presentations or posters about or using Gammapy at gamma-ray astronomy meetings or
-                conferences, or tutorials at schools / workshops on gamma-ray astronomy data analysis.
-            </li>
-            <li>
-                Maintain Gammapy communication channels (mailing lists, Slack, GitHub, ...)
-                as well as the content at <a href="https://gammapy.org/">https://gammapy.org/</a>
-            </li>
-        </ul>
-        <p>
-            The current project manager is <strong>Bruno Kh&eacute;lifi</strong>, the deputy project manager is <strong> Christopher van Eldik</strong>.
-        </p>
-
-        <br><br>
-        <h2 id="lead-developer"><a href="#ld">Lead developers</a></h2>
-        <p class="lead">
-            The lead developers are the technical executive leads for the Gammapy project.
-        </p>
-        <p>
-            The lead developers are appointed by the Gammapy coordination committee, and work closely with the Gammapy
-            coordination committee, project managers and contributors.
-        </p>
-        <p>
-            Responsibilities include:
-        </p>
-        <ul>
-            <li>
-                Organise and drive all technical aspects of the project on a day-to-day basis.
-                Keep the overview of ongoing activities, schedules and action items and follow up
-                to make sure all important things get done.
-            </li>
-            <li>
-                Serve on the Gammapy coordination committee, as the link between CC and the development team.
-            </li>
-            <li>
-                Ensure that <a href="https://docs.gammapy.org/dev/development/pigs/">Proposal for
-                improvement of Gammapy (PIG)</a> documents are properly reviewed and
-                eventually decisions made by the CC.
-            </li>
-            <li>
-                Manage the Gammapy developer / maintainer / contributor team. Distribute tasks and assign
-                responsibilities to other Gammapy core developers.
-            </li>
-            <li>
-                Ensure that anyone interested in contributing to Gammapy development has good resources (documentation,
-                communication, mentoring) to get started. Specifically: maintain the Gammapy <a
-                    href="https://docs.gammapy.org/dev/development">developer documentation</a>
-                that describes all aspects of Gammapy development (code, testing, documentation, processes).
-            </li>
-            <li>
-                Ensure Gammapy infrastructure is well set up and maintained (issue tracker and pull requests on GitHub,
-                continuous integration tests, documentation builds, releases and distribution).
-            </li>
-            <li>Organise Gammapy developer calls and coding sprints via <a
-                href="https://github.com/gammapy/gammapy-meetings/">gammapy-meetings</a>
-            </li>
-            <li>
-                Schedule Gammapy releases and define which fixes and features go in which release, taking the needs of
-                people and projects using Gammapy as well as available manpower for developments into account.
-                Either execute releases directly or assign a release manager.
-            </li>
-        </ul>
-        <p>
-            The current lead developers are <strong>Axel Donath</strong> and <strong>Régis Terrier</strong>.
-        </p>
-
-        <br><br>
-        <h2 id="module-maintainer"><a href="#mainteners">Sub-package maintainers</a></h2>
-          <p>Among the Gammapy core developer team, they are some experts that are devoted to the maintenance of some sub-packages.</p>
-          
-          <p>They are in charge of:
-          <ul>
-            <li>perform initial triage of issues and pull requests,</li>
-            <li>supporting developers on tasks associated to the sub-package(s),</li>
-            <li>evaluating new pull requests for quality, API consistency and Gammapy coding standards,</li>
-            <li>taking care of the global design of the sub-package(s) in the context of the global Gammapy architecture,</li>
-            <li>participating in the User Support for questions related to the sub-package(s).</li>
-          </ul>
-          </p>
-
-          <p> The list of subpackage maintainers is given below:
-              <table width="80%" border="0" cellspacing="0" cellpadding="0">
-                  <tr>
-                      <th>Maintainer</th>
-                      <th>Subpackage(s)</th>
-                  </tr>
-                  <tr>
-                      <td>Quentin Remy (MPIK)</td>
-                      <td><a href="https://docs.gammapy.org/dev/api-reference/catalog.html">catalog</a>,
-                          <a href="https://docs.gammapy.org/dev/api-reference/datasets.html">datasets</a>,
-                          <a href="https://docs.gammapy.org/dev/api-reference/modeling.html">modeling</a></td>
-                  </tr>
-                  <tr>
-                      <td>Atreyee Sinha (GAE-UCM)</td>
-                      <td><a href="https://docs.gammapy.org/dev/api-reference/datasets.html">datasets</a>,
-                          <a href="https://docs.gammapy.org/dev/api-reference/irf.html">irf</a>,
-                          <a href="https://docs.gammapy.org/dev/api-reference/makers.html">makers</a></td>
-                  </tr>
-              </table>
-          </p>
-
-
-        <br><br>
-        <h2 id="contributors"><a href="#contributor">Contributors</a></h2>
-        <p>
-            As of March 2021, there have been ~70 different contributors to Gammapy from ~10 countries and
-            ~200 people are subscribed to the Gammapy Slack. An overview of all contributors can be found on
-            <a href="https://github.com/gammapy/gammapy/graphs/contributors">GitHub</a>.
-        </p>
-        <p>
-            There is no useful automatic way to measure how much someone contributed. The most common measure used
-            is commits to the code repository. However, the number of commits is not the only useful measure.
-            Some contributors spent several days to find and fix an important bug, or implement a big and complex
-            feature that only results in a single commit. If someone makes a good bug report or does code review
-            or mentoring or organisational work for Gammapy, it does not show up in the commit statistic at all.
-            Please know that any contribution to the Gammapy project is valued!
-        </p>
-
-        <p>
-            The list of contributions into conferences, hands-on sessions and schools, and for recipes can be found on the following list:
-           <ul>
-             <li><a href="https://github.com/gammapy/gammapy-presentations">conferences</a>, </li>
-             <li><a href="https://github.com/gammapy/gammapy-recipes">recipes</a>, </li>
-             <li><a href="https://github.com/gammapy/gammapy-handson">hands-on sessions and schools</a>. </li>
-           </ul>
-        </p>
-
-        <br><br>
-        <h2 id="support"><a href="#support">Supporting institutions</a></h2>
-        <p>
-            People involved in Gammapy are coming from different institutions, laboratories and universities. We acknowledge
-            them for their daily support. Here are listed the main institutions (alphabetical order):
+            <br><br><br>
+            <h2 id="overview"><a href="#overview"> Composition </a></h2>
+            <p>
+                The following sections describe the major roles and responsibilities in the Gammapy team:
+            </p>
             <ul>
-                <li><strong>AIM</strong> (Astrophysique, instrumentation, modélisation), DAp-CEA/CNRS, Saclay/France -
-                    <a href="http://irfu.cea.fr/Phocea/Vie_des_labos/Ast/ast_service.php?id_unit=3">Web site</a></li>
-               <li><strong>APC</strong> (AstroParticules et Cosmologie), Université de Paris/CNRS, Paris/France -
-                    <a href="https://www.apc.univ-paris7.fr/APC_CS/">Web site</a></li>
-               <li><strong>DESY</strong> (Deutsches Elektronen-Synchrotron), Zeuthen/Germany -
-                    <a href="https://www.desy.de/research/astroparticle_physics/index_eng.html">Web site</a></li>
-                <li><strong>ECAP</strong> (Erlangen Center for Astroparticle Physics), Friedrich-Alexander Univervität, Erlangen/Germany -
-                    <a href="https://ecap.nat.fau.de/">Web site</a></li>
-               <li><strong>IAA-CSIC</strong> (Instituto de Astrofísica de Andalucía), Consejo Superior de Investigaciones Científicas, Granada/Spain -
-                    <a href="https://www.iaa.csic.es/">Web site</a></li>
-               <li><strong>INAF</strong> (Istituto Nazionale di Astrofisica), Italy -
-                    <a href="http://www.inaf.it/en">Web site</a></li>
-               <li><strong>LUTh</strong> (Laboratoire Univers et Théorie), CNRS/Observatoire de Paris, Meudon/France -
-                    <a href="https://luth.obspm.fr/">Web site</a></li>
-               <li><strong>MPIK</strong> (Max-Planck-Institut für Kernphysik), Max-Planck-Gesellschaft, Heidelberg/Germany -
-                    <a href="https://www.mpi-hd.mpg.de/mpi/de/">Web site</a></li>
-               <li><strong>Observatoire de Paris</strong>, Paris-Meudon-Nançay/France -
-                    <a href="https://www.obspm.fr/">Web site</a></li>
-               <li><strong>UCM</strong> (Universidad Complutense Madrid), Madrid/Spain -
-                    <a href="https://www.ucm.es/">Website</a></li>
-               <li><strong>CTAO</strong> - <a href="https://www.ctao.org//">Web site</a></li>
+                <li><a href="#coordination-committee">Coordination committee</a></li>
+                <li><a href="#project-manager">Project managers</a></li>
+                <li><a href="#lead-developer">Lead developers</a></li>
+                <li><a href="#module-maintainer">Sub-package maintainers</a></li>
+                <li><a href="#contributors">Contributors</a></li>
+                <li><a href="#support">Institutional support</a></li>
             </ul>
-        </p>
-        <br>
-        <center>
-            <img src="img/LogoList_V2024_v2.png" style="width:70%;" alt="Institutions supporting the project" align="middle">
-        </center>
 
-        <br><br><br>
-        <h2 id="grants"><a href="#grants">Grants</a></h2>
-        <p>
-            Several grants have helped to support the development of Gammapy, including:
-             <ul>
-                <li><strong>OSCARS</strong> (Open Science Clusters ACtion for Research and Society): 2025–26,</li>
-                <li><strong>ACME</strong> (Astrophysics Centre for Multi-messenger studies in Europe, HORIZON-INFRA-2023-SERV-01): 2025-27,</li>
-                <li><strong>PUNCH4NFDI</strong> (German National Research Data Infrastructure for particle, astro-, astroparticle, hadron and nuclear physics),</li>
-                <li><strong>ESCAPE H2020 project</strong> (European Science Cluster of Astronomy & Particle Physics ESFRI research Infrastructure):
-                    grant agreement n. 824064, 2019/2022 in Germany and France (from EU)</li>
-                <li><strong>PECORA ANR project</strong>: 2019/2022 (from France)</li>
-                <li><strong>Action Fédératrice CTA</strong>: 2018, 2019, 2020, 2021 (from Observatoire de Paris)</li>
-                <li><strong>Action Pluri-annauelle Initiatrice "Astrophysique des hautes énergies"</strong>: 2022,
-                    2023 (from Observatoire de Paris)</li>
-                <li><strong>ASTERICS H2020 project</strong> (Astronomy ESFRI & Research Infrastructure Cluster):
-                    grant agreement n. 653477, 2015/2019 in France and Spain (from EU)</li>
-                <li><strong>Spanish MINECO/AEI projects</strong>: FPA2015-69210-C6-3-R, FPA2017-82729-C6-3-R, AYA2016-8089-P (from Spain)</li>
+            <br><br>
+            <h2 id="coordination-committee"><a href="#cc"> Coordination Committee </a></h2>
+            <p class="lead">
+                The Gammapy coordination committee (CC) is the board that is responsible to promote, coordinate and steer
+                Gammapy developments. It also serves as the main contact point for the Gammapy project.
+            </p>
+            <p>
+                Gammapy is developed and used by people and projects from several institutes and countries, with different
+                needs, priorities and schedules. Members of the CC are representatives for the major stakeholders, i.e.
+                groups that have contributed significantly to Gammapy development, as well as projects like H.E.S.S. and CTAO
+                that are using Gammapy. In addition, the Gammapy project managers and lead developers are part of the Gammapy
+                CC.
+            </p>
+            <p>
+                Responsibilities include:
+            </p>
+            <ul>
+                <li>
+                    Ensure that scientists and projects that are using Gammapy have reliable, good and long-term support
+                </li>
+                <li>
+                    Promote the use of Gammapy by new projects, especially as Science Tool for CTAO
+                </li>
+                <li>
+                    Support and grow the Gammapy team (help find manpower and funding)
+                </li>
+                <li>
+                    Make decisions on the scope, content and development priorities for the Gammapy package. <br>
+                    In many cases, this will be done via <a href="https://docs.gammapy.org/dev/development/pigs/">Proposal for
+                    improvement of Gammapy (PIG)</a> documents.
+                </li>
+                <li>
+                    Support and coordinate the use of Gammapy for scientific or technical studies and papers
+                </li>
+                <li>
+                    The CC is the official contact point for the Gammapy project.
+                </li>
+                <li>
+                    Appoint the Gammapy project managers (non-technical lead) and lead developers (technical lead)
+                </li>
+                <li>
+                    CC members should join the Gammapy CC mailing list and call for important discussions <br>
+                    (day-to-day management is left to the project managers and lead developers).
+                </li>
             </ul>
-       </p>
-       </h2>
-    </div>
+            <p>
+                Current CC members (alphabetical order):
+            </p>
+            <ul>
+                <li><strong>Axel Donath</strong> (CfA/Harvard, U.S.A.)</li>
+                <li><strong>Bruno Kh&eacute;lifi</strong> (APC, France)</li>
+                <li><strong>Catherine Boisson</strong> (LUTh, France)</li>
+                <li><strong>Christopher van Eldik</strong> (Erlangen University, Germany)</li>
+                <li><strong>David Berge</strong>, as deputy <strong>Emma de Ona Wilhelmi</strong> (DESY, Germany)</li>
+                <li><strong>Fabio Acero</strong> (CEA/Irfu/DAp-AIM, France)</li>
+                <li><strong>Fabio Pintore</strong> (IASF Palermo/INAF, Italy), as deputy <strong>Martina Cardillo</strong> (Roma, INAF)</li>
+                <li><strong>Jim Hinton</strong> (MPIK, Germany)</li>
+                <li><strong>Jose Luis Contreras</strong> (UCM, Spain)</li>
+    <!--            <li><strong>Jose Enrique Ruiz</strong> (IAA/CSIC, Spain)</li> -->
+                <li><strong>Matthias Fuessling</strong> (S.U.S.S. coordinator of CTAO)</li>
+                <li><strong>R&eacute;gis Terrier</strong> (APC, France)</li>
+                <li><strong>Roberta Zanin</strong> (Project Scientist of CTAO)</li>
+                <li><strong>Rub&eacute;n L&oacute;pez-Coto</strong> (IAA/CSIC, Spain)</li>
+                <li><strong>Stefan Funk</strong> (Erlangen University, Germany)</li>
+            </ul>
 
-</main>
+            <br><br>
+            <h2 id="project-manager"><a href="#pm"> Project managers </a></h2>
+            <p class="lead">
+                The project manager and the deputy project manager are the non-technical executive lead for the Gammapy project.
+            </p>
+            <p>
+                The project managers are appointed by the Gammapy coordination committee, and work closely with the Gammapy
+                coordination committee, lead developers, contributors and users.
+            </p>
+            <p>
+                Responsibilities include:
+            </p>
+            <ul>
+                <li>
+                    Organise and drive all non-technical aspects of the project on a day-to-day basis.
+                    Keep the overview of ongoing activities, schedules and action items and follow up
+                    to make sure all important things get done.
+                </li>
+                <li>
+                    Serve as Gammapy coordination committee secretary (schedule and moderate calls; give status reports;
+                    write minutes)
+                </li>
+                <li>Organise Gammapy user calls and training events via <a
+                        href="https://github.com/gammapy/gammapy-meetings/">gammapy-meetings</a>
+                </li>
+                <li>
+                    Keep an overview and help coordinate all activities that have some involvement of Gammapy,
+                    such as e.g. papers, presentations or posters about or using Gammapy at gamma-ray astronomy meetings or
+                    conferences, or tutorials at schools / workshops on gamma-ray astronomy data analysis.
+                </li>
+                <li>
+                    Maintain Gammapy communication channels (mailing lists, Slack, GitHub, ...)
+                    as well as the content at <a href="https://gammapy.org/">https://gammapy.org/</a>
+                </li>
+            </ul>
+            <p>
+                The current project manager is <strong>Bruno Kh&eacute;lifi</strong>, the deputy project manager is <strong> Christopher van Eldik</strong>.
+            </p>
 
-<!-- Footer Section -->
-<div data-include="footer.html"></div>
+            <br><br>
+            <h2 id="lead-developer"><a href="#ld">Lead developers</a></h2>
+            <p class="lead">
+                The lead developers are the technical executive leads for the Gammapy project.
+            </p>
+            <p>
+                The lead developers are appointed by the Gammapy coordination committee, and work closely with the Gammapy
+                coordination committee, project managers and contributors.
+            </p>
+            <p>
+                Responsibilities include:
+            </p>
+            <ul>
+                <li>
+                    Organise and drive all technical aspects of the project on a day-to-day basis.
+                    Keep the overview of ongoing activities, schedules and action items and follow up
+                    to make sure all important things get done.
+                </li>
+                <li>
+                    Serve on the Gammapy coordination committee, as the link between CC and the development team.
+                </li>
+                <li>
+                    Ensure that <a href="https://docs.gammapy.org/dev/development/pigs/">Proposal for
+                    improvement of Gammapy (PIG)</a> documents are properly reviewed and
+                    eventually decisions made by the CC.
+                </li>
+                <li>
+                    Manage the Gammapy developer / maintainer / contributor team. Distribute tasks and assign
+                    responsibilities to other Gammapy core developers.
+                </li>
+                <li>
+                    Ensure that anyone interested in contributing to Gammapy development has good resources (documentation,
+                    communication, mentoring) to get started. Specifically: maintain the Gammapy <a
+                        href="https://docs.gammapy.org/dev/development">developer documentation</a>
+                    that describes all aspects of Gammapy development (code, testing, documentation, processes).
+                </li>
+                <li>
+                    Ensure Gammapy infrastructure is well set up and maintained (issue tracker and pull requests on GitHub,
+                    continuous integration tests, documentation builds, releases and distribution).
+                </li>
+                <li>Organise Gammapy developer calls and coding sprints via <a
+                    href="https://github.com/gammapy/gammapy-meetings/">gammapy-meetings</a>
+                </li>
+                <li>
+                    Schedule Gammapy releases and define which fixes and features go in which release, taking the needs of
+                    people and projects using Gammapy as well as available manpower for developments into account.
+                    Either execute releases directly or assign a release manager.
+                </li>
+            </ul>
+            <p>
+                The current lead developers are <strong>Axel Donath</strong> and <strong>Régis Terrier</strong>.
+            </p>
 
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+            <br><br>
+            <h2 id="module-maintainer"><a href="#mainteners">Sub-package maintainers</a></h2>
+              <p>Among the Gammapy core developer team, they are some experts that are devoted to the maintenance of some sub-packages.</p>
+
+              <p>They are in charge of:
+              <ul>
+                <li>perform initial triage of issues and pull requests,</li>
+                <li>supporting developers on tasks associated to the sub-package(s),</li>
+                <li>evaluating new pull requests for quality, API consistency and Gammapy coding standards,</li>
+                <li>taking care of the global design of the sub-package(s) in the context of the global Gammapy architecture,</li>
+                <li>participating in the User Support for questions related to the sub-package(s).</li>
+              </ul>
+              </p>
+
+              <p> The list of subpackage maintainers is given below:
+                  <table width="80%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                          <th>Maintainer</th>
+                          <th>Subpackage(s)</th>
+                      </tr>
+                      <tr>
+                          <td>Quentin Remy (MPIK)</td>
+                          <td><a href="https://docs.gammapy.org/dev/api-reference/catalog.html">catalog</a>,
+                              <a href="https://docs.gammapy.org/dev/api-reference/datasets.html">datasets</a>,
+                              <a href="https://docs.gammapy.org/dev/api-reference/modeling.html">modeling</a></td>
+                      </tr>
+                      <tr>
+                          <td>Atreyee Sinha (GAE-UCM)</td>
+                          <td><a href="https://docs.gammapy.org/dev/api-reference/datasets.html">datasets</a>,
+                              <a href="https://docs.gammapy.org/dev/api-reference/irf.html">irf</a>,
+                              <a href="https://docs.gammapy.org/dev/api-reference/makers.html">makers</a></td>
+                      </tr>
+                  </table>
+              </p>
 
 
-<script src="scripts/navbarCollapse.js" defer></script>
+            <br><br>
+            <h2 id="contributors"><a href="#contributor">Contributors</a></h2>
+            <p>
+                As of March 2021, there have been ~70 different contributors to Gammapy from ~10 countries and
+                ~200 people are subscribed to the Gammapy Slack. An overview of all contributors can be found on
+                <a href="https://github.com/gammapy/gammapy/graphs/contributors">GitHub</a>.
+            </p>
+            <p>
+                There is no useful automatic way to measure how much someone contributed. The most common measure used
+                is commits to the code repository. However, the number of commits is not the only useful measure.
+                Some contributors spent several days to find and fix an important bug, or implement a big and complex
+                feature that only results in a single commit. If someone makes a good bug report or does code review
+                or mentoring or organisational work for Gammapy, it does not show up in the commit statistic at all.
+                Please know that any contribution to the Gammapy project is valued!
+            </p>
+
+            <p>
+                The list of contributions into conferences, hands-on sessions and schools, and for recipes can be found on the following list:
+               <ul>
+                 <li><a href="https://github.com/gammapy/gammapy-presentations">conferences</a>, </li>
+                 <li><a href="https://github.com/gammapy/gammapy-recipes">recipes</a>, </li>
+                 <li><a href="https://github.com/gammapy/gammapy-handson">hands-on sessions and schools</a>. </li>
+               </ul>
+            </p>
+
+            <br><br>
+            <h2 id="support"><a href="#support">Supporting institutions</a></h2>
+            <p>
+                People involved in Gammapy are coming from different institutions, laboratories and universities. We acknowledge
+                them for their daily support. Here are listed the main institutions (alphabetical order):
+                <ul>
+                    <li><strong>AIM</strong> (Astrophysique, instrumentation, modélisation), DAp-CEA/CNRS, Saclay/France -
+                        <a href="http://irfu.cea.fr/Phocea/Vie_des_labos/Ast/ast_service.php?id_unit=3">Web site</a></li>
+                   <li><strong>APC</strong> (AstroParticules et Cosmologie), Université de Paris/CNRS, Paris/France -
+                        <a href="https://www.apc.univ-paris7.fr/APC_CS/">Web site</a></li>
+                   <li><strong>DESY</strong> (Deutsches Elektronen-Synchrotron), Zeuthen/Germany -
+                        <a href="https://www.desy.de/research/astroparticle_physics/index_eng.html">Web site</a></li>
+                    <li><strong>ECAP</strong> (Erlangen Center for Astroparticle Physics), Friedrich-Alexander Univervität, Erlangen/Germany -
+                        <a href="https://ecap.nat.fau.de/">Web site</a></li>
+                   <li><strong>IAA-CSIC</strong> (Instituto de Astrofísica de Andalucía), Consejo Superior de Investigaciones Científicas, Granada/Spain -
+                        <a href="https://www.iaa.csic.es/">Web site</a></li>
+                   <li><strong>INAF</strong> (Istituto Nazionale di Astrofisica), Italy -
+                        <a href="http://www.inaf.it/en">Web site</a></li>
+                   <li><strong>LUTh</strong> (Laboratoire Univers et Théorie), CNRS/Observatoire de Paris, Meudon/France -
+                        <a href="https://luth.obspm.fr/">Web site</a></li>
+                   <li><strong>MPIK</strong> (Max-Planck-Institut für Kernphysik), Max-Planck-Gesellschaft, Heidelberg/Germany -
+                        <a href="https://www.mpi-hd.mpg.de/mpi/de/">Web site</a></li>
+                   <li><strong>Observatoire de Paris</strong>, Paris-Meudon-Nançay/France -
+                        <a href="https://www.obspm.fr/">Web site</a></li>
+                   <li><strong>UCM</strong> (Universidad Complutense Madrid), Madrid/Spain -
+                        <a href="https://www.ucm.es/">Website</a></li>
+                   <li><strong>CTAO</strong> - <a href="https://www.ctao.org//">Web site</a></li>
+                </ul>
+            </p>
+            <br>
+            <center>
+                <img src="img/LogoList_V2024_v2.png" style="width:70%;" alt="Institutions supporting the project" align="middle">
+            </center>
+
+            <br><br><br>
+            <h2 id="grants"><a href="#grants">Grants</a></h2>
+            <p>
+                Several grants have helped to support the development of Gammapy, including:
+                 <ul>
+                    <li><strong>OSCARS</strong> (Open Science Clusters ACtion for Research and Society): 2025–26,</li>
+                    <li><strong>ACME</strong> (Astrophysics Centre for Multi-messenger studies in Europe, HORIZON-INFRA-2023-SERV-01): 2025-27,</li>
+                    <li><strong>PUNCH4NFDI</strong> (German National Research Data Infrastructure for particle, astro-, astroparticle, hadron and nuclear physics),</li>
+                    <li><strong>ESCAPE H2020 project</strong> (European Science Cluster of Astronomy & Particle Physics ESFRI research Infrastructure):
+                        grant agreement n. 824064, 2019/2022 in Germany and France (from EU)</li>
+                    <li><strong>PECORA ANR project</strong>: 2019/2022 (from France)</li>
+                    <li><strong>Action Fédératrice CTA</strong>: 2018, 2019, 2020, 2021 (from Observatoire de Paris)</li>
+                    <li><strong>Action Pluri-annauelle Initiatrice "Astrophysique des hautes énergies"</strong>: 2022,
+                        2023 (from Observatoire de Paris)</li>
+                    <li><strong>ASTERICS H2020 project</strong> (Astronomy ESFRI & Research Infrastructure Cluster):
+                        grant agreement n. 653477, 2015/2019 in France and Spain (from EU)</li>
+                    <li><strong>Spanish MINECO/AEI projects</strong>: FPA2015-69210-C6-3-R, FPA2017-82729-C6-3-R, AYA2016-8089-P (from Spain)</li>
+                </ul>
+           </p>
+           </h2>
+        </div>
+
+    </main>
+
+    <!-- Footer Section -->
+    <div id="footer-placeholder"></div>
+    <script src="load-components.js"></script>
 
 </body>
 </html>

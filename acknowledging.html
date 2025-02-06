@@ -1,3 +1,4 @@
+<!--  Licensed under the MIT license - see LICENSE -->
 <!DOCTYPE html>
 <html>
 
@@ -10,42 +11,32 @@
     }
 </style>
 
-<script src="scripts/matomo.js" defer></script>
-<script src="scripts/myscripts.js" defer></script>
-<script src="scripts/includeHTML.js" defer></script>
-
-<div data-include="header.html"></div>
+<head>
+      <!-- Common scripts  -->
+      <script src="load-scripts.js"></script>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title>Acknowledging or Citing gammapy</title>
+      <!-- head placeholder -->
+      <div id="head-placeholder"></div>
+ </head>
 
 <body>
-<div data-include="navbar.html"></div>
+    <!-- Navbar placeholder -->
+    <div id="navbar-placeholder"></div>
 
+    <script>
+         function copyToClipboard(element) {
+           var $temp = $("<textarea>");
+           $("body").append($temp);
+           var x = $(element).text().trim().replace(/<br>/g, '\n').replace(/<\/?[^>]+>/g, '');
+           $temp.val(x).select();
+           document.execCommand("copy");
+           $temp.remove();
+         }
+    </script>
 
-<!-- OLD VERSION
-<script>
-function copyToClipboard(element) {
-  var $temp = $("<textarea>");
-  $("body").append($temp);
-  var x = $(element).html().trim().replace(/<br>/g, '\n').replace(/<\/?[^>]+>/g, '');
-  $temp.val(x).select();
-  document.execCommand("copy");
-  $temp.remove();
-}
-</script>
--->
-
-<script>
-function copyToClipboard(element) {
-  var $temp = $("<textarea>");
-  $("body").append($temp);
-  var x = $(element).text().trim().replace(/<br>/g, '\n').replace(/<\/?[^>]+>/g, '');
-  $temp.val(x).select();
-  document.execCommand("copy");
-  $temp.remove();
-}
-</script>
-
-
-<p id="bibtex-proc" style="display:none;">
+    <p id="bibtex-proc" style="display:none;">
 @INPROCEEDINGS{gammapy:2017,
 author = {{Deil}, C. and {Zanin}, R. and {Lefaucheur}, J. and {Boisson}, C. and
          {Khélifi}, B. and {Terrier}, R. and {Wood}, M. and {Mohrmann}, L. and
@@ -73,7 +64,7 @@ adsnote = {Provided by the SAO/NASA Astrophysics Data System}
 }
 </p>
 
-<p id="bibtex-paper" style="display:none;">
+    <p id="bibtex-paper" style="display:none;">
 @article{gammapy:2023,
     author = {{Donath}, Axel and {Terrier}, R\'egis and {Remy}, Quentin and {Sinha}, Atreyee and {Nigro}, Cosimo and
         {Pintore}, Fabio and {Kh\'elifi}, Bruno and {Olivera-Nieto}, Laura and {Ruiz}, Jose Enrique and
@@ -96,7 +87,7 @@ adsnote = {Provided by the SAO/NASA Astrophysics Data System}
 }
 </p>
 
-<p id="bibtex-zenodo-11" style="display:none;">
+    <p id="bibtex-zenodo-11" style="display:none;">
 @software{gammapy:zenodo-1.1,
   author       = {Aguasca-Cabot, Arnau and
                   Donath, Axel and
@@ -124,8 +115,7 @@ adsnote = {Provided by the SAO/NASA Astrophysics Data System}
 }
 </p>
 
-
-<p id="bibtex-zenodo-12" style="display:none;">
+    <p id="bibtex-zenodo-12" style="display:none;">
 @software{gammapy:zenodo-1.2,
   author       = {Acero, Fabio and
                   Bernete, Juan and
@@ -162,7 +152,7 @@ adsnote = {Provided by the SAO/NASA Astrophysics Data System}
 }
 </p>
 
-<p id="bibtex-zenodo-13" style="display:none;">
+    <p id="bibtex-zenodo-13" style="display:none;">
 @software{acero_2025_14760974,
   author       = {Acero, Fabio and
                   Aguasca-Cabot, Arnau and
@@ -212,7 +202,7 @@ adsnote = {Provided by the SAO/NASA Astrophysics Data System}
 }
 </p>
 
-<main role="main">
+    <main role="main">
     <div class="container">
 
         <h1>Acknowledging or Citing gammapy</h1>
@@ -291,15 +281,8 @@ adsnote = {Provided by the SAO/NASA Astrophysics Data System}
 
 </main>
 
-<!-- Footer Section -->
-<div data-include="footer.html"></div>
-
-
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-<script src="scripts/navbarCollapse.js" defer></script>
-
+    <!-- Footer Section -->
+    <div id="footer-placeholder"></div>
+    <script src="load-components.js"></script>
 </body>
 </html>

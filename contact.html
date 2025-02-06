@@ -1,3 +1,4 @@
+<!--  Licensed under the MIT license - see LICENSE -->
 <!DOCTYPE html>
 <html>
 
@@ -10,76 +11,74 @@
     }
 </style>
 
-
-<script src="scripts/matomo.js" defer></script>
-<script src="scripts/myscripts.js" defer></script>
-<script src="scripts/includeHTML.js" defer></script>
-
-<div data-include="header.html"></div>
-
+<head>
+      <!-- Common scripts  -->
+      <script src="load-scripts.js"></script>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title>Gammapy - Contact</title>
+      <!-- head placeholder -->
+      <div id="head-placeholder"></div>
+ </head>
 
 <body>
+    <!-- Navbar placeholder -->
+    <div id="navbar-placeholder"></div>
 
-<div data-include="navbar.html"></div>
+    <main>
+        <div class="container">
+            <h1>Contact</h1>
+            <br>
+            <p>This page lists the contact points and communication channels for Gammapy </p>
 
-<main>
-    <div class="container">
-        <h1>Contact</h1>
-        <br>
-        <p>This page lists the contact points and communication channels for Gammapy </p>
+            <ul class="">
+                <li>
+                    Gammapy slack (<a href="https://gammapy.slack.com">gammapy.slack.com</a>)
+                    <br>
+                    Many Gammapy developers and users are using the Gammapy Slack to chat.
+                    There is a <strong>#general</strong> and some other Slack channels that will go to many people.
+                    But you can also join and use the Gammapy slack for 1:1 text chat with someone from the Gammapy team to
+                    get help with Python, git, Gammapy, ...
+                    The Gammapy slack is private, and the history is not archived, i.e. is lost at some point.
+                    <br>
+                    To get access, sign-up <a href="https://join.slack.com/t/gammapy/signup">here</a>, and wait a bit for moderator approval.
+                </li>
+                <li>
+                    Gammapy CTAO mailing list
+                    (<a href="mailto:gammapy-cta-l@in2p3.fr">gammapy-cta-l [at] in2p3 [dot] fr</a>,
+                    <a href="https://listserv.in2p3.fr/archives/gammapy-cta-l.html">archive</a>)
+                    <br>
+                    Ask any question about CTAO data analysis with Gammapy.
+                    This is a private mailing list, so discussing CTAO-internal information is OK.
+                    <br>
+                    Sign up <a href="https://listserv.in2p3.fr/cgi-bin/wa?SUBED1=GAMMAPY-CTA-L&A=1">here</a>, and wait a bit
+                    for moderator approval.
+                </li>
+                <li>
+                    Gammapy coordination committee mailing list
+                    (<a href="mailto:gammapy-coordination-l@in2p3.fr">gammapy-coordination-l [at] in2p3 [dot] fr</a>,
+                    <a href="https://listserv.in2p3.fr/archives/gammapy-coordination-l.html">archives</a>)
+                    <br>
+                    Use this mailing list to contact the Gammapy coordination committee.
+                    Anyone can post, but only coordination committee members can read it.
+                    Don't be shy: just email us if you have any question or comment about Gammapy!
+                </li>
+                <li>
+                    Github (<a href="https://github.com/gammapy/gammapy">https://github.com/gammapy/gammapy</a>)
+                    <br>
+                    The place where we develop Gammapy (code, tests, documentation).
+                    If you want to report an issue, you can do it directly in the issue tracker there,
+                    or by posting on the mailing lists mentioned above.
+                    <br>
+                    You can make a GitHub account yourself, it's free.
+                </li>
+            </ul>
+        </div>
+    </main>
 
-        <ul class="">
-            <li>
-                Gammapy slack (<a href="https://gammapy.slack.com">gammapy.slack.com</a>)
-                <br>
-                Many Gammapy developers and users are using the Gammapy Slack to chat.
-                There is a <strong>#general</strong> and some other Slack channels that will go to many people.
-                But you can also join and use the Gammapy slack for 1:1 text chat with someone from the Gammapy team to
-                get help with Python, git, Gammapy, ...
-                The Gammapy slack is private, and the history is not archived, i.e. is lost at some point.
-                <br>
-                To get access, sign-up <a href="https://join.slack.com/t/gammapy/signup">here</a>, and wait a bit for moderator approval.
-            </li>
-            <li>
-                Gammapy CTAO mailing list
-                (<a href="mailto:gammapy-cta-l@in2p3.fr">gammapy-cta-l [at] in2p3 [dot] fr</a>,
-                <a href="https://listserv.in2p3.fr/archives/gammapy-cta-l.html">archive</a>)
-                <br>
-                Ask any question about CTAO data analysis with Gammapy.
-                This is a private mailing list, so discussing CTAO-internal information is OK.
-                <br>
-                Sign up <a href="https://listserv.in2p3.fr/cgi-bin/wa?SUBED1=GAMMAPY-CTA-L&A=1">here</a>, and wait a bit
-                for moderator approval.
-            </li>
-            <li>
-                Gammapy coordination committee mailing list
-                (<a href="mailto:gammapy-coordination-l@in2p3.fr">gammapy-coordination-l [at] in2p3 [dot] fr</a>,
-                <a href="https://listserv.in2p3.fr/archives/gammapy-coordination-l.html">archives</a>)
-                <br>
-                Use this mailing list to contact the Gammapy coordination committee.
-                Anyone can post, but only coordination committee members can read it.
-                Don't be shy: just email us if you have any question or comment about Gammapy!
-            </li>
-            <li>
-                Github (<a href="https://github.com/gammapy/gammapy">https://github.com/gammapy/gammapy</a>)
-                <br>
-                The place where we develop Gammapy (code, tests, documentation).
-                If you want to report an issue, you can do it directly in the issue tracker there,
-                or by posting on the mailing lists mentioned above.
-                <br>
-                You can make a GitHub account yourself, it's free.
-            </li>
-        </ul>
-    </div>
-</main>
+    <!-- Footer Section -->
+    <div id="footer-placeholder"></div>
+    <script src="load-components.js"></script>
 
-<!-- Footer Section -->
-<div data-include="footer.html"></div>
-
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-<script src="scripts/navbarCollapse.js" defer></script>
 </body>
 </html>

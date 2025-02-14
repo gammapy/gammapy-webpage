@@ -47,7 +47,7 @@ body {
 }
 
 main {
-    padding-top: 7rem;
+    padding-top: 2rem;
     margin-bottom: 0;
 }
 
@@ -62,7 +62,7 @@ footer {
 
 .opener {
     /*padding-top: 7rem;*/
-    padding-bottom: 3rem;
+    padding-bottom: 1rem;
 }
 
 #gp-banner {
@@ -104,7 +104,7 @@ footer {
 	padding: 0px;
 	text-align: center;
 	text-decoration: none;
-	font-size: 1em;
+	font-size: 1rem;
 	display: inline-block;
 	border-radius: 5px;
 	box-shadow: 3px 3px 8px 0 #000; /* h-offset v-offset blur spread color */

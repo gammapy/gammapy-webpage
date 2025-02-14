@@ -26,14 +26,19 @@
     <div id="navbar-placeholder"></div>
 
     <script>
-         function copyToClipboard(element) {
-           var $temp = $("<textarea>");
-           $("body").append($temp);
-           var x = $(element).text().trim().replace(/<br>/g, '\n').replace(/<\/?[^>]+>/g, '');
-           $temp.val(x).select();
-           document.execCommand("copy");
-           $temp.remove();
-         }
+        function copyToClipboard(elementId) {
+            // Selection of the input element l'élément input
+            let text = document.getElementById(elementId).innerText;
+
+            // Copy le text in clipboard
+            navigator.clipboard.writeText(text)
+                .then(() => {
+                    let message = document.getElementById("confirmationMessage");
+                    message.style.display = "block"; // Print message
+                    setTimeout(() => message.style.display = "none", 2000); // Caching after 2 sec
+                })
+                .catch(err => console.error("Copy error :", err));
+        }
     </script>
 
     <p id="bibtex-proc" style="display:none;">
@@ -65,27 +70,27 @@ adsnote = {Provided by the SAO/NASA Astrophysics Data System}
 </p>
 
     <p id="bibtex-paper" style="display:none;">
-@article{gammapy:2023,
-    author = {{Donath}, Axel and {Terrier}, R\'egis and {Remy}, Quentin and {Sinha}, Atreyee and {Nigro}, Cosimo and
-        {Pintore}, Fabio and {Kh\'elifi}, Bruno and {Olivera-Nieto}, Laura and {Ruiz}, Jose Enrique and
-        {Br\"ugge}, Kai and {Linhoff}, Maximilian and {Contreras}, Jose Luis and {Acero}, Fabio and
-        {Aguasca-Cabot}, Arnau and {Berge}, David and {Bhattacharjee}, Pooja and {Buchner}, Johannes and
-        {Boisson}, Catherine and {Carreto Fidalgo}, David and {Chen}, Andrew and {de Bony de Lavergne}, Mathieu and
-        {de Miranda Cardoso}, Jos\'e Vinicius and {Deil}, Christoph and {F\"u\ss{}ling}, Matthias and
-        {Funk}, Stefan and {Giunti}, Luca and {Hinton}, Jim and {Jouvin}, L\'ea and {King}, Johannes and
-        {Lefaucheur}, Julien and {Lemoine-Goumard}, Marianne and {Lenain}, Jean-Philippe and {L\'opez-Coto}, Rub\'en
-        and {Mohrmann}, Lars and {Morcuende}, Daniel and {Panny}, Sebastian and {Regeard}, Maxime and {Saha}, Lab
-        and {Siejkowski}, Hubert and {Siemiginowska}, Aneta and {Sip"ocz}, Brigitta M. and {Unbehaun}, Tim
-        and {van Eldik}, Christopher and {Vuillaume}, Thomas and {Zanin}, Roberta},
-    title = {Gammapy: A Python package for gamma-ray astronomy},
-    DOI= "10.1051/0004-6361/202346488",
-    url= "https://doi.org/10.1051/0004-6361/202346488",
-    journal = {A&A},
-    year = 2023,
-    volume = 678,
-    pages = "A157",
-}
-</p>
+ @article{gammapy:2023,
+ author = {{Donath}, Axel and {Terrier}, R\'egis and {Remy}, Quentin and {Sinha}, Atreyee and {Nigro}, Cosimo and
+ {Pintore}, Fabio and {Kh\'elifi}, Bruno and {Olivera-Nieto}, Laura and {Ruiz}, Jose Enrique and
+ {Br\"ugge}, Kai and {Linhoff}, Maximilian and {Contreras}, Jose Luis and {Acero}, Fabio and
+ {Aguasca-Cabot}, Arnau and {Berge}, David and {Bhattacharjee}, Pooja and {Buchner}, Johannes and
+ {Boisson}, Catherine and {Carreto Fidalgo}, David and {Chen}, Andrew and {de Bony de Lavergne}, Mathieu and
+ {de Miranda Cardoso}, Jos\'e Vinicius and {Deil}, Christoph and {F\"u\ss{}ling}, Matthias and
+ {Funk}, Stefan and {Giunti}, Luca and {Hinton}, Jim and {Jouvin}, L\'ea and {King}, Johannes and
+ {Lefaucheur}, Julien and {Lemoine-Goumard}, Marianne and {Lenain}, Jean-Philippe and {L\'opez-Coto}, Rub\'en
+ and {Mohrmann}, Lars and {Morcuende}, Daniel and {Panny}, Sebastian and {Regeard}, Maxime and {Saha}, Lab
+ and {Siejkowski}, Hubert and {Siemiginowska}, Aneta and {Sip"ocz}, Brigitta M. and {Unbehaun}, Tim
+ and {van Eldik}, Christopher and {Vuillaume}, Thomas and {Zanin}, Roberta},
+ title = {Gammapy: A Python package for gamma-ray astronomy},
+ DOI= "10.1051/0004-6361/202346488",
+ url= "https://doi.org/10.1051/0004-6361/202346488",
+ journal = {A&A},
+ year = 2023,
+ volume = 678,
+ pages = "A157",
+ }
+  </p>
 
     <p id="bibtex-zenodo-11" style="display:none;">
 @software{gammapy:zenodo-1.1,
@@ -202,7 +207,7 @@ adsnote = {Provided by the SAO/NASA Astrophysics Data System}
 }
 </p>
 
-    <main role="main">
+    <main>
     <div class="container">
 
         <h1>Acknowledging or Citing gammapy</h1>
@@ -214,23 +219,19 @@ adsnote = {Provided by the SAO/NASA Astrophysics Data System}
 
         <br><br>
         <h2 id="publication"><a href="#pub">In publications</a></h2>
-        <p class="lead">
+        <p>
             If you use Gammapy for work or research presented in a publication (whether directly, or as a dependency to
             another package), we ask you to add two citations to Gammapy:
         </p>
         <ul>
             <li><a href="https://www.aanda.org/component/article?access=doi&doi=10.1051/0004-6361/202346488">Gammapy paper in A&amp;A</a>
                  (as a general citation) &nbsp; &nbsp;
-                <button class="button-fancy"
-                    onclick="copyToClipboard('#bibtex-paper'); alert('A&amp;A BibTeX copied!');">
-                    <small>Copy BibTeX to clipboard</small>
-                </button>
+                <button class="button-fancy" onclick="copyToClipboard('bibtex-paper'); alert('A&amp;A BibTeX copied!');">
+                    <small>Copy BibTeX to clipboard</small></button>
             </li>
-<!--            <li><a href="https://arxiv.org/abs/1709.01751">Gammapy paper</a>
-                (<a href="https://ui.adsabs.harvard.edu/abs/2017ICRC...35..766D/abstract">ADS</a>) (as a general citation)</li> -->
             <li><a href="https://doi.org/10.5281/zenodo.4701488">Gammapy on Zenodo</a> (with the specific version used) &nbsp; &nbsp; &nbsp;
                 -  &nbsp; &nbsp;e.g. for the v1.3: &nbsp; <button class="button-fancy"
-                    onclick="copyToClipboard('#bibtex-zenodo-13'); alert('Zenodo v1.3 BibTeX copied!');">
+                    onclick="copyToClipboard('bibtex-zenodo-13'); alert('Zenodo v1.3 BibTeX copied!');">
                     <small>Copy BibTeX to clipboard</small>
                 </button>
             </li>
@@ -250,7 +251,7 @@ adsnote = {Provided by the SAO/NASA Astrophysics Data System}
         <br>
         <hr>
         <h2 id="presentation"><a href="#pres">In presentations</a></h2>
-        <p class="lead">
+        <p>
             If you are giving a presentation or talk featuring work/research that makes use of Gammapy, we suggest
             using this logo on your title slide:
         </p>
@@ -260,7 +261,7 @@ adsnote = {Provided by the SAO/NASA Astrophysics Data System}
         <br><br><br>
         <hr>
         <h2 id="projects"><a href="#projects">In projects</a></h2>
-        <p class="lead">
+        <p>
             If you are using Gammapy as part of a code project (e.g., affiliated packages), a useful way to acknowledge
             your use of Gammapy is with a badge in your README. We suggest this badge:
         </p>

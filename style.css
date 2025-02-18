@@ -129,3 +129,11 @@ footer {
     overflow:visible !important;
 }
 
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th {
+  text-align: centered;
+  font-weight: bold;
+}

@@ -129,19 +129,30 @@ footer {
     overflow:visible !important;
 }
 
-table.about th, table.about td {
-  border: 1px solid black;
+table.about {
+  table-layout: fixed;
   border-collapse: collapse;
+  width: 70%;
 }
 table.about th {
-  text-align: centered;
+  border: 1px solid black;
+  text-align: center;
   font-weight: bold;
 }
-
-table.default th, table.default td {
-  border: none;
+table.about td {
+  border: 1px solid black;
   text-align: left;
 }
+
+table.default {
+  table-layout: fixed;
+}
+table.default td {
+  text-align: left;
+  border: none;
+}
 table.default th {
+  text-align: left;
   font-weight: bold;
+  border: none;
 }

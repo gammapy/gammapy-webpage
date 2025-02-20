@@ -129,11 +129,19 @@ footer {
     overflow:visible !important;
 }
 
-table, th, td {
+table.about th, table.team td {
   border: 1px solid black;
   border-collapse: collapse;
 }
-th {
+table.about th {
   text-align: centered;
+  font-weight: bold;
+}
+
+table.default th, table.default td {
+  border: none;
+  text-align: left;
+}
+table.default th {
   font-weight: bold;
 }

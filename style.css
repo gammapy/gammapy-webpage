@@ -129,7 +129,7 @@ footer {
     overflow:visible !important;
 }
 
-table.about th, table.team td {
+table.about th, table.about td {
   border: 1px solid black;
   border-collapse: collapse;
 }

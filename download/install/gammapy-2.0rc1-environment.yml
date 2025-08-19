@@ -36,4 +36,4 @@ dependencies:
   - tqdm
   - pip:
     - gammapy==2.0rc1
-    - ray[default]==2.48
+    - ray[default]=2.48

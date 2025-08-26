@@ -1,19 +1,19 @@
-# Conda environment for Gammapy version 2.0rc1
-# Install:    conda env create -f gammapy-2.0rc1-environment.yml
-# Activate:   conda activate gammapy-2.0rc1
+# Conda environment for Gammapy version 2.0
+# Install:    conda env create -f gammapy-2.0-environment.yml
+# Activate:   conda activate gammapy-2.0
 # Deactivate: conda deactivate
 
-name: gammapy-2.0rc1
+name: gammapy-2.0
 
 channels:
   - conda-forge
-  - https://cxc.cfa.harvard.edu/conda/sherpa
 
 variables:
   PYTHONNOUSERSITE: "1"
 
 dependencies:
   - python=3.12
+  - gammapy=2.0
   - ipython=8.27
   - cython
   - jupyter
@@ -34,6 +34,5 @@ dependencies:
   - pip
   - requests
   - tqdm
-  - gammapy=2.0
   - pip:
     - ray[default]~=2.48.0

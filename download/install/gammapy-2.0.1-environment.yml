@@ -12,7 +12,7 @@ variables:
   PYTHONNOUSERSITE: "1"
 
 dependencies:
-  - python=3.13
+  - python=3.12
   - gammapy=2.0.1
   - ipython=8.27
   - cython

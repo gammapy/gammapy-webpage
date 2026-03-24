@@ -34,7 +34,7 @@ dependencies:
   - requests
   - tqdm
   - ultranest
-  - arviz
+  - arviz<1
   - pip:
     - gammapy==2.1rc1
     - ray[default]~=2.54.0

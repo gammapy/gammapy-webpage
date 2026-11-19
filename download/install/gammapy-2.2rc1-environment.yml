@@ -1,0 +1,43 @@
+# Conda environment for Gammapy version 2.2rc1
+# Install:    conda env create -f gammapy-2.2rc1-environment.yml
+# Activate:   conda activate gammapy-2.2rc1
+# Deactivate: conda deactivate
+
+name: gammapy-2.2rc1
+
+channels:
+  - conda-forge
+
+variables:
+  PYTHONNOUSERSITE: "1"
+
+dependencies:
+  - python=3.14
+  - ipython=9.18
+  - cython
+  - jupyter
+  - jupyterlab=4.6
+  - pyyaml=6.0
+  - click=8.5
+  - numpy=2.5
+  - scipy=1.18
+  - pandas=3.1
+  - matplotlib=3.11
+  - astropy=8.0
+  - regions=0.13
+  - iminuit=2.33
+  - healpy=1.20
+  - naima=0.10
+  - pydantic=2.14
+  - corner=2.3
+  - pip
+  - requests
+  - tqdm
+  - ultranest=4.6
+  - arviz=1.3
+  - asdf=6.0
+  - asdf-astropy=0.11
+  - nautilus-sampler=1.0
+  - pip:
+    - gammapy==2.2rc1
+    - ray[default]~=2.60

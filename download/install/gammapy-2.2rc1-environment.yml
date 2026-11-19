@@ -36,8 +36,8 @@ dependencies:
   - ultranest
   - arviz=1.3
   - asdf=6.0
-  - asdf-astopy=0.11
-  - nautilues-sampler=1.0
+  - asdf-astropy=0.11
+  - nautilus-sampler=1.0
   - pip:
     - gammapy==2.2rc1
     - ray[default]~=2.60

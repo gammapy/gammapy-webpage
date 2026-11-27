@@ -23,7 +23,12 @@
         "notebooks": "https://docs.gammapy.org/2.1rc1/_downloads/a5659940aa3f8f568547d47752a43172/tutorials_jupyter.zip",
         "datasets": "https://github.com/gammapy/gammapy-data/tarball/master",
         "conda-environment": "https://raw.githubusercontent.com/gammapy/gammapy/master/gammapy-2.1rc1-environment.yml"
-    },   
+    },
+    "2.0.2": {
+        "notebooks": "https://docs.gammapy.org/2.0.2/_downloads/a5659940aa3f8f568547d47752a43172/tutorials_jupyter.zip",
+        "datasets": "https://github.com/gammapy/gammapy-data/tarball/v2.0",
+        "conda-environment": "https://gammapy.org/download/install/gammapy-2.0.2-environment.yml"
+    },
     "2.0.1": {
         "notebooks": "https://docs.gammapy.org/2.0.1/_downloads/a5659940aa3f8f568547d47752a43172/tutorials_jupyter.zip",
         "datasets": "https://github.com/gammapy/gammapy-data/tarball/v2.0",
